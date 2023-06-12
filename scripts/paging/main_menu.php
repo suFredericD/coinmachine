@@ -22,14 +22,14 @@ function creatMainMenu($fileName){
     $strProfileFile = $strPagesPath . "profile_fr.html";
 ?>
 <!-- --- --- --- MAIN NAVIGATION BAR --- --- --- -->
-        <nav id="main-navbar" class="navbar navbar-expand-lg col-xs-10 col-sm-10 col-md-10 col-10">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-expand-md col-xs-10 col-sm-10 col-md-10 col-10">
             <div id="main-navbar-container" class="container-fluid">
                 <a class="navbar-brand" href="#home">
                     <img id="menu-logo" src="<?php echo $strMenuLogo;?>" alt="CoinMachine logo">
                 </a>
 <!-- Responsive menu toggling image -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><img id="menu-logo" src="<?php echo $strMenuLogo;?>" alt="CoinMachine logo"></span>
+                <button id="user-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <!-- Navigation links list -->
