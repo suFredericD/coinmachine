@@ -14,12 +14,18 @@ function creatMainMenu($fileName){
         $strMediaPath = "media/";
         $strIndexFile = "index.php";
     } else {
-        $strPagesPath = "/";
+        $strPagesPath = "../pages/";
         $strMediaPath = "../media/";
         $strIndexFile = "../index.php";
     }
     $strMenuLogo = $strMediaPath . "logos/CoinMachine_green_001.png";
     $strProfileFile = $strPagesPath . "profile_fr.html";
+
+    $strWeb3dashboard = $strPagesPath . "web3dashboard.php";
+    $strWeb3Protocols = $strPagesPath . "web3protocols.php";
+    $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
+    $strWeb3Medias = $strPagesPath . "web3medias.php";
+    $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
 ?>
 <!-- --- --- --- MAIN NAVIGATION BAR --- --- --- -->
         <nav id="main-navbar" class="navbar navbar-expand-lg navbar-expand-md col-xs-10 col-sm-10 col-md-10 col-10">
@@ -45,48 +51,32 @@ function creatMainMenu($fileName){
                     </li>
 <!-- Blockchain section -->
 <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Blockchain
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blockchain</a>
                         <ul class="dropdown-menu ddm-user">
-                            <li><a class="dropdown-item" href="#">Actualités</a></li>
-                            <li><a class="dropdown-item" href="#">YouTube</a></li>
-                            <li><a class="dropdown-item" href="#">Twitter</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Protocols;?>">Protocols</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>">ToolBox</a></li>
+                            <li><hr class="dropdown-divider ddm-hr"></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news">Actualités</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube">YouTube</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter">Twitter</a></li>
 
                         </ul>
                     </li>
 <!-- Ressources section -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ressources
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressources</a>
                         <ul class="dropdown-menu ddm-user">
-                            <li><a class="dropdown-item" href="#">Tutoriels</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>">Tutoriels</a></li>
                             <li><hr class="dropdown-divider ddm-hr"></li>
                             
-                        </ul>
-                    </li>
-<!-- Medias section -->
-<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Medias
-                        </a>
-                        <ul class="dropdown-menu ddm-user">
-                            <li><a class="dropdown-item" href="#">Actualités</a></li>
-                            <li><a class="dropdown-item" href="#">YouTube</a></li>
-                            <li><a class="dropdown-item" href="#">Twitter</a></li>
-
                         </ul>
                     </li>
 <!-- Projets section -->
 <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projets
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
                         <ul class="dropdown-menu ddm-user">
-                            <li><a class="dropdown-item" href="#">Tutoriels</a></li>
-                            <li><hr class="dropdown-divider ddm-hr"></li>
-                            
+
                         </ul>
                     </li>
 <!-- Contacts section -->

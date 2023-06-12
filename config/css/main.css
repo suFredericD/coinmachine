@@ -65,10 +65,11 @@ body {
     font-size: 26px;
 }
 /* *** *** *** MAIN NAVIGATION BAR *** *** *** */
-#main-navbar, #main-navbar-container,
+#main-navbar-container, #main-navbar-container ul
+#main-navbar-container ul li,
 #main-navbar-container a, #main-navbar-container button,
 #main-navbar-container div {
-    background-color: #000;
+    background-color: transparent;
     color: #06c883;
 }
 #main-navbar {
@@ -76,6 +77,7 @@ body {
     align-items: center;
     margin: 10px auto;
     border: 1px solid #06c883;
+    background-color: linear-gradient(45deg, #ebef7b, #06c883);
     color: #06c883;
     text-align: center;
 }
@@ -91,6 +93,7 @@ body {
     padding: 5px 15px;
     font-family: "Wallpoet";
     font-size: 16px;
+    color: #06c883;
     transition: all 0.85s ease-in-out;
 }
 #main-navbar-container a:hover {
