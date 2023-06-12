@@ -38,7 +38,7 @@ function createHTMLheader($fileName, $siteInformations){
 
     <favicon href="" />
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Aldrich|Alexandria|Audiowide|Beth+Ellen|Bevan|Black+Ops+One|Bungee|Crafty+Girls|Finger+Paint|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Syncopate" rel="stylesheet">
     <!-- Attached CSS files -->
     <link rel="stylesheet" href="<?php echo $strBootstrapCSS;?>" media="all">
     <link rel="stylesheet" href="<?php echo $strMainCSS;?>" media="all">

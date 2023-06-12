@@ -20,12 +20,13 @@ function createPageheader($fileName){
 ?>
         <header id="site-header" class="offset-xl-1 col-xl-10">
             <div class="row">
-                <div id="site-logo" class="col-xl-1">
+                <div id="site-logo" class="col-xl-2">
                     <a href="<?php echo $strIndexFile;?>"><img src="<?php echo $strSiteLogo;?>" alt="CoinMachine logo"></a>
                 </div>
-                <div id="site-title" class="col-xl-11">
+                <div id="site-title" class="col-xl-10">
                     <h1>CoinMachine</h1>
-                    <h2>Blockchain & Cryptocurrency</h2>
+                    <h2>IT & Web3</h2>
+                    <h3>Blockchain & Cryptocurrency</h3>
                 </div>
             </div>
         </header>

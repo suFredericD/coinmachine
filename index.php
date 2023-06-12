@@ -14,6 +14,8 @@ require('scripts\paging\html_header.php');
 require('scripts\paging\page_header.php');
 // Include the HTML footer builder
 require('scripts\paging\html_footer.php');
+// Include the menu builder script
+require('scripts\paging\main_menu.php');
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 $siteInformations = [];
