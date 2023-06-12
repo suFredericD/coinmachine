@@ -26,35 +26,48 @@ createHTMLheader($fileName, $siteInformations);         // Create the HTML heade
 createPageheader($fileName);                            // Create the page header
 creatMainMenu($fileName);                               // Create the main menu
 ?>
+        <label id ="web3-medias-label" for="web3-medias">Medias web3</label>
         <section id ="web3-medias" class="col-11">
-            <h1>Web3 medias</h1>
-            <div id="web3-medias-news" class="row">
-                <section class="col-12">
-                    <h2>Actualités</h2>
+            <div class="row">
+<!-- Little menu -->
+                <nav id="medias-mini-menu" class="col-2">
+                    <h4>Medias web3</h4>
+                    <ul>
+                        <li><a href="#news">Actualités</a></li>
+                        <li><a href="#youtube">YouTube</a></li>
+                        <li><a href="#charts">Charts</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                    </ul>
+                </nav>
+<!-- Main content -->
+                <section id="medias-main-content" class="offset-2 col-10">
+                    <div id="web3-medias-news" class="row">
+                        <section id="#news" class="col-12">
+                            <h2>Actualités</h2>
+                            
+
+                        </section>
+                    </div>
+                    <div id="web3-medias-youtube" class="row">
+                        <section id="#youtube" class="col-12">
+                            <h2>YouTube</h2>
+
+                        </section>
+                    </div>
+                    <div id="web3-medias-charts" class="row">
+                        <section id="#charts" class="col-12">
+                            <h2>Charts</h2>
+
+                        </section>
+                    </div>
+                    <div id="web3-medias-twitter" class="row">
+                        <section id="#twitter" class="col-12">
+                            <h2>Twitter</h2>
+
+                        </section>
+                    </div>
                 </section>
             </div>
-            <div id="web3-medias-youtube" class="row">
-                <section class="col-12">
-                    <h2>YouTube</h2>
-                </section>
-            </div>
-            <div id="web3-medias-charts" class="row">
-                <section class="col-12">
-                    <h2>Charts</h2>
-                </section>
-            </div>
-            <div id="web3-medias-twitter" class="row">
-                <section class="col-12">
-                    <h2>Twitter</h2>
-                </section>
-            </div>
-
-
-
-
-
-
-
         </section>
 <?php
 createHTMLfooter($fileName);                            // Create the HTML footer

@@ -1,0 +1,101 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3medias.css
+// Role         : web3medias.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-12
+// Last update  : 2021-06-12
+// ===================================================================================================== */
+/* 
+    green : #60e660
+    lightgreen : #60e6a3
+*/
+/* *** *** *** CONTAINERS *** *** *** */
+#medias-main-content, #web3-medias-youtube, 
+#web3-medias-charts, #web3-medias-twitter {
+    border: 1px solid #60e660;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+#medias-mini-menu {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+#medias-mini-menu h4 {
+    font-family: "Frijole";
+    font-size: 1.1em;
+}
+#medias-mini-menu ul li, #medias-mini-menu ul li a{
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+
+}
+#medias-mini-menu ul li a {
+    transition: all 0.75s ease-in-out;
+}
+#medias-mini-menu ul li a:hover {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+/* *** *** *** TITRAGES *** *** *** */
+#web3-medias-label {
+    margin: 10px auto;
+    font-family: "Frijole";
+    font-size: 2.5rem;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+#medias-main-content div section h2 {
+    margin-top: 10px;
+    font-family: "Frijole";
+    font-size: 2rem;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
