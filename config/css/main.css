@@ -19,7 +19,6 @@ body {
     padding: 0;
     background: black;
     color: #60e660;
-    font-family: "Courier New", Courier, monospace;
 }
 /* *** *** *** CONTAINER *** *** *** */
 #site-container {
@@ -42,17 +41,20 @@ body {
 }
 #site-title {
     text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 #site-title h1 {
     font-family: "Frijole";
     font-variant: small-caps;
     font-size: 80px;
     letter-spacing: 0.1em;
-    text-shadow: 3px 3px 4px darkgray;
 }
 #site-title h2, #site-title h3 {
     font-family: "Syncopate";
-    color: #60e6a3;
     text-shadow: 2px 2px 3px darkgray;
 }
 #site-title h2 {
@@ -61,4 +63,41 @@ body {
 }
 #site-title h3 {
     font-size: 26px;
+}
+/* *** *** *** MAIN NAVIGATION BAR *** *** *** */
+#main-navbar, #main-navbar-container,
+#main-navbar-container a, #main-navbar-container button,
+#main-navbar-container div {
+    background-color: #000;
+    color: #06c883;
+}
+#main-navbar {
+    margin: 10px auto;
+    border: 1px solid #06c883;
+    color: #06c883;
+    text-align: center;
+}
+#main-navbar-container {
+
+}
+#menu-logo {
+    max-width: 50px;
+}
+#main-navbar-container a, #main-navbar-container ul li a {
+    padding: 5px 15px;
+    font-family: "Press Start 2P";
+    font-size: 12px;
+    transition: all 0.85s ease-in-out;
+}
+#main-navbar-container a:hover {
+    background-color: #06c883;
+    color: #000;
+    border-radius: 20px;
+}
+.ddm-user {
+    background-color: #000;
+}
+.ddm-hr {
+    width: 90%;
+    background-color: #06c883;
 }

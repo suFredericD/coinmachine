@@ -23,6 +23,7 @@ $siteInformations = [];
 
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
 createPageheader($fileName);                            // Create the page header
+creatMainMenu($fileName);                               // Create the main menu
 ?>
 
 

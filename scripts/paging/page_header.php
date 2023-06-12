@@ -16,14 +16,14 @@ function createPageheader($fileName){
         $strMediaPath = "../media/";
         $strIndexFile = "../index.php";
     }
-    $strSiteLogo = $strMediaPath . "logos/CML_transparent.png";
+    $strSiteLogo = $strMediaPath . "logos/CoinMachine_green_001.png";
 ?>
-        <header id="site-header" class="offset-xl-1 col-xl-10">
+        <header id="site-header" class="col-xs-10 col-sm-10 col-md-10 col-10">
             <div class="row">
-                <div id="site-logo" class="col-xl-2">
+                <div id="site-logo" class="col-xs-2 col-sm-2 col-md-2 col-2">
                     <a href="<?php echo $strIndexFile;?>"><img src="<?php echo $strSiteLogo;?>" alt="CoinMachine logo"></a>
                 </div>
-                <div id="site-title" class="col-xl-10">
+                <div id="site-title" class="col-xs-10 col-sm-10 col-md-10 col-10">
                     <h1>CoinMachine</h1>
                     <h2>IT & Web3</h2>
                     <h3>Blockchain & Cryptocurrency</h3>

@@ -1,0 +1,540 @@
+/*      Purpose     : testing possibilities of AI assisted coding
+        Subject     : Matrix CV CSS file
+        Context     : coder without experience in corporations aiming to work in web3.0
+        Author      : CoinMachine
+        Created     : 2023-28-05
+*/
+body {
+    background: black;
+    color: lightgreen;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+}
+#home-link {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    font-family: "Audiowide";
+    font-family: 26px;
+}
+#home-link span {
+    margin-right: 10px;
+}
+/*    Containers    */
+.matrix-container {
+    padding: 30px;
+    position: relative;
+    border: 1px dotted lightgreen;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+.matrix-upper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.matrix-picture {
+    background-image: url('../../media/pictures/IDpic.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    border: 2px solid red;
+    border-radius: 50%;
+    animation: matrix-border-picture 2s infinite;
+}
+.matrix-presentation{
+    text-align: left;
+    flex: 1;
+    margin-left: 20px;
+}
+.load-infos {
+    animation: fade-out-in 5s step-end;
+    font-family: Audiowide, sans-serif;
+}
+.matrix-presentation h1{
+    animation: fade-in-out 5s step-end;
+    animation-delay: 5s;
+    font-family: Aldrich, sans-serif;
+    font-size: 24px;
+}
+.matrix-presentation h2{
+    animation: fade-out-in 5s step-end;
+    animation-delay: 5s;
+    font-family: Aldrich, sans-serif;
+    font-size: 20px;
+}
+.matrix-presentation h5{
+    font-family: Aldrich, sans-serif;
+    color: darkgray;
+    font-size: 14px;
+}
+.courrier {
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgreen;
+}
+.matrix-contact {
+    text-align: left;
+}
+.matrix-lower {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    opacity: 1;
+    animation: fade-in 5s step-end;
+    animation-delay: 5s;
+}
+.humoristic-comment{
+    color: lightgray;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.matrix-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border: 2px dotted lightgreen;
+    padding: 10px;
+}
+.matrix-column {
+    flex: 1;
+    text-align: left;
+}
+.matrix-column h3 {
+    font-family: Audiowide, sans-serif;
+}
+.matrix-column p {
+    color: darkgray;
+}
+.matrix-column p span {
+    color: lightgreen;
+}
+.functions {
+    font-family: Aldrich, sans-serif;
+    color: darkgray;
+}
+.data-title, .data-subtitle{
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: red;
+    font-family: Black Ops One, cursive;
+    animation: fade-out-in-red 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+.data-title{
+    font-size: 30px;
+}
+.data-subtitle{
+    font-size: 24px;
+}
+.warning {
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+.warning-title {
+    color: darkred;
+}
+.warning-text {
+    border: 1px dotted darkred;
+    text-align: justify;
+    padding: 14px;
+    animation: warning-text 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+}
+.warning-text i {
+    color: lightgray;
+    font-style: italic;
+}
+.fa-triangle-exclamation {
+    animation: fade-out-in-red 2s infinite;
+}
+.matrix-section-upgrades, .matrix-section-xp {
+    display: block;
+    align-items: stretch;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px dotted lightgreen;
+    padding: 10px;
+    position: relative;
+    width: 75%;
+    animation: matrix-border-animation 4s;
+}
+.matrix-section-upgrades {
+    animation-iteration-count: 2;
+}
+.matrix-section-xp {
+    animation-iteration-count: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.matrix-section-upgrades h3 {
+    display: inline-block;
+    font-size: 24px;
+    width: 100%;
+}
+.upg-article-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+.upg-article {
+    position: relative;
+    display: block;
+    max-width: 50%;
+    margin: 2px;
+    padding: 10px;
+    border: 1px dotted lightgreen;
+    text-align: left;
+    animation: matrix-border-animation 4s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+}
+.upg-article p, .upg-article h3 {
+    margin: 0 auto;
+}
+.upg-article-credits {
+    font-family: Aldrich, sans-serif;
+    font-size: 14px;
+    color: darkgray;
+}
+.grant-year {
+    font-size: 12px;
+}
+.upg-article h5 {
+    margin-bottom: 4px;
+    font-family: Aldrich, sans-serif;
+    color: darkgray;
+}
+.text-offset {
+    font-family: Ubuntu, sans-serif;
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.text-big-offset {
+    font-family: AudioWide, sans-serif;
+    margin-left: 6px;
+}
+.text-offset-contacts {
+    margin-left: 3px;
+    font-family: AudioWide, sans-serif;
+}
+.link-contact {
+    font-family: Aldrich, sans-serif;
+}
+.skills-infos-single{
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    color: lightgray;
+    column-count: 1;
+}
+.skills-infos {
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    color: lightgray;
+    column-count: 2;
+    column-gap: 20px;
+}
+.skills-icon {
+    max-width: 66%;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: lightgreen;
+}
+.known-activities-section {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px dotted lightgreen;
+    padding: 10px;
+    position: relative;
+    width: 75%;
+    animation: matrix-border-animation 4s;
+    animation-iteration-count: 2;
+    
+}
+.known-activities-section h2 {
+    font-family: Black Ops One, cursive;
+    color: darkred;
+}
+.activities-infos{
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    color: lightgray;
+    text-align: left;
+    column-count: 2;
+    column-gap: 20px;
+}
+.matrix-section-xp h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: Black Ops One, cursive;
+    color: darkred;
+}
+.xp-article {
+    position: relative;
+    display: block;
+    max-width: 45%;
+    margin: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px dotted lightgreen;
+    text-align: justify;
+    animation: matrix-border-animation 4s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+}
+.xp-article h4, .xp-article h5 {
+    font-family: Aldrich, sans-serif;
+}
+.xp-article h4 {
+    margin-bottom: 0px;
+    color: lightgreen;
+    font-size: 20px;
+}
+.xp-article h5 {
+    margin-bottom: 4px;
+    color: darkgray;
+    font-size: 14px;
+}
+.xp-article p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 4px;
+    color: lightgray;
+    font-family: Aldrich, sans-serif;
+    font-size: 12px;
+}
+.xp-article p::first-letter {
+    font-size: 18px;
+}
+.xp-article ul {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 20px;
+    color: lightgray;
+    font-family: Aldrich, sans-serif;
+    font-size: 12px;
+}
+/*    HTML Basics    */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: lightgreen;
+}
+h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: lightgreen;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: lightgreen;
+}
+h4 {
+    font-size: 18px;
+    margin-top: 0;
+    color: lightgreen;
+}
+h5 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: lightgreen;
+}
+a {
+    color: lightgreen;
+    text-decoration: none;
+    font-style: italic;
+    animation: blink-link 4s infinite;
+}
+a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.header-title{
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-family: Black Ops One, cursive;
+    animation: fade-out-in-red 5s infinite;
+}
+.header-subtitle{
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 30px;
+    color: red;
+    font-family: Black Ops One, cursive;
+    animation: fade-out-in-red 5s;
+    animation-iteration-count: 1;
+}
+.blink-link {
+    text-decoration: none;
+    animation: blink-link 2s infinite;
+}
+/* Loading animated horizontal bar */
+.polling_message {
+    font-family: Aldrich, sans-serif;
+    color: lightgray;
+    float: left;
+    margin-right: 2%;
+}
+.view_port {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+.cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+    -webkit-animation: 3s linear 0s infinite alternate move_eye;
+            animation: 3s linear 0s infinite alternate move_eye;
+}
+#footer {
+    display: inline-block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: Aldrich, sans-serif;
+    color: lightgreen;
+    font-size: 14px;
+}
+.powering {
+    width: 80%;
+    margin: 10px auto;
+}
+.powering span {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.skynet {
+    color: red;
+    font-family: Black Ops One, cursive;
+    font-size: 16px;
+    animation: fade-out-in-red 2s;
+    animation-iteration-count: 1;
+}
+/*    Animations    */
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@keyframes matrix-border-animation {
+    0% {
+        border: 1px dotted lightgreen;
+    }
+    50% {
+        border: 1px dotted transparent;
+    }
+    100% {
+        border: 1px dotted lightgreen;
+    }
+}
+@keyframes matrix-border-picture {
+    0% {
+        border: 1px dotted red;
+    }
+    50% {
+        border: 1px dotted lightgreen;
+    }
+    100% {
+        border: 1px dotted red;
+    }
+}
+@keyframes fade-out-in {
+    0% {
+        color: lightgray;
+        opacity: 1;
+    }
+    50% {
+        color: lightgreen;
+        opacity: 0.95;
+    }
+    100% {
+        color: lightgray;
+        opacity: 1;
+    }
+}
+@keyframes fade-in-out {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: lightgray;
+    }
+    100% {
+        color: transparent;
+    }
+}
+@keyframes fade-out-in-red {
+    0% {
+        color: red;
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: red;
+    }
+}
+@keyframes blink-link {
+    0% {
+        color: lightgreen;
+    }
+    50% {
+        color: darkgrey;
+        text-decoration: underline;
+    }
+    100% {
+        color: lightgreen;
+    }
+}
+@keyframes warning-text {
+    0% {
+        color: darkred;
+        border-color: red;
+    }
+    50% {
+        color: transparent;
+        border-color: transparent;
+    }
+    100% {
+        color: darkred;
+        border-color: red;
+    }
+}
