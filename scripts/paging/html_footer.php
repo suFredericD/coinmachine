@@ -6,7 +6,7 @@
 // Role         : script creating the HTML footer
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-12
+// Last update  : 2021-06-13
 // =====================================================================================================
 function createHTMLfooter($fileName){
     if($fileName == '/index.php'){
@@ -15,6 +15,7 @@ function createHTMLfooter($fileName){
         $strScriptspath = "../scripts/";
     }
     $strJSscripts = $strScriptspath . "js/";
+    $strSpecialJSFile = $strJSscripts . substr(strrchr($fileName, "/"), 1, -4) . ".js";
 ?>
 <!-- --- --- --- END OF CONTENT --- --- --- -->
     </section>
@@ -25,8 +26,11 @@ function createHTMLfooter($fileName){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/91b2ef136e.js" crossorigin="anonymous"></script>
+<!-- --- --- --- Attached JavaScript dedicated to unique utilisation page by page --- --- --- -->
+<?php   if(file_exists($strSpecialJSFile)){ ?>
+    <script src="<?php echo $strSpecialJSFile;?>" crossorigin="anonymous"></script>
+<?php   }?>
 <!-- --- --- --- Add JavaScript here --- --- --- -->
-    <script src="" crossorigin="anonymous"></script>
 </body>
 <?php
 }

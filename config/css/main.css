@@ -30,14 +30,18 @@ body {
     align-items: center;
 }
 /* *** *** *** SITE HEADER *** *** *** */
+#site-header {
+    margin: 0px auto;
+    padding: 0px;
+}
 #site-logo, #site-logo img {
     margin: 0;
     padding: 0;
 }
 #site-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
 }
 #site-title {
     text-align: center;
@@ -75,7 +79,7 @@ body {
 #main-navbar {
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
+    margin: 0px auto;
     border: 1px solid #06c883;
     background-color: linear-gradient(45deg, #ebef7b, #06c883);
     color: #06c883;

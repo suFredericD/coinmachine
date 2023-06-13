@@ -12,7 +12,7 @@
 #bc-main-content {
     
 }
-#bc-main-content article {
+.blockchain {
     margin: 0;
     margin-bottom: 5px;
     padding: 0;
@@ -26,7 +26,7 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
     text-indent: 10px;
     text-align: justify;
     font-family: "Lekton";
@@ -60,7 +60,7 @@
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 #bcd-mini-menu ul, #bcd-mini-menu ul li {
-    margin-left: 0px;
+    margin-left: 20px;
     margin-bottom: 1px;
     padding: 0;
 }
@@ -82,7 +82,7 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
 }
 /* *** *** *** TITRAGES *** *** *** */
 #bc-dashboard-label, #bc-blockchains-list article h3,
@@ -109,7 +109,7 @@
     margin-top: 10px;
     font-family: "Audiowide";
 }
-#bc-blockchains-list article h4 {
+.bc-consensus {
     margin-top: 10px;
     margin-right: 5px;
     font-family: "Share Tech Mono";
@@ -132,7 +132,7 @@
     transition: all 1.75s ease-in-out;
 }
 .bc-article-titles:hover, .bc-blockscan-link:hover {
-    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
 }
 .bc-blockscan-link-label {
     text-decoration: none;
@@ -161,7 +161,125 @@
     margin-left: 5px;
     font-size: 0.8em;
 }
-
+/* *** *** *** REFERENCES SECTIONS *** *** *** */
+.bc-references {
+    display: none;
+    border: none;
+}
+.bc-ref-titles, .bc-ref-titles .row {
+    margin: 5px auto;
+    padding: 5px;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.bc-ref-titles:hover, .bc-ref-titles .row:hover {
+    background-image: linear-gradient(45deg,#06acc8, #8306c8);
+}
+.bc-ref-titles span, .bc-ref-titles-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.bc-ref-titles-content {
+    font-family: "Audiowide";
+    font-size: 0.9em;
+    letter-spacing: 0.65em;
+    color: #06c883;
+    animation: blinkky 1.5s infinite;
+    cursor: pointer;
+}
+.bc-references{
+    margin: 0;
+    padding: 5px;
+}
+.bc-ref-details, .bc-ref-details li, .bc-ref-details li a {
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.bc-ref-details li a:hover {
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
+}
+.bc-ref-rubrics, .bc-ref-rubrics li {
+    margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    font-family: "Audiowide";
+    font-size: 1.1em;
+}
+.bc-ref-details li {
+    margin: 0px;
+    margin-left: 30px;
+    padding: 0px;
+}
+.bc-ref-details li a {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Share Tech";
+    font-size: 0.75em;
+}
+.bc-ref-tooltip {
+    font-size: 0.9em;
+    font-weight: 900;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: #06c883;
+    animation: blinkky 4s infinite;
+}
+.bc-ref-tooltip:hover {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.bc-ref-noref {
+    margin: 0;
+    margin-left: 10px;    
+}
+.bc-ref-noref, .bc-noref-titles-content {
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    font-family: "Share Tech Mono";
+}
+.bc-noref-titles-content {
+    font-size: 0.9em;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+@keyframes blinkky {
+    0% {
+        color: #06c883;
+        opacity: 1;
+    }
+    50% {
+        color: #ebef7b;
+        opacity: 0.95;
+    }
+    100% {
+        color: #06c883;
+        opacity: 1;
+    }
+}
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
 
