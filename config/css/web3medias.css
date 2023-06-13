@@ -16,6 +16,34 @@
 #web3-medias-charts, #web3-medias-twitter {
     border: 1px solid #60e660;
 }
+#medias-main-content article, #web3-medias-youtube article, 
+#web3-medias-charts article, #web3-medias-twitter article {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    border: 1px dotted #60e660;
+    border-top-left-radius: 50px;
+}
+#medias-main-content article img, #web3-medias-youtube article img, 
+#web3-medias-charts article img, #web3-medias-twitter article img {
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+    border: 1px solid #60e660;
+    border-radius: 50px;
+}
+.media-desciption{
+    padding-left: 10px;
+    padding-bottom: 0;
+    font-family: "Share Tech Mono";
+    text-align: justify;
+    text-indent: 10px;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
 /* *** *** *** MINI NAVIGATION MENU *** *** *** */
 #medias-mini-menu {
     position: fixed;
@@ -31,52 +59,88 @@
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
-}
-#medias-mini-menu h4 {
     font-family: "Frijole";
-    font-size: 1.1em;
 }
-#medias-mini-menu ul li, #medias-mini-menu ul li a{
+#medias-mini-menu h4, #medias-mini-menu h4 a {
+    text-decoration: none;
+    font-family: "Frijole";
+    font-size: 1.5em;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
-
 }
-#medias-mini-menu ul li a {
-    transition: all 0.75s ease-in-out;
+#medias-mini-menu ul li, #medias-mini-menu ul li a,
+.media-desciption a {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    font-size: 1.1em;
 }
-#medias-mini-menu ul li a:hover {
+#medias-mini-menu ul li a,
+#medias-mini-menu h4 a,
+.media-desciption a {
+    transition: all 1.75s ease-in-out;
+}
+#medias-mini-menu ul li a:hover,
+#medias-mini-menu h4 a:hover,
+.media-desciption a:hover  {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+/* *** *** *** TITRAGES *** *** *** */
+#web3-medias-label, #medias-main-content div section h2,
+#medias-main-content article h3, #web3-medias-youtube article h3, 
+#web3-medias-charts article h3, #web3-medias-twitter article h3 {
+    text-align: center;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
-/* *** *** *** TITRAGES *** *** *** */
 #web3-medias-label {
     margin: 10px auto;
     font-family: "Frijole";
     font-size: 2.5rem;
-    text-align: center;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 #medias-main-content div section h2 {
     margin-top: 10px;
     font-family: "Frijole";
     font-size: 2rem;
+}
+#medias-main-content article h3, #web3-medias-youtube article h3, 
+#web3-medias-charts article h3, #web3-medias-twitter article h3 {
+    margin-top: 10px;
+    font-family: "Syncopate";
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.media-url {
+    text-decoration: none;
+    font-family: "Share Tech Mono";
+    font-size: 1.1em;
     text-align: center;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    transition: all 1.75s ease-in-out;
 }
+.media-url:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+.media-url span, .media-desciption a span {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
 
