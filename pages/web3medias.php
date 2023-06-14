@@ -41,9 +41,9 @@ creatMainMenu($fileName);                               // Create the main menu
                     <h4><a href="#web3-medias-label">Medias web3</a></h4>
                     <ul>
                         <li><a href="#news">Actualités</a></li>
-                        <li><a href="#youtube">YouTube</a></li>
                         <li><a href="#charts">Charts</a></li>
-                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#youtube">YouTubers</a></li>
+                        <li><a href="#twitter">Twittos</a></li>
                     </ul>
                 </nav>
 <!-- Main content -->
@@ -67,25 +67,6 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   } ?>
                         </section>
                     </div>
-                    <div id="web3-medias-youtube" class="row">
-                        <section id="#youtube" class="col-12">
-                            <h2><a id="youtube">YouTube</a></h2>
-<?php   for($i = 0; $i < count($tabYoutubeChannelsInfos); $i++){
-            $strLogo = "../media/logos/" . $tabYoutubeChannelsInfos[$i]['LogoFile'];
-?>
-                            <article class="row">
-                                <img class="col-3" src="<?php echo $strLogo;?>"/>
-                                <div class="col-9">
-                                    <div class="row">
-                                        <h3 class="col-9"><?php echo $tabYoutubeChannelsInfos[$i]['Name'];?></h3>
-                                        <a class="media-url col-9" href="<?php echo $tabYoutubeChannelsInfos[$i]['Url'];?>" target="_blank"><?php echo $tabYoutubeChannelsInfos[$i]['Url'];?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
-                                    </div>
-                                </div>
-                                <p class="media-desciption offset-1 col-10"><?php echo $tabYoutubeChannelsInfos[$i]['Description'];?></p>
-                            </article>
-<?php   } ?>
-                        </section>
-                    </div>
                     <div id="web3-medias-charts" class="row">
                         <section id="#charts" class="col-12">
                             <h2><a id="charts">Charts</a></h2>
@@ -105,9 +86,28 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   } ?>
                         </section>
                     </div>
+                    <div id="web3-medias-youtube" class="row">
+                        <section id="#youtube" class="col-12">
+                            <h2><a id="youtube">YouTubers</a></h2>
+<?php   for($i = 0; $i < count($tabYoutubeChannelsInfos); $i++){
+            $strLogo = "../media/logos/" . $tabYoutubeChannelsInfos[$i]['LogoFile'];
+?>
+                            <article class="row">
+                                <img class="col-3" src="<?php echo $strLogo;?>"/>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <h3 class="col-9"><?php echo $tabYoutubeChannelsInfos[$i]['Name'];?></h3>
+                                        <a class="media-url col-9" href="<?php echo $tabYoutubeChannelsInfos[$i]['Url'];?>" target="_blank"><?php echo $tabYoutubeChannelsInfos[$i]['Url'];?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                                    </div>
+                                </div>
+                                <p class="media-desciption offset-1 col-10"><?php echo $tabYoutubeChannelsInfos[$i]['Description'];?></p>
+                            </article>
+<?php   } ?>
+                        </section>
+                    </div>
                     <div id="web3-medias-twitter" class="row">
                         <section id="#twitter" class="col-12">
-                            <h2><a id="twitter">Twitter</a></h2>
+                            <h2><a id="twitter">Twittos</a></h2>
 <?php   for($i = 0; $i < count($tabTwitterInfos); $i++){
             $strLogo = "../media/logos/" . $tabTwitterInfos[$i]['LogoFile'];
 ?>

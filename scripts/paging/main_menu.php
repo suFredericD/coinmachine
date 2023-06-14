@@ -76,9 +76,9 @@ function creatMainMenu($fileName){
                                 <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr">Medias</li>
 
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news">Actualités</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube">YouTube</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts">Charts</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter">Twitter</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube">YouTubers</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter">Twittos</a></li>
                             </ul>
                         </li>
 <!-- Projets section -->

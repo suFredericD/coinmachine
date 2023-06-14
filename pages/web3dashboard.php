@@ -30,7 +30,7 @@ createPageheader($fileName);                            // Create the page heade
 creatMainMenu($fileName);                               // Create the main menu
 ?>
 
-        <label id ="bc-dashboard-label" for="bc-dashboard" class="col-10">Blockchains dashboard</label>
+        <label id ="bc-dashboard-label" for="bc-dashboard" class="col-10">Blockchains knowledge base</label>
         <section id ="bc-dashboard" class="col-11">
             <div class="row">
 <!-- Little menu -->

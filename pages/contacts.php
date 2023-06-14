@@ -56,7 +56,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="discord" class="col-5">
                     <div class="row">
-                        <span class="social-brands fa-brands fa-discord col-2" alt="LinkedIn logo"></span>
+                        <span class="social-brands fa-brands fa-discord col-2" alt="Discord logo"></span>
                         <h3 class="col-9">Discord</h3>
                         <div class="offset-1 col-10">
                             <div class="row">
@@ -67,9 +67,9 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="mail" class="col-5">
                     <div class="row">
-                        <span class="social-brands fa-regular fa-envelope col-2" alt="Email logo"></span>
+                        <span class="social-brands fa-regular fa-envelope col-2" alt="Email icon"></span>
                         <h3 class="col-9">Email</h3>
-                        <a class="social-link offset-1 col-10" href="mailto(coinmachine100k@gmail.com)" target="_blank">coinmachine100k@gmail.com<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                        <a class="social-link offset-1 col-10" href="mailto:coinmachine100k@gmail.com" target="_blank">coinmachine100k@gmail.com<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
                         
                     </div>
                 </article>
