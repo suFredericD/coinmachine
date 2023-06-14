@@ -20,7 +20,7 @@ function creatMainMenu($fileName){
     }
     $strMenuLogo = $strMediaPath . "logos/CoinMachine_green_001.png";
     $strProfileFile = $strPagesPath . "profile_fr.html";
-
+    $strProfileFileEN = $strPagesPath . "profile_en.html";
     $strWeb3dashboard = $strPagesPath . "web3dashboard.php";
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
@@ -51,6 +51,7 @@ function creatMainMenu($fileName){
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
                             <ul class="dropdown-menu ddm-user">
                                 <li><a class="dropdown-item" href="<?php echo $strProfileFile;?>">Profile FR</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strProfileFileEN;?>">Profile EN</a></li>
                 
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="nav-link" href="<?php echo $strContacts;?>">Contacts</a></li>

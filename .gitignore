@@ -1,3 +1,2 @@
 # Administrations files
-./admin/db_access.php
-
+admin/*.*
