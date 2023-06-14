@@ -1,0 +1,125 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3toolbox.css
+// Role         : web3toolbox.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-14
+// Last update  : 2021-06-14
+// ===================================================================================================== */
+/* 
+    lightblue   : #1491ff
+    darblue     : #141bff
+    violet      : #8214ff
+    turquoise   : #14fff8
+    lightgreen  : #14ff82
+    orange      : #ff8214
+    anis        : #91ff14
+    rose        : #fe14ff
+*/
+/* *** *** *** CONTAINERS *** *** *** */
+#index-intro-cm {
+    margin: 30px auto;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+
+/* *** *** *** TITRAGES *** *** *** */
+#index-title {
+    margin: 10px auto;
+    padding: 0;
+    font-family: "AudioWide", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+}
+#index-intro-cm .row h2 {
+    font-family: "Frijole", cursive;
+    font-size: 1.5rem;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #34f8ee, #ebef7b);
+}
+#index-intro-cm .row h2 a {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    animation: blink-me 4s infinite;
+}
+#index-intro-cm .row h2 a:hover {
+    color: #34f8ee;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+#index-intro p {
+    margin: 10px auto;
+    padding: 0 100px;
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #34f8ee, #ebef7b);
+}
+#index-intro-cm-text .row p {
+    margin: 5px auto;
+    padding: 0 40px;
+    text-align: justify;
+}
+.intro-cm-fulltext {
+    margin: 10px auto;
+    padding: 0 40px;
+    text-align: justify;
+}
+.intro-cm-contact {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+@keyframes blink-me {
+    0% {
+        background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+    }
+    50% {
+        background-image: linear-gradient(45deg, #34f8ee, #ebef7b);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+    }
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}

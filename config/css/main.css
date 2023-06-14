@@ -107,6 +107,7 @@ body {
     border-radius: 20px;
 }
 .ddm-user {
+    opacity: 0.8;
     background-color: #000;
     border: 1px solid #06c883;
 }

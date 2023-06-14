@@ -88,6 +88,7 @@
     padding: 5px;
     text-align: center;
     text-decoration: none;
+    transition: all 2s ease-in-out;
 }
 #mini-item-li1 {
     border: 1px outset #1491ff;
@@ -150,6 +151,7 @@
     text-decoration: none;
     font-family: "AudioWide";
     font-size: 1.7em;
+    transition: all 2s ease-in-out;
 }
 .mini-item a:hover {
     text-decoration: underline;

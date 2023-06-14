@@ -48,7 +48,7 @@ function creatMainMenu($fileName){
                         </li>
 <?php   } ?>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
                             <ul class="dropdown-menu ddm-user">
                                 <li><a class="dropdown-item" href="<?php echo $strProfileFile;?>">Profile FR</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strProfileFileEN;?>">Profile EN</a></li>
