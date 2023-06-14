@@ -12,8 +12,9 @@
     lightgreen : #60e6a3
 */
 /* *** *** *** CONTAINERS *** *** *** */
-#medias-main-content, #web3-medias-youtube, 
+#web3-medias-youtube, 
 #web3-medias-charts, #web3-medias-twitter {
+    margin-bottom: 10px;
     border: 1px solid #06c883;
 }
 #medias-main-content article, #web3-medias-youtube article, 

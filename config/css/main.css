@@ -97,6 +97,7 @@ body {
     padding: 5px 15px;
     font-family: "Aldrich";
     font-size: 20px;
+    text-align: center;
     color: #06c883;
     transition: all 0.85s ease-in-out;
 }
@@ -107,10 +108,18 @@ body {
 }
 .ddm-user {
     background-color: #000;
+    border: 1px solid #06c883;
 }
 .ddm-hr {
     width: 90%;
     background-color: #06c883;
+}
+.ddm-subtitle {
+    padding-left: 5px;
+    text-align: left;
+    font-family: "Aldrich";
+    font-size: 1.4em;
+    color: #ebef7b;
 }
 #user-toggler, #user-toggler span {
     color: #06c883;

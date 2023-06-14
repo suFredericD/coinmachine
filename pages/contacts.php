@@ -70,10 +70,23 @@ creatMainMenu($fileName);                               // Create the main menu
                         <span class="social-brands fa-regular fa-envelope col-2" alt="Email logo"></span>
                         <h3 class="col-9">Email</h3>
                         <a class="social-link offset-1 col-10" href="mailto(coinmachine100k@gmail.com)" target="_blank">coinmachine100k@gmail.com<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                        
+                    </div>
+                </article>
+                <article id="odysee" class="col-5">
+                    <div class="row">
+                        <span class="social-brands fa-brands fa-odysee col-2" alt="Odysee logo"></span>
+                        <h3 class="col-9">Odysee</h3>
+                        <a class="col-4" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">
+                            <img class="social-thumbnail" src="../media/thumbnails/odysee-CoinMaChiNe.png" alt="Odysee channel">
+                        </a>
+                        <div class="col-8">
+                            <div class="row">
+                                <a class="social-link col-11" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">CoinMachine channel<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                            </div>
                         </div>
                     </div>
                 </article>
-
 
 
 
