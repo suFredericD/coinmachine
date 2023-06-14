@@ -1,0 +1,328 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3toolbox.css
+// Role         : web3toolbox.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-14
+// Last update  : 2021-06-14
+// ===================================================================================================== */
+/* 
+    lightblue   : #1491ff
+    darblue     : #141bff
+    violet      : #8214ff
+    turquoise   : #14fff8
+    lightgreen  : #14ff82
+    orange      : #ff8214
+    anis        : #91ff14
+    rose        : #fe14ff
+*/
+/* *** *** *** CONTAINERS *** *** *** */
+#toolbox-main {
+
+}
+#toolbox-main-list {
+    margin: 10px auto;
+    padding: 10px;
+}
+.tml-section {
+    margin: 10px auto;
+    padding: 10px;
+}
+#tml1, #tml1 .row .toolbox-item-container {
+    border: 1px outset #1491ff;
+    box-shadow: inset 0 0 10px #1491ff;
+    color: #1491ff;
+}
+#tml2, #tml2 .row .toolbox-item-container {
+    border: 1px outset #91ff14;
+    box-shadow: inset 0 0 10px #91ff14;
+    color: #91ff14;
+}
+#tml3, #tml3 .row .toolbox-item-container {
+    border: 1px outset #8214ff;
+    box-shadow: inset 0 0 10px #8214ff;
+    color: #8214ff;
+}
+#tml4, #tml4 .row .toolbox-item-container {
+    border: 1px outset #14fff8;
+    box-shadow: inset 0 0 10px #14fff8;
+    color: #14fff8;
+}
+#tml5, #tml5 .row .toolbox-item-container {
+    border: 1px outset #14ff82;
+    box-shadow: inset 0 0 10px #14ff82;
+    color: #14ff82;
+}
+#tml6, #tml6 .row .toolbox-item-container {
+    border: 1px outset #ff8214;
+    box-shadow: inset 0 0 10px #ff8214;
+    color: #ff8214;
+}
+#tml7, #tml7 .row .toolbox-item-container {
+    border: 1px outset #141bff;
+    box-shadow: inset 0 0 10px #141bff;
+    color: #141bff;
+}
+.toolbox-item-container {
+    margin: 5px auto;
+    padding: 5px 10px;
+
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+#toolbox-mini-nav {
+    position: fixed;
+    top: 45%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+.mini-item {
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+#mini-item-li1 {
+    border: 1px outset #1491ff;
+    box-shadow: inset 0 0 10px #1491ff;
+}
+#mini-item-li2 {
+    border: 1px outset #91ff14;
+    box-shadow: inset 0 0 10px #91ff14;
+}
+#mini-item-li3 {
+    border: 1px outset #8214ff;
+    box-shadow: inset 0 0 10px #8214ff;
+}
+#mini-item-li4 {
+    border: 1px outset #14fff8;
+    box-shadow: inset 0 0 10px #14fff8;
+}
+#mini-item-li5 {
+    border: 1px outset #14ff82;
+    box-shadow: inset 0 0 10px #14ff82;
+}
+#mini-item-li6 {
+    border: 1px outset #ff8214;
+    box-shadow: inset 0 0 10px #ff8214;
+}
+#mini-item-li7 {
+    border: 1px outset #141bff;
+    box-shadow: inset 0 0 10px #141bff;
+}
+#mini-item-li1:hover {
+    border: 1px inset #1491ff;
+    box-shadow: 2px 2px 5px #1491ff;
+}
+#mini-item-li2:hover {
+    border: 1px outset #91ff14;
+    box-shadow: 2px 2px 5px #91ff14;
+}
+#mini-item-li3:hover {
+    border: 1px inset #8214ff;
+    box-shadow: 2px 2px 5px #8214ff;
+}
+#mini-item-li4:hover {
+    border: 1px inset #14fff8;
+    box-shadow: 2px 2px 5px #14fff8;
+}
+#mini-item-li5:hover {
+    border: 1px inset #14ff82;
+    box-shadow: 2px 2px 5px #14ff82;
+}
+#mini-item-li6:hover {
+    border: 1px inset #ff8214;
+    box-shadow: 2px 2px 5px #ff8214;
+}
+#mini-item-li7:hover {
+    border: 1px inset #141bff;
+    box-shadow: 2px 2px 5px #141bff;
+}
+.mini-item a {
+    padding: 4px;
+    text-decoration: none;
+    font-family: "AudioWide";
+    font-size: 1.7em;
+}
+.mini-item a:hover {
+    text-decoration: underline;
+}
+#mini-item-li1 a{
+    color: #1491ff;
+}
+#mini-item-li2 a{
+    color: #91ff14;
+}
+#mini-item-li3 a{
+    color: #8214ff;
+}    
+#mini-item-li4 a{
+    color: #14fff8;
+}
+#mini-item-li5 a{
+    color: #14ff82;
+}
+#mini-item-li6 a{
+    color: #ff8214;
+}
+#mini-item-li7 a{
+    color: #141bff;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#toobox-main-label{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+    font-family: "AudioWide";
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.toolbox-item-container .row h3,
+.toolbox-item-container .row h4 {
+    font-family: "AudioWide";
+    align-self: center;
+}
+.toolbox-item-container .row h3 {
+    font-size: 2.5em;
+    text-align: left;
+}
+.toolbox-item-container .row h4 {
+    padding-top: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    color: darkgray;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.toolbox-text {
+    margin: 10px auto;
+    padding: 0;
+    padding-right: 20px;
+    font-family: "Share Tech Mono";
+    font-size: 1em;
+    text-align: justify;
+    color: darkgray;
+    text-indent: 10px;
+    align-self: center;
+}
+.toolbox-item-container .row a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.toolbox-item-container .row a:hover {
+    text-decoration: underline;
+}
+#tml1 .row .toolbox-item-container .row a {
+    color: #1491ff;
+}
+#tml2 .row .toolbox-item-container .row a {
+    color: #91ff14;
+}
+#tml3 .row .toolbox-item-container .row a {
+    color: #8214ff;
+}
+#tml4 .row .toolbox-item-container .row a {
+    color: #14fff8;
+}
+#tml5 .row .toolbox-item-container .row a {
+    color: #14ff82;
+}
+#tml6 .row .toolbox-item-container .row a {
+    color: #ff8214;
+}
+#tml7 .row .toolbox-item-container .row a {
+    color: #141bff;
+}
+#tml1 .row .toolbox-item-container .row a:hover,
+#tml2 .row .toolbox-item-container .row a:hover,
+#tml3 .row .toolbox-item-container .row a:hover,
+#tml4 .row .toolbox-item-container .row a:hover,
+#tml5 .row .toolbox-item-container .row a:hover,
+#tml6 .row .toolbox-item-container .row a:hover,
+#tml7 .row .toolbox-item-container .row a:hover {
+    color: darkgrey;
+}
+.toolbox-item-container .row a img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+#tml1 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #1491ff;
+    box-shadow: 2px 2px 5px #1491ff;
+}
+#tml2 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #91ff14;
+    box-shadow: 2px 2px 5px #91ff14;
+}
+#tml3 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #8214ff;
+    box-shadow: 2px 2px 5px #8214ff;
+}
+#tml4 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #14fff8;
+    box-shadow: 2px 2px 5px #14fff8;
+}
+#tml5 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #14ff82;
+    box-shadow: 2px 2px 5px #14ff82;
+}
+#tml6 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #ff8214;
+    box-shadow: 2px 2px 5px #ff8214;
+}
+#tml7 .row .toolbox-item-container .row a img:hover {
+    border: 2px outset #141bff;
+    box-shadow: 2px 2px 5px #141bff;
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+    #toolbox-mini-nav {
+        top: 40%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #toolbox-mini-nav {
+        top: 35%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #toolbox-mini-nav {
+        top: 30%;
+    }
+    #toobox-main-label{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
