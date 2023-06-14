@@ -1,0 +1,87 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : contacts.css
+// Role         : contacts.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-13
+// Last update  : 2021-06-13
+// ===================================================================================================== */
+
+/* *** *** *** CONTAINERS *** *** *** */
+#contacts-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#contacts-container .row article {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px dotted #06c883;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    box-shadow: 2px 2px 3px #06c883;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+
+/* *** *** *** TITRAGES *** *** *** */
+
+/* *** *** *** USER CLASSES *** *** *** */
+.social-brands {
+    font-size: 2em;
+}
+article .row h3 {
+    font-family: "Aldrich";
+    font-size: 2em;
+}
+article .row a {
+    text-decoration: none;
+    font-family: "Aldrich";
+    font-size: 1.25em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b), #06c883;
+}
+article .row a:hover {
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
+}
+.social-link span {
+    margin-left: 5px;
+}
+.social-thumbnail {
+    max-width: 150px;
+    box-shadow: 1px 1px 2px #06c883;
+}
+.social-thumbnail:hover {
+    box-shadow: 1px 1px 2px #ebef7b;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
