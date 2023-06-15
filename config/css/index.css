@@ -21,10 +21,15 @@
 #index-intro-cm {
     margin: 30px auto;
 }
-/* *** *** *** MINI NAVIGATION MENU *** *** *** */
-
+#arborescence{
+    opacity: 0;
+    font-family: "Share Tech Mono", monospace;
+    color: darkgreen;
+    text-shadow: 1px 1px 1px lightgray;
+}
 /* *** *** *** TITRAGES *** *** *** */
 #index-title {
+    opacity: 0;
     margin: 10px auto;
     padding: 0;
     font-family: "AudioWide", sans-serif;
@@ -35,23 +40,24 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 #index-intro-cm .row h2 {
+    opacity: 0;
     font-family: "Frijole", cursive;
     font-size: 1.5rem;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #34f8ee, #ebef7b);
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
 #index-intro-cm .row h2 a {
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     animation: blink-me 4s infinite;
@@ -59,8 +65,10 @@
 #index-intro-cm .row h2 a:hover {
     color: #34f8ee;
 }
+
 /* *** *** *** USER CLASSES *** *** *** */
 #index-intro p {
+    opacity: 0;
     margin: 10px auto;
     padding: 0 100px;
     font-family: "Aldrich", sans-serif;
@@ -71,34 +79,60 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(90deg, #34f8ee, #ebef7b);
+    background-image: linear-gradient(90deg, #06c883, #ebef7b);
+}
+#index-intro-cm-text .row p,
+.intro-cm-fulltext, .intro-cm-contact {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: justify;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 #index-intro-cm-text .row p {
     margin: 5px auto;
     padding: 0 40px;
+    font-size: 0.9em;
     text-align: justify;
+    background-image: linear-gradient(90deg, #ebef7b, #06c883);
 }
 .intro-cm-fulltext {
+    opacity: 0;
     margin: 10px auto;
     padding: 0 40px;
+    font-size: 1em;
     text-align: justify;
+    text-indent: 20px;
+    background-image: linear-gradient(90deg, #06c883, #ebef7b);
+}
+.intro-cm-shorttext {
+    opacity: 0;
 }
 .intro-cm-contact {
+    opacity: 0;
     margin: 0px auto;
     margin-bottom: 20px;
-    padding: 0;
+    padding: 0 40px;
+    font-size: 1.1em;
     text-align: center;
+    background-image: linear-gradient(90deg, #ebef7b, #06c883);
+}
+#index-intro-cm div img {
+    opacity: 0;
 }
 /* *** *** *** ANIMATIONS *** *** *** */
 @keyframes blink-me {
     0% {
-        background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+        background-image: linear-gradient(45deg, #ebef7b, #06c883);
     }
     50% {
-        background-image: linear-gradient(45deg, #34f8ee, #ebef7b);
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
     }
     100% {
-        background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
+        background-image: linear-gradient(45deg, #ebef7b, #06c883);
     }
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */

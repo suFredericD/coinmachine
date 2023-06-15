@@ -31,7 +31,7 @@ creatMainMenu($fileName);                               // Create the main menu
             <div class="row">
                 <h1 id="index-title" class="col-11">CoinMachine Plateforme</h1>
                 <div id="index-intro" class="col-11">
-                    <p>CoinMachine est une plateforme d'éducation et de consulting en blockchain et cryptomonnaies.</p>
+                    <p>CoinMachine Plateforme est dédiée à l'éducation et au consulting en blockchain et cryptomonnaies.</p>
                     <p>Vous trouverez ici des ressources, des tutoriels, des outils, des liens utiles, des actualités, des analyses, des projets...</p>
                     <p>Le but est d'aider chacun à comprendre les blockchains et les cryptomonnaies, à se familiariser avec les outils et les usages, à être accompagné dans leurs utilisations.</p>
                 </div>
@@ -43,13 +43,13 @@ creatMainMenu($fileName);                               // Create the main menu
                         <img class="col-2" src="media/pictures/IDpic.jpg">
                         <div id="index-intro-cm-text" class="col-10">
                             <div class="row">
-                                <p class="col-12">
+                                <p class="intro-cm-shorttext col-12">
                                     Connu sous le pseudonyme CoinMachine. Je suis un programmeur passionné, spécialisé dans les langages PHP, SQL, JavaScript, HTML/CSS, Java et les nouvelles capacités web3.
                                 </p>
-                                <p class="col-12">
+                                <p class="intro-cm-shorttext col-12">
                                     Mon expertise s'étend à la gestion des wallets et des transactions web3, aux concepts de DAO et de gouvernance, ainsi qu'à l'évaluation des tokenomics.
                                 </p>
-                                <p class="col-12">
+                                <p class="intro-cm-shorttext col-12">
                                     Possèdant une compréhension horizontale des enjeux politiques, économiques et technologiques de la décentralisation, ainsi qu'une connaissance approfondie des domaines de la blockchain, de la DeFi, des NFTs, du GameFi et des Métavers.
                                 </p>
                             </div>
@@ -74,15 +74,12 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ Mes liens de contatcs / contatcs links
    |
    |__ Datas
-   |    |___ Blockchains : fondamentaux, articles, vidéos,
-   |    |                  docus à propos de Bitcoin, Ethereum, BSC...
+   |    |___ Blockchains : fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...
    |
    |__ Ressources
    |    |
-   |    |___ Tutoriels  : réalisés par mes soins à propos de l'utilisation
-   |    |                 des blockchains, wallets, des tokens...
-   |    |___ ToolBox    : liens utiles et outils pour les wallets, les NFT,
-   |    |                 la DeFi, les explorateurs de blocs...
+   |    |___ Tutoriels  : réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...
+   |    |___ ToolBox    : liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...
    |    |___ Medias     : médias d'actualités crypto triés sur le volet
    |          |___ Actualités
    |          |___ Charts
