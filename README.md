@@ -17,15 +17,15 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 ## Main Navigation
 
 ### Profil
-- [Profile FR](profile_fr_link)
-- [Profile EN](profile_en_link)
+- **[Profile FR]**(profile_fr_link)
+- **[Profile EN]**(profile_en_link)
 
 - [Contacts](contacts_link)
 - [Disclaimer](disclaimer_link)
 - ---
 ### Datas
 - [Blockchains](blockchains_link)
-- [Blockchains](blockchains_link)
+- [Wallets](blockchains_link)
 <!-- Protocols -->
 <!-- Exchanges -->
 - ---
