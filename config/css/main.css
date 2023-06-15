@@ -5,7 +5,7 @@
 // Role         : main CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-12
+// Last update  : 2023-06-12
 // ===================================================================================================== */
 /* 
     green : #60e660
@@ -127,6 +127,44 @@ body {
 }
 #user-toggler:hover, #user-toggler span:hover {
     color: #ebef7b;
+}
+/* *** *** *** FOOTER *** *** *** */
+footer {
+    margin: 10px auto;
+    padding: 0 40px;
+    color: #00a36a;
+}
+footer .row p {
+    margin: 1px auto;
+    padding: 0;
+    font-family: "Aldrich";
+    font-size: 1.em;
+    text-align: center;
+}
+footer .row p span {
+    margin: 0 3px;
+}
+footer .row p a {
+    color: #ebef7b;
+    text-decoration: none;
+    transition: all 0.85s ease-in-out;
+    animation: green-yellow 3s infinite;
+}
+footer .row p a:hover {
+    text-decoration: underline;
+    color: #00a36a;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+@keyframes green-yellow {
+    0% {
+        color: #ebef7b;
+    }
+    50% {
+        color: #00a36a;
+    }
+    100% {
+        color: #ebef7b;
+    }
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {

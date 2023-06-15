@@ -6,19 +6,30 @@
 // Role         : script creating the HTML footer
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-13
+// Last update  : 2023-06-13
 // =====================================================================================================
 function createHTMLfooter($fileName){
     if($fileName == '/index.php'){
         $strScriptspath = "scripts/";
+        $strPagesPath = "pages/";
     } else {
         $strScriptspath = "../scripts/";
+        $strPagesPath = "../pages/";
     }
     $strJSscripts = $strScriptspath . "js/";
     $strSpecialJSFile = $strJSscripts . substr(strrchr($fileName, "/"), 1, -4) . ".js";
+    $strContactPage = $strPagesPath . "contacts.php";
 ?>
 <!-- --- --- --- END OF CONTENT --- --- --- -->
     </section>
+<!-- --- --- --- FOOTER --- --- --- -->
+    <footer class="col-10">
+        <div class="row">
+            <p class="col-12">Powered by <span class="fa-brands fa-php"></span><span class="fa-brands fa-html5"><span class="fa-brands fa-css3"></span></span></p>
+            <p class="col-12">With <span class="fa-regular fa-heart"></span> by <a href="<?php echo $strContactPage;?>" title="Contacter CoinMachine...">CoinMachine</a></p>
+            <p class="col-12">&copy; 2023</p>
+        </div>
+    </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap's JavaScript plugins) -->
