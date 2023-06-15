@@ -96,6 +96,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |
    |__ Datas
    |    |___ Blockchains : fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...
+   |    |___ Wallets     : tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...
    |
    |__ Ressources
    |    |
