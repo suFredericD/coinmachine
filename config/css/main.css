@@ -71,17 +71,14 @@ body {
 /* *** *** *** MAIN NAVIGATION BAR *** *** *** */
 #main-navbar-container, #main-navbar-container ul
 #main-navbar-container ul li,
-#main-navbar-container a, #main-navbar-container button,
-#main-navbar-container div {
-    background-color: transparent;
+#main-navbar-container a, #main-navbar-container ul li a,
+#main-navbar-container button, #main-navbar-container div {
     color: #06c883;
 }
 #main-navbar {
     justify-content: center;
     align-items: center;
     margin: 0px auto;
-    border: 1px solid #06c883;
-    background-color: linear-gradient(45deg, #ebef7b, #06c883);
     color: #06c883;
     text-align: center;
 }
@@ -98,7 +95,6 @@ body {
     font-family: "Aldrich";
     font-size: 20px;
     text-align: center;
-    color: #06c883;
     transition: all 0.85s ease-in-out;
 }
 #main-navbar-container a:hover {

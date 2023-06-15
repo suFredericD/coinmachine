@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-13
+// Last update  : 2021-06-15
 // =====================================================================================================
 function creatMainMenu($fileName){
     if($fileName == '/index.php'){
@@ -27,6 +27,7 @@ function creatMainMenu($fileName){
     $strWeb3Medias = $strPagesPath . "web3medias.php";
     $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
     $strContacts = $strPagesPath . "contacts.php";
+    $strDisclaimer = $strPagesPath . "disclaimer.php";
 ?>
 <!-- --- --- --- MAIN NAVIGATION BAR --- --- --- -->
         <nav id="main-navbar" class="navbar navbar-expand-lg navbar-expand-md col-xs-10 col-sm-10 col-md-10 col-10">
@@ -55,6 +56,7 @@ function creatMainMenu($fileName){
                 
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="nav-link" href="<?php echo $strContacts;?>">Contacts</a></li>
+                                <li><a class="nav-link" href="<?php echo $strDisclaimer;?>">Disclaimer</a></li>
                             </ul>
                         </li>
 <!-- Blockchain section -->

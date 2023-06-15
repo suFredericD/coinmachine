@@ -5,7 +5,7 @@
 // Role         : animation JS script for index.php
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-14
+// Last update  : 2021-06-15
 // =====================================================================================================
 // ================ CONSTANTS ================= //
 const letterTimer = 50;                         // Time between each letter in ms
@@ -22,8 +22,9 @@ const profileIntroParagraphs = document.querySelectorAll('.intro-cm-shorttext');
 const profileParagraph = document.querySelector('.intro-cm-fulltext');
 const profileContact = document.querySelector('.intro-cm-contact');
 
+const disclaimer = document.querySelector('#disclaimer-section');
 const arborescence = document.querySelector('#arborescence');
-
+const footer = document.querySelector('footer');
 // ================ FUNCTIONS ================ //
 // Functions producing typewriting animations
 // Parameter : DOM element
@@ -52,7 +53,7 @@ function timer(){
     tabTimers.push(tabTimers[3] + 5000);
     tabTimers.push(tabTimers[4] + 1000);
     tabTimers.push(tabTimers[5] + 6000);
-    tabTimers.push(tabTimers[6] + 2000);
+    tabTimers.push(tabTimers[6] + 4000);
 }
 // ================ EVENT LISTENERS ================ //
 
@@ -60,6 +61,7 @@ function timer(){
 // ================ ANIMATIONS TIMEOUTS ================ //
 timer();
 setTimeout(function(){
+    footer.style.opacity = 0;
     typewritter(siteTitle);
 }, tabTimers[0]);
 setTimeout(function(){
@@ -72,6 +74,7 @@ setTimeout(function(){
     typewritter(siteIntroParagraphs[2]);
 }, tabTimers[3]);
 setTimeout(function(){
+    disclaimer.style.display = "none";
     profileTitle.style.opacity = 1;
 }, tabTimers[4]);
 setTimeout(function(){
@@ -86,4 +89,5 @@ setTimeout(function(){
 }, tabTimers[6]);
 setTimeout(function(){
     arborescence.style.opacity = 1;
+    footer.style.opacity = 1;
 }, tabTimers[7]);
