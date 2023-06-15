@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-15
+// Last update  : 2023-06-15
 // =====================================================================================================
 function creatMainMenu($fileName){
     if($fileName == '/index.php'){
@@ -22,6 +22,7 @@ function creatMainMenu($fileName){
     $strProfileFile = $strPagesPath . "profile_fr.html";
     $strProfileFileEN = $strPagesPath . "profile_en.html";
     $strWeb3dashboard = $strPagesPath . "web3dashboard.php";
+    $strWallets = $strPagesPath . "web3wallets.php";
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
@@ -64,6 +65,7 @@ function creatMainMenu($fileName){
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Datas</a>
                             <ul class="dropdown-menu ddm-user">
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>"><span class="fa-solid fa-server"></span>Blockchains</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWallets;?>"><span class="fa-solid fa-wallet"></span>Wallets</a></li>
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Exchanges</a></li> -->

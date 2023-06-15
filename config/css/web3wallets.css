@@ -1,0 +1,209 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3wallets.css
+// Role         : web3wallets.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-15
+// Last update  : 2023-06-15
+// ===================================================================================================== */
+
+/* *** *** *** CONTAINERS *** *** *** */
+#wallets-main {
+    margin: 0;
+    padding: 0;
+}
+#wallets-main .row {
+    margin: 0;
+    padding: 0;
+}
+.wallet-container {
+    margin-left: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px outset #06c883;
+    box-shadow: 3px 3px 3px #005c17;
+}
+.wallet-compatibilities {
+    padding: 5px;
+    display: block;
+    align-self: center;
+}
+.wallet-details {
+    font-family: "Audiowide", sans-serif;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+#wallet-mini-menu {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    padding: 10px 0;
+}
+#wmm-title, #wmm-title a, .wmm-link, .wmm-link a {
+    font-family: "Audiowide";
+    text-align: left;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#wmm-title {
+    font-size: 2.1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-bottom: 5px;
+}
+.wmm-link {
+    font-size: 1.4em;
+}
+#wmm-title:hover, #wmm-title a:hover, .wmm-link:hover, .wmm-link a:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+/* *** *** *** TITRAGES *** *** *** */
+#wallets-main-label, .wallet-details label {
+    font-family: "Audiowide";
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+#wallets-main-label {
+    margin: 10px auto;
+    font-size: 2.5rem;
+    text-align: right;
+    letter-spacing: 0.2em;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.wallet-details label {
+    font-size: 2.2em;
+    font-variant: small-caps;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.wallet-features {
+    vertical-align: middle;
+    align-items: center;
+    text-align: right;
+    font-size: 1.1em;
+    color: darkgray;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.wallet-logo-container {
+    align-self: center;
+}
+.wallet-logo {
+    width: 80%;
+}
+.wmd-link-img {
+    margin-bottom: 4px;
+    max-width: 70%;
+    border: 1px outset #06c883;
+    box-shadow: 2px 2px 2px #005c17;
+}
+.wmd-link-img:hover {
+    border: 1px inset #8306c8;
+    box-shadow: 3px 3px 3px #06acc8;
+}
+.user-green, .user-red {
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+}
+.user-green {
+    color: #06c883;
+}
+.user-red {
+    color: #ff0000;
+}
+.wallet-mobile-downloads {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.wallet-browser-link {
+    margin-bottom: 5px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.wallet-browser-link:hover {
+    text-decoration: underline;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+.wallet-browser-link span{
+    margin-right: 4px;
+    font-size: 0.9em;
+}
+.wallet-description {
+    font-family: "Share Tech Mono", monospace;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+/* *** *** *** TOKENS STANDARDS CLASSES *** *** *** */
+:root {
+    --eth1: #8c8c8c;
+    --eth2: #505050;
+    --eth3: #141414;
+    --bsc: #f4ba4f;
+    --tron: #fe0000;
+    --btc: #f7931a;
+    --erd: #25f9e3;
+    --cerc: #7ece4d;
+}
+.erc {
+    border: 1px inset var(--eth2);
+    box-shadow: 0 0 5px inset var(--eth1);
+    color: var(--eth1);
+}
+.bep {
+    border: 1px inset var(--bsc);
+    box-shadow: 0 0 4px inset var(--bsc);
+    color: var(--bsc);
+}
+.trc {
+    border: 1px inset var(--tron);
+    box-shadow: 0 0 4px inset var(--tron);
+    color: var(--tron);
+}
+.btc {
+    border: 1px inset var(--btc);
+    box-shadow: 0 0 4px inset var(--btc);
+    color: var(--btc);
+}
+.erd {
+    border: 1px inset var(--erd);
+    box-shadow: 0 0 4px inset var(--erd);
+    color: var(--erd);
+}
+.celo {
+    border: 1px inset var(--cerc);
+    box-shadow: 0 0 4px inset var(--cerc);
+    color: var(--cerc);
+}
+.wallet-compatibility {
+    margin: 2px 2px;
+    padding: 4px 0;
+    text-align: center;
+}

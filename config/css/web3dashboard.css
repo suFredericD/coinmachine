@@ -5,7 +5,7 @@
 // Role         : web3medias.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-13
+// Last update  : 2021-06-15
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -282,7 +282,9 @@
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
-
+    #bcd-mini-menu {
+        top: 40%;
+    }
 }
 @media screen and (max-width: 1200px) {
 

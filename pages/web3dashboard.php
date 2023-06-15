@@ -6,7 +6,7 @@
 // Role         : known and used blockchains informations
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-14
+// Last update  : 2021-06-15
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
