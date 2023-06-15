@@ -83,7 +83,7 @@ creatMainMenu($fileName);                               // Create the main menu
                             N'hésitez pas à considérer ma candidature et à me contacter pour toute question, suggestion, proposition de projet, demande de consulting...
                         </p>
                     </div>
-                </div>
+                </div><hr>
 <!-- --- --- Website tree map --- --- -->
                 <pre id="arborescence" class="col-11">
   Home  - - -> you are here

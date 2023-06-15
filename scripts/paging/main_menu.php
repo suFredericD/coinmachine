@@ -41,30 +41,30 @@ function creatMainMenu($fileName){
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <!-- Navigation links list -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav">
 <!-- Return home link -->
 <?php   if($fileName != '/index.php'){?>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo $strIndexFile;?>#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="<?php echo $strIndexFile;?>#home">Home</a>
                         </li>
 <?php   } ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strProfileFile;?>">Profile FR</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strProfileFileEN;?>">Profile EN</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strProfileFile;?>"><span class="fa-regular fa-id-badge"></span>Profile FR</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strProfileFileEN;?>"><span class="fa-regular fa-id-badge"></span>Profile EN</a></li>
                 
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <li><a class="nav-link" href="<?php echo $strContacts;?>">Contacts</a></li>
-                                <li><a class="nav-link" href="<?php echo $strDisclaimer;?>">Disclaimer</a></li>
+                                <li><a class="nav-link" href="<?php echo $strContacts;?>"><span class="fa-regular fa-address-card"></span>Contacts</a></li>
+                                <li><a class="nav-link" href="<?php echo $strDisclaimer;?>"><span class="fa-solid fa-triangle-exclamation"></span>Disclaimer</a></li>
                             </ul>
                         </li>
 <!-- Blockchain section -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Datas</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>">Blockchains</a></li>
-                                <!-- <li><a class="dropdown-item" href="<?php echo $strWeb3Protocols;?>">Protocols</a></li> -->
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>"><span class="fa-solid fa-server"></span>Blockchains</a></li>
+                                <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Exchanges</a></li> -->
                             </ul>
@@ -73,15 +73,14 @@ function creatMainMenu($fileName){
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressources</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>">Tutoriels</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>"><span class="fa-solid fa-graduation-cap"></span>Tutoriels</a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>">ToolBox</a></li>
-                                <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr">Medias</li>
-
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news">Actualités</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts">Charts</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube">YouTubers</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter">Twittos</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>"><span class="fa-solid fa-toolbox"></span>ToolBox</a></li>
+                                <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr"><span class="fa-solid fa-photo-film"></span>Medias</li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news"><span class="fa-regular fa-newspaper"></span>Actualités</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts"><span class="fa-solid fa-chart-line"></span>Charts</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube"><span class="fa-brands fa-youtube"></span>YouTubers</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter"><span class="fa-brands fa-twitter"></span>Twittos</a></li>
                             </ul>
                         </li>
 <!-- Projets section -->
