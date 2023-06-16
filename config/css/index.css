@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-15
+// Last update  : 2021-06-16
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -68,7 +68,6 @@
 #index-intro-cm .row h2 a:hover {
     color: #ebef7b;
 }
-
 /* *** *** *** USER CLASSES *** *** *** */
 #index-intro p {
     opacity: 0;
@@ -98,7 +97,7 @@
 #index-intro-cm-text .row p {
     margin: 5px auto;
     padding: 0 40px;
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-align: justify;
     background-image: linear-gradient(90deg, #ebef7b, #06c883);
 }
@@ -242,23 +241,76 @@
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
-
+    #index-intro-cm-text .row p {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 1200px) {
-
+    #index-intro-cm-text .row p,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.9em;
+    }
 }
 @media screen and (max-width: 992px) {
-
+    #index-title {
+        font-size: 2rem;
+    }
+    #index-intro-cm-text .row p,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.7em;
+    }
 }
 @media screen and (max-width: 768px) {
-
+    #index-title {
+        font-size: 1.5rem;
+    }
+    #index-intro-cm-text .row p,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.6em;
+    }
+    #index-intro-cm .row img {
+        display: none;
+    }
 }
 @media screen and (max-width: 576px) {
-
+    #index-title {
+        font-size: 1.2rem;
+    }
+    #index-intro-cm .row h2 {
+        font-size: 1rem;
+    }
+    #index-intro-cm-text .row p,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.5em;
+    }
+        #index-intro-cm .row img {
+        display: none;
+    }
 }
 @media screen and (max-width: 480px) {
-
+    #index-title {
+        font-size: 1rem;
+    }
+    #index-intro-cm-text .row p,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.4em;
+    }
+    #index-intro-cm .row img {
+        display: none;
+    }
 }
 @media screen and (max-width: 360px) {
-
+    #index-title {
+        font-size: 0.8rem;
+    }
+    #index-intro p {
+        font-size: 0.8rem;
+        padding: 0 5px;
+    }
+    #index-intro-cm .row h2 {
+        font-size: 0.8rem;
+    }
+    #index-intro-cm .row img {
+        display: none;
+    }
 }

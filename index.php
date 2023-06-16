@@ -60,8 +60,8 @@ creatMainMenu($fileName);                               // Create the main menu
                     <div class="row">
                         <h2 class="col-12">
                             A propos de <a href="/pages/profile_fr.html" title="Consulter le profil de CoinMachine..." target="_blank">CoinMachine...</a></h2>
-                        <img class="col-2" src="media/pictures/IDpic.jpg">
-                        <div id="index-intro-cm-text" class="col-10">
+                        <img class="col-0 col-sm-0 col-md-3 col-xl-2" src="media/pictures/IDpic.jpg">
+                        <div id="index-intro-cm-text" class="col-12 col-sm-12 col-md-9 col-xl-9">
                             <div class="row">
                                 <p class="intro-cm-shorttext col-12">
                                     Connu sous le pseudonyme CoinMachine, je suis un programmeur passionné, spécialisé dans les langages PHP, SQL, JavaScript, HTML/CSS, Java et les nouvelles capacités web3.
@@ -103,11 +103,11 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |
    |    |___ Tutoriels  : réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...
    |    |___ ToolBox    : liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...
-   |    |___ Medias     : médias d'actualités crypto triés sur le volet
-   |          |___ Actualités
-   |          |___ Charts
-   |          |___ YouTubers
-   |          |___ Twittos
+   |    |___ Medias     : médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...
+   |            |___ Actualités
+   |            |___ Charts
+   |            |___ YouTubers
+   |            |___ Twittos
    |
    |__ Projects
                 </pre>
