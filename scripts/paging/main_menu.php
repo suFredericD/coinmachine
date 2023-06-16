@@ -33,7 +33,7 @@ function creatMainMenu($fileName){
 <!-- --- --- --- MAIN NAVIGATION BAR --- --- --- -->
         <nav id="main-navbar" class="navbar navbar-expand-lg navbar-expand-md col-xs-10 col-sm-10 col-md-10 col-10">
             <div id="main-navbar-container" class="container-fluid">
-                <a class="navbar-brand" href="#home">
+                <a id="mld" class="navbar-brand" href="#home">
                     <img id="menu-logo" src="<?php echo $strMenuLogo;?>" alt="CoinMachine logo">
                 </a>
 <!-- Responsive menu toggling image -->

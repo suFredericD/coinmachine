@@ -14,11 +14,12 @@
     padding: 0;
 }
 #wallets-main .row {
+    display: flex;
     margin: 0;
     padding: 0;
 }
 .wallet-container {
-    margin-left: 100px;
+    margin: 20px auto;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px outset #06c883;
@@ -61,6 +62,71 @@
 #wmm-title:hover, #wmm-title a:hover, .wmm-link:hover, .wmm-link a:hover {
     background-image: linear-gradient(45deg, #8306c8, #06acc8);
 }
+/* *** *** *** USER TABLES *** *** *** */
+table {
+    opacity: 0.95;
+    border-collapse: collapse;
+}
+#wallet-compat-tab {
+    margin-top: 10px;
+}
+#wallet-compat-tab thead tr th{
+    writing-mode: vertical-lr;
+    padding-bottom: 4px;
+    text-align: center;
+}
+th {
+    flex-wrap: wrap;
+    vertical-align: bottom;
+    text-align: center;
+    padding-bottom: 2px;
+}
+tr {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #06c883;
+}
+.user-check {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 1.25em;
+}
+#wallet-dispo-tab thead tr {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+#wallet-dispo-tab thead tr th {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1em;
+    color: transparent;
+}
+td a, th a {
+    font-family: "AudioWide", sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+td a:hover, th a:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+.tst {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.2em;
+    text-align: right;
+    color: #06c883;
+}
 /* *** *** *** TITRAGES *** *** *** */
 #wallets-main-label, .wallet-details label {
     font-family: "Audiowide";
@@ -68,7 +134,6 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    
 }
 #wallets-main-label {
     margin: 10px auto;
@@ -92,6 +157,18 @@
     text-align: right;
     font-size: 1.1em;
     color: darkgray;
+}
+.wallet-rubric {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-align: left;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 /* *** *** *** USER CLASSES *** *** *** */
 .wallet-logo-container {
@@ -119,7 +196,7 @@
     color: #06c883;
 }
 .user-red {
-    color: #ff0000;
+    color: darkred;
 }
 .wallet-mobile-downloads {
     margin-top: 4px;
@@ -161,16 +238,27 @@
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
+.wallet-description a {
+    font-family: "Share Tech Mono", monospace;
+    color: #25f9e3;
+    text-decoration: none;
+}
+.wallet-description a:hover {
+    color: #7ece4d;
+    text-decoration: underline;
+}
 /* *** *** *** TOKENS STANDARDS CLASSES *** *** *** */
 :root {
     --eth1: #8c8c8c;
     --eth2: #505050;
     --eth3: #141414;
-    --bsc: #f4ba4f;
+    --bsc: #f4e94f;
     --tron: #fe0000;
-    --btc: #f7931a;
+    --btc: #db7c09;
     --erd: #25f9e3;
     --cerc: #7ece4d;
+    --spl: #5433d5;
+    --ibc: #0378c5;
 }
 .erc {
     border: 1px inset var(--eth2);
@@ -201,6 +289,16 @@
     border: 1px inset var(--cerc);
     box-shadow: 0 0 4px inset var(--cerc);
     color: var(--cerc);
+}
+.sol {
+    border: 1px inset var(--spl);
+    box-shadow: 0 0 4px inset var(--spl);
+    color: var(--spl);
+}
+.atom {
+    border: 1px inset var(--ibc);
+    box-shadow: 0 0 4px inset var(--ibc);
+    color: var(--ibc);
 }
 .wallet-compatibility {
     margin: 2px 2px;

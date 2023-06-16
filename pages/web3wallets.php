@@ -20,6 +20,7 @@ $siteInformations = [];
 
 $tabWallets = getWalletsInformations();                 // Get the wallets informations
 $tabCompatibilities = getWalletsCompatibilities();      // Get the wallets compatibilities
+$tabTokenStandards = getTokenStandards();               // Get the token standards
 
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
 createPageheader($fileName);                            // Create the page header
@@ -39,8 +40,82 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   } ?>
             </ul>
         </nav>
-        <section id ="wallets-main" class="offset-5 col-8">
+        <section id ="wallets-main" class="offset-6 col-8">
             <div class="row">
+<!-- --- --- --- WALLETS DETAILS SUMMARY --- --- --- -->
+                <h3 class="wallet-rubric col-7">Disponibilités</h3>
+                <table id="wallet-dispo-tab" class="col-12">
+                    <thead>
+                        <tr class="row">
+                            <th class="col-3"></th>
+                            <th class="col-2">iOS</th>
+                            <th class="col-2">Android</th>
+                            <th class="col-2">Wallet Connect</th>
+                            <th class="col-3">Browser extension</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+<?php   for($i = 0; $i < count($tabWallets); $i++){ ?>
+                        <tr class="row">
+                            <td class="col-3"><a href="<?php echo "#wallet" . $i;?>"><?php echo $tabWallets[$i]['Name'];?></a></td>
+<?php       if($tabWallets[$i]['Applestore'] != ""){ ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-check user-green"></span></td>
+<?php       } else { ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-xmark user-red"></span></td>
+<?php       }
+            if($tabWallets[$i]['Playstore'] != ""){ ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-check user-green"></span></td>
+<?php       } else { ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-xmark user-red"></span></td>
+<?php       }
+            if($tabWallets[$i]['WalletConnect'] != FALSE){ ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-check user-green"></span></td>
+<?php       } else { ?>
+                            <td class="user-check col-2"><span class="fa-solid fa-xmark user-red"></span></td>
+<?php       }
+            if($tabWallets[$i]['Browser'] != ""){ ?>
+                            <td class="user-check col-3"><span class="fa-solid fa-check user-green"></span></td>
+<?php       } else { ?>
+                            <td class="user-check col-3"><span class="fa-solid fa-xmark user-red"></span></td>
+<?php       } ?>
+                        </tr>
+<?php   } ?>
+                    </tbody>
+                </table>
+                <table id="wallet-compat-tab" class="col-12">
+                    <thead>
+                        <tr class="row">
+                            <th class="col-2"></th>
+<?php   for($i = 0; $i < count($tabWallets); $i++){ ?>
+                            <th class="col-1"><a href="<?php echo "#wallet" . $i;?>"><?php echo $tabWallets[$i]['Name'];?></a></th>
+<?php   } ?>
+                        </tr>
+                    </thead>
+                    <tbody>
+<!-- --- --- TOKENS STANDARDS LINES --- --- -->
+<?php   for($k = 0; $k < count($tabTokenStandards); $k++){ ?>
+<!-- --- --- <?php echo $tabTokenStandards[$k]['Name'];?> LINE --- --- -->
+                        <tr class="row">
+                                <td class="tst col-2"><?php echo $tabTokenStandards[$k]['Name'];?></td>
+<?php       $tabStandard = getWalletsCompByStandard($tabTokenStandards[$k]['Id']);
+            for($i = 0; $i < count($tabWallets); $i++){
+                $boolCheck = FALSE; ?>
+                                <td class="user-check col-1">
+<?php           for($j = 0; $j < count($tabStandard); $j++){
+                    if($tabStandard[$j]['WalletId'] == $tabWallets[$i]['Id']){
+                            $boolCheck = TRUE; ?>
+                                    <span class="fa-solid fa-check user-green"></span></td>
+<?php               }
+                }
+                if ($boolCheck != TRUE) { ?>
+                                    <span class="fa-solid fa-xmark user-red"></span></td>
+<?php           }
+            }?>
+                                </tr>
+<?php   } ?>
+                    </tbody>
+                </table>
+<!-- --- --- --- WALLETS DETAILS --- --- --- -->
 <?php   for($i = 0; $i < count($tabWallets); $i++){
             $strLogoFile = "../media/logos/" . $tabWallets[$i]['LogoFile'];
             if($tabWallets[$i]['Mobile'] != FALSE){
@@ -54,7 +129,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 $strWalletConnectClass = "fa-solid fa-xmark user-red";
             }
 ?>
-                <article id="wallet<?php echo $i;?>" class="wallet-container col-12">
+                <article id="wallet<?php echo $i;?>" class="wallet-container col-md-12 col-lg-10 col-xl-10">
                     <div class="row">
                         <div class="wallet-logo-container col-4">
                             <img class="wallet-logo" src="<?php echo $strLogoFile;?>" title="<?php echo $tabWallets[$i]['Tooltip'];?>">
@@ -107,6 +182,10 @@ creatMainMenu($fileName);                               // Create the main menu
                         $strItemClass = "erd wallet-compatibility col-2";
                     } elseif($tabCompatibilities[$j]['TokenStandardId'] == 8) {
                         $strItemClass = "celo wallet-compatibility col-2";
+                    } elseif($tabCompatibilities[$j]['TokenStandardId'] == 9) {
+                        $strItemClass = "sol wallet-compatibility col-2";
+                    } elseif($tabCompatibilities[$j]['TokenStandardId'] == 10) {
+                        $strItemClass = "atom wallet-compatibility col-2";
                     }
                     ?>
                                 <div class="<?php echo $strItemClass;?>" title="<?php echo $tabCompatibilities[$j]['TokenStandardToolTip'];?>"><?php echo $tabCompatibilities[$j]['TokenStandard'];?></div>

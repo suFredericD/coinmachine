@@ -17,8 +17,8 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 ## Main Navigation
 
 ### Profil
-- **[Profile FR]**(profile_fr_link)
-- **[Profile EN]**(profile_en_link)
+- [Profile FR](profile_fr_link)
+- [Profile EN](profile_en_link)
 
 - [Contacts](contacts_link)
 - [Disclaimer](disclaimer_link)
@@ -32,10 +32,12 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 ### Ressources
 - [Tutoriels](tutorials_link)
 - [ToolBox](toolbox_link)
-- **Medias**
+- [Medias](medias_link)
   - [Actualités](news_link)
   - [Charts](charts_link)
   - [YouTubers](youtubers_link)
   - [Twittos](twittos_link)
 - ---
 ## Projets
+
+

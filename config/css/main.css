@@ -5,7 +5,7 @@
 // Role         : main CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-12
+// Last update  : 2023-06-15
 // ===================================================================================================== */
 /* 
     green : #60e660
@@ -95,14 +95,19 @@ body {
     width: 100%;
 }
 #main-navbar-container a, #main-navbar-container ul li a {
+    width: fit-content;
+    min-width: 120px;
+    margin: 0 10px;
     padding: 5px 15px;
     font-family: "Aldrich";
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    background-color: #000;
+    color: #00a36a;
     transition: all 0.85s ease-in-out;
 }
 #main-navbar-container a:hover {
-    background-color: #06c883;
+    background-color: #00a36a;
     color: #000;
     border-radius: 20px;
 }
@@ -114,7 +119,7 @@ body {
     min-width: 15rem;
     width: 100%;
     padding-left: 10px;
-    opacity: 0.8;
+    opacity: 0.85;
     background-color: #000;
     border: 1px solid #06c883;
 }
@@ -122,6 +127,16 @@ body {
     display: inline-block;
     width: 100%;
     flex-wrap: nowrap;
+    padding: 5px 15px;
+    font-family: "Aldrich";
+    font-size: 20px;
+    text-align: left;
+    transition: all 0.85s ease-in-out; 
+}
+.ddm-user li:hover, .ddm-user li a:hover {
+    background-color: #06c883;
+    color: #000;
+    border-radius: 20px;
 }
 .ddm-hr {
     margin: 5px auto;
