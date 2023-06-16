@@ -24,6 +24,7 @@ function creatMainMenu($fileName){
     $strWeb3dashboard = $strPagesPath . "web3dashboard.php";
     $strWallets = $strPagesPath . "web3wallets.php";
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
+    $strCexchanges = $strPagesPath . "cexchanges.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
     $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
@@ -68,7 +69,7 @@ function creatMainMenu($fileName){
                                 <li><a class="dropdown-item" href="<?php echo $strWallets;?>"><span class="fa-solid fa-wallet"></span>Wallets</a></li>
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <!-- <li><a class="dropdown-item" href="<?php ?>">Exchanges</a></li> -->
+                                <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>"><span class="fa-solid fa-chart-line"></span>CeXchanges</a></li>
                             </ul>
                         </li>
 <!-- Ressources section -->

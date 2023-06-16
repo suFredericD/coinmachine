@@ -123,6 +123,9 @@ body {
     background-color: #000;
     border: 1px solid #06c883;
 }
+.ddm-user li {
+    margin-right: 20px;
+}
 .ddm-user li, .ddm-user li a {
     display: inline-block;
     width: 100%;

@@ -26,8 +26,8 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 ### Datas
 - [Blockchains](blockchains_link)
 - [Wallets](blockchains_link)
+- [CeXchanges](blockchains_link)
 <!-- Protocols -->
-<!-- Exchanges -->
 - ---
 ### Ressources
 - [Tutoriels](tutorials_link)

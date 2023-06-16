@@ -1,0 +1,194 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : cexchanges.css
+// Role         : cexchanges.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-16
+// Last update  : 2023-06-16
+// ===================================================================================================== */
+:root {
+    --twitter: #1da1f2;
+    --facebook: #385eaf;
+    --youtube: #ff0000;
+    --linkedin: #0077b5;
+
+    --binance: #f3ba2f;
+    --swissborg: #31b880;
+    --coinbase: #0066bf;
+    --cryptocom: #002d72;
+    --uphold: #00b92e;
+    --faucetpay: #00acc1;
+}
+/* *** *** *** CONTAINERS *** *** *** */
+#cex-master {
+    margin: 0 auto;
+    padding: 0;
+}
+#cex1, #cex2, #cex3, #cex4, #cex5, #cex6 {
+    margin: 10px auto;
+    padding: 5px;
+}
+#cex1 {
+    border: 2px inset var(--binance);
+}
+#cex2 {
+    border: 2px inset var(--swissborg);
+}
+#cex3 {
+    border: 2px inset var(--coinbase);
+}
+#cex4 {
+    border: 2px inset var(--cryptocom);
+}
+#cex5 {
+    border: 2px inset var(--uphold);
+}
+#cex6 {
+    border: 2px inset var(--faucetpay);
+}
+.description-bloc, .description-bloc .row {
+    padding-bottom: 5px;
+}
+.cex-description {
+    width: 100%;
+    margin: auto;
+    padding-right: 30px;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    color: darkgray;
+    text-indent: 40px;
+}
+/* *** *** *** SOCIALS ICONS *** *** *** */
+.twitter-icon {
+    color: var(--twitter);
+}
+.facebook-icon {
+    color: var(--facebook);
+}
+.youtube-icon {
+    color: var(--youtube);
+}
+.linkedin-icon {
+    color: var(--linkedin);
+}
+.twitter-icon, .facebook-icon,
+.youtube-icon, .linkedin-icon {
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+.twitter-icon:hover, .facebook-icon:hover,
+.youtube-icon:hover, .linkedin-icon:hover {
+    color: #8306c8;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#cex-master .row h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.cex-name {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    animation: title-color 3s infinite;
+}
+.cex-name:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.cex-link-img {
+    opacity: 0.9;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.cex-link-img img:hover {
+    border: 3px inset #8306c8;
+}
+.cex-link-img img{
+    max-width: 100%;
+    align-self: center;
+}
+.cex-tutos {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    animation: swish 3s infinite;
+}
+.cex-tutos span {
+    margin-left: 5px;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+@keyframes title-color {
+    0% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+    50% {
+        background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+}
+@keyframes swish {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
