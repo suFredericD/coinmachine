@@ -5,7 +5,7 @@
 // Role         : animation JS script for index.php
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-15
+// Last update  : 2021-06-17
 // =====================================================================================================
 // ================ CONSTANTS ================= //
 const letterTimer = 50;                         // Time between each letter in ms
@@ -23,7 +23,6 @@ const profileParagraph = document.querySelector('.intro-cm-fulltext');
 const profileContact = document.querySelector('.intro-cm-contact');
 
 const disclaimer = document.querySelector('#disclaimer-section');
-const arborescence = document.querySelector('#arborescence');
 const footer = document.querySelector('footer');
 // ================ FUNCTIONS ================ //
 // Functions producing typewriting animations
@@ -56,8 +55,9 @@ function timer(){
     tabTimers.push(tabTimers[6] + 4000);
 }
 // ================ EVENT LISTENERS ================ //
-
-
+$("#see-map").click(function () {
+    $("#arborescence").slideToggle("slow");
+});
 // ================ ANIMATIONS TIMEOUTS ================ //
 timer();
 setTimeout(function(){
@@ -88,6 +88,6 @@ setTimeout(function(){
     typewritter(profileContact);
 }, tabTimers[6]);
 setTimeout(function(){
-    arborescence.style.opacity = 1;
+    $("#see-map").css("opacity", "0.9");
     footer.style.opacity = 1;
 }, tabTimers[7]);

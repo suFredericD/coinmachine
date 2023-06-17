@@ -5,7 +5,7 @@
 // Role         : web3medias.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-15
+// Last update  : 2021-06-17
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -20,17 +20,21 @@
     border: 2px dotted #06c883;
 }
 .bc-description {
-    opacity: 0.95;
-    margin: 5px;
+    opacity: 0.9;
+    margin: 2px;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #ebef7b, #34f8ee);
-    text-indent: 10px;
+    font-weight: 700;
     text-align: justify;
     font-family: "Lekton";
     font-size: 1.1em;
+}
+.bc-description::first-letter {
+    color: #06acc8;
+    font-weight: 900;
 }
 /* *** *** *** MINI NAVIGATION MENU *** *** *** */
 #bcd-mini-menu {

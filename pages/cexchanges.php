@@ -6,7 +6,7 @@
 // Role         : CeXchanges presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-16
+// Last update  : 2023-06-17
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder

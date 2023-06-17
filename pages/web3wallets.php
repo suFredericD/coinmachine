@@ -6,7 +6,7 @@
 // Role         : web3wallets presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-15
+// Last update  : 2023-06-17
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -82,10 +82,11 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   } ?>
                     </tbody>
                 </table>
+<!-- --- --- COMPATIBILITY TABLE --- --- -->
                 <table id="wallet-compat-tab" class="col-12">
                     <thead>
                         <tr class="row">
-                            <th class="col-2"></th>
+                            <th class="col-1"></th>
 <?php   for($i = 0; $i < count($tabWallets); $i++){ ?>
                             <th class="col-1"><a href="<?php echo "#wallet" . $i;?>"><?php echo $tabWallets[$i]['Name'];?></a></th>
 <?php   } ?>
@@ -96,7 +97,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   for($k = 0; $k < count($tabTokenStandards); $k++){ ?>
 <!-- --- --- <?php echo $tabTokenStandards[$k]['Name'];?> LINE --- --- -->
                         <tr class="row">
-                                <td class="tst col-2"><?php echo $tabTokenStandards[$k]['Name'];?></td>
+                                <td class="tst col-2 col-xl-1"><?php echo $tabTokenStandards[$k]['Name'];?></td>
 <?php       $tabStandard = getWalletsCompByStandard($tabTokenStandards[$k]['Id']);
             for($i = 0; $i < count($tabWallets); $i++){
                 $boolCheck = FALSE; ?>

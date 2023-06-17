@@ -5,7 +5,7 @@
 // Role         : web3wallets.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-15
+// Last update  : 2023-06-17
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -71,7 +71,7 @@ table {
     margin-top: 10px;
 }
 #wallet-compat-tab thead tr th{
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     padding-bottom: 4px;
     text-align: center;
 }

@@ -5,7 +5,7 @@
 // Role         : cexchanges.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-16
+// Last update  : 2023-06-17
 // ===================================================================================================== */
 :root {
     --twitter: #1da1f2;
@@ -123,13 +123,16 @@
     align-self: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .cex-link-img img:hover {
     border: 3px inset #8306c8;
 }
 .cex-link-img img{
     max-width: 100%;
+    max-height: 250px;
     align-self: center;
+    justify-self: center;
 }
 .cex-tutos {
     font-family: "Aldrich", sans-serif;

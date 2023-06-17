@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-15
+// Last update  : 2021-06-17
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder
@@ -85,31 +85,32 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                 </div><hr>
 <!-- --- --- Website tree map --- --- -->
+                <label id="see-map" for="arborescence" class="col-2">Voir le plan<span class="fa-solid fa-caret-down"></span></label>
                 <pre id="arborescence" class="col-11">
-  Home  - - -> you are here
+  <strong>Home</strong>  - - -> <em>you are here</em>
    |
-   |__ Profil
-   |    |___ Mon profil FR : en français
-   |    |___ My profile EN : in english
-   |    |___ Mes liens de contatcs / contatcs links
-   |    |___ Disclaimer
+   |__ <strong>Profil</strong>
+   |    |___ <a href="pages/profile_fr.html">Mon profil FR</a> : <em>en français</em>
+   |    |___ <a href="pages/profile_en.html">My profile EN</a> : <em>in english</em>
+   |    |___ <a href="pages/contacts.php">Mes liens de contatcs / contatcs links</a>
+   |    |___ <a href="pages/disclaimer.php">Disclaimer</a>
    |
-   |__ Datas
-   |    |___ Blockchains : fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...
-   |    |___ Wallets     : tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...
-   |    |___ CeXchanges  : tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...
+   |__ <strong>Datas</strong>
+   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...</em>
+   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...</em>
+   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
    |
-   |__ Ressources
+   |__ <strong>Ressources</strong>
    |    |
-   |    |___ Tutoriels  : réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...
-   |    |___ ToolBox    : liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...
-   |    |___ Medias     : médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...
-   |            |___ Actualités
-   |            |___ Charts
-   |            |___ YouTubers
-   |            |___ Twittos
+   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em>réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...</em>
+   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em>liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
+   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em>médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...</em>
+   |            |___ <a href="pages/web3medias.php#news">Actualités</a>
+   |            |___ <a href="pages/web3medias.php#charts">Charts</a>
+   |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
+   |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>
    |
-   |__ Projects
+   |__ <strong>Projects</strong>
                 </pre>
 <!-- --- --- END of content --- --- -->
             </div>

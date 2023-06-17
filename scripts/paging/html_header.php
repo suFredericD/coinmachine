@@ -6,7 +6,7 @@
 // Role         : script creating the HTML header
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-12
+// Last update  : 2021-06-17
 // =====================================================================================================
 function createHTMLheader($fileName, $siteInformations){
     $strAuthor = "CoinMachine";
@@ -27,15 +27,17 @@ function createHTMLheader($fileName, $siteInformations){
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Blockchain and cryptocurrency education and consulting">
     <meta name="keywords" content="">
     <meta name="author" content="<?php echo $strAuthor;?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index,follow">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="CoinMachine : Blockchain and cryptocurrency">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Blockchain and cryptocurrency education and consulting">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
+    <meta property="og:locale" content="fr_FR">
 
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $strFavicon;?>">
     <favicon href="<?php echo $strFavicon;?>" />

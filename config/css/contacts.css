@@ -18,18 +18,35 @@
 #contacts-container .row article {
     margin: 20px auto;
     padding: 10px;
-    border: 1px dotted #06c883;
+    border: 1px ridge #06c883;
+    border-radius: 0% 100% 100% 0% / 55% 46% 54% 45%;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
-    box-shadow: 2px 2px 3px #06c883;
+    box-shadow: 2px 2px 2px #a9ef7b;
+}
+#linkedin-details, #github-details,
+#discord-details, #mail-details, #odysee-details {
+    display: none;
 }
 /* *** *** *** MINI NAVIGATION MENU *** *** *** */
 
 /* *** *** *** TITRAGES *** *** *** */
-
+#linkedin-title, #github-title,
+#discord-title, #mail-title, #odysee-title {
+    cursor: pointer;
+}
+#linkedin-title:hover, #github-title:hover,
+#discord-title:hover, #mail-title:hover,
+#odysee-title:hover {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
+}
 /* *** *** *** USER CLASSES *** *** *** */
 .social-brands {
     font-size: 2em;

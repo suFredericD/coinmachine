@@ -6,7 +6,7 @@
 // Role         : known and used blockchains informations
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-15
+// Last update  : 2021-06-17
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -48,7 +48,8 @@ creatMainMenu($fileName);                               // Create the main menu
                 <section id="bc-main-content" class="offset-3 col-9">
                     <div id="bc-blockchains-list" class="row">
 <?php   for($i = 0; $i < count($tabBlockchainsInfos); $i++){
-            $strLogoFile = "../media/tokens/" . $tabBlockchainsInfos[$i]['LogoFile'];    
+            $strLogoFile = "../media/tokens/" . $tabBlockchainsInfos[$i]['LogoFile'];
+            $tabBlockchainDescription = explode("<br>", $tabBlockchainsInfos[$i]['Description']);
 ?>
                         <article class="blockchain col-12">
                             <div class="row">
@@ -63,7 +64,13 @@ creatMainMenu($fileName);                               // Create the main menu
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['Blockscan'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['Blockscan'];?></a>
                                         <label class="bc-blockscan-link-label offset-1 col-5">Code source :</label>
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['SourceCode'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['SourceCode'];?></a>
-                                        <p class="bc-description col-12"><?php echo $tabBlockchainsInfos[$i]['Description'];?></p>
+                                        <div class="col-12">
+                                            <div class="row">
+<?php        for($j = 0; $j < count($tabBlockchainDescription); $j++){ ?>
+                                                <p class="bc-description col-12"><?php echo $tabBlockchainDescription[$j];?></p>
+<?php       } ?>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 <?php       if(isset($tabSubjectsReferencesCount[$tabBlockchainsInfos[$i]['Id']])){ ?>
