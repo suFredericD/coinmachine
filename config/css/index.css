@@ -32,6 +32,7 @@
 }
 #see-map {
     opacity: 0;
+    margin-bottom: 5px;
     border: none;
     border-radius: 25px;
     background-color: #000;

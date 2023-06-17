@@ -38,14 +38,22 @@ creatMainMenu($fileName);                               // Create the main menu
                             <div class="row">
                                 <a class="cex-name col-8" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
                                     <h2><?php echo $tabCexchanges[$i]['Name'];?></h2></a>
+<?php       if($tabCexchanges[$i]['Twitter'] != ""){ ?>
                                 <a class="col-1" href="<?php echo $tabCexchanges[$i]['Twitter'];?>" title="Compte Twitter de <?php echo $tabCexchanges[$i]['Name'];?>" target="_blank">
                                     <span class="twitter-icon fa-brands fa-twitter-square"></span></a>
+<?php       } 
+            if($tabCexchanges[$i]['Youtube'] != ""){?>
                                 <a class="col-1" href="<?php echo $tabCexchanges[$i]['Youtube'];?>" title="Chaîne YouTube de <?php echo $tabCexchanges[$i]['Name'];?>" target="_blank">
                                     <span class="youtube-icon fa-brands fa-youtube-square"></span></a>
+<?php       } 
+            if($tabCexchanges[$i]['Meta'] != ""){?>
                                 <a class="col-1" href="<?php echo $tabCexchanges[$i]['Meta'];?>" title="Compte Facebook de <?php echo $tabCexchanges[$i]['Name'];?>" target="_blank">
                                     <span class="facebook-icon fa-brands fa-facebook-square"></span></a>
+<?php       } 
+            if($tabCexchanges[$i]['Linkedin'] != ""){?>
                                 <a class="col-1" href="<?php echo $tabCexchanges[$i]['Linkedin'];?>" title="Compte LinkedIn de <?php echo $tabCexchanges[$i]['Name'];?>" target="_blank">
                                     <span class="linkedin-icon fa-brands fa-linkedin"></span></a>
+<?php       } ?>
                                 <div class="description-bloc col-12">
                                     <div class="row container-fluid">
 <?php       $tabDescription = explode("<br>", $tabCexchanges[$i]['Description']);
