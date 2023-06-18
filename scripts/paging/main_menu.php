@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-06-15
+// Last update  : 2023-06-18
 // =====================================================================================================
 function creatMainMenu($fileName){
     if($fileName == '/index.php'){
@@ -25,6 +25,7 @@ function creatMainMenu($fileName){
     $strWallets = $strPagesPath . "web3wallets.php";
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strCexchanges = $strPagesPath . "cexchanges.php";
+    $strHumans = $strPagesPath . "web3humans.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
     $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
@@ -70,6 +71,7 @@ function creatMainMenu($fileName){
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>"><span class="fa-solid fa-chart-line"></span>CeXchanges</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strHumans;?>"><span class="fa-solid fa-chart-line"></span>Humains</a></li>
                             </ul>
                         </li>
 <!-- Ressources section -->

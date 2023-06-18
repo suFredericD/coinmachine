@@ -5,9 +5,15 @@
 // Role         : contacts.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-13
-// Last update  : 2021-06-13
+// Last update  : 2021-06-18
 // ===================================================================================================== */
-
+:root {
+        --linkedin: #0077b5;
+        --github: darkgray;
+        --discord: #7289da;
+        --mail: #ff0000;
+        --odysee: #f98f2a;
+}
 /* *** *** *** CONTAINERS *** *** *** */
 #contacts-container {
     display: block;
@@ -50,6 +56,21 @@
 /* *** *** *** USER CLASSES *** *** *** */
 .social-brands {
     font-size: 2em;
+}
+.linkedin {
+    color: var(--linkedin);
+}
+.github {
+    color: var(--github);
+}
+.discord {
+    color: var(--discord);
+}
+.mail {
+    color: var(--mail);
+}
+.odysee {
+    color: var(--odysee);
 }
 article .row h3 {
     font-family: "Aldrich";

@@ -1,0 +1,157 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3humans.css
+// Role         : web3humans.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-18
+// Last update  : 2021-06-18
+// ===================================================================================================== */
+:root {
+    --linkedin: #0077b5;
+    --twitter: #1da1f2;
+    --facebook: #1558e7;
+}
+/* *** *** *** CONTAINERS *** *** *** */
+article {
+    margin: 10px auto;
+    padding: 10px;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    border: 1px inset #06c883;
+    box-shadow: inset 0 0 15px #06c883;
+}
+
+/* *** *** *** NAVIGATION *** *** *** */
+#humans-mini-nav {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    font-family: "Frijole";
+    font-size: 1.5em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#humans-mini-nav .row a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#humans-mini-nav .row a:hover {
+    color: #8306c8;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#humans-main-title, article h2, article h3 {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+#humans-main-title {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+article h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.2em;
+    text-align: left;
+}
+article h3 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+}
+.firstname {
+    font-size: 0.8em;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.zodiac-img, .birthdate, .wiki-link,
+article a, article p {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+.zodiac-img {
+    max-width: 80px;
+    max-height: 80px;
+    margin: 0 auto;
+    padding: 0;
+}
+.birthdate {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+}
+article a, article p {
+    text-decoration: none;
+    text-align: left;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+article a {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+article a span {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+article a:hover {
+    background-image: linear-gradient(45deg, #1491ff, #8306c8);
+}
+article p {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.wiki-link {
+    text-align: center;
+}
+/* *** *** *** SOCIALS ICONS *** *** *** */
+.twitter-icon {
+    color: var(--twitter);
+}
+.facebook-icon {
+    color: var(--facebook);
+}
+.youtube-icon {
+    color: var(--youtube);
+}
+.linkedin-icon {
+    color: var(--linkedin);
+}
+.twitter-icon, .facebook-icon,
+.youtube-icon, .linkedin-icon {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+.twitter-icon:hover, .facebook-icon:hover,
+.youtube-icon:hover, .linkedin-icon:hover {
+    color: #8306c8;
+}

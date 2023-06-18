@@ -6,16 +6,14 @@
 // Role         : contacts presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-13
-// Last update  : 2021-06-17
+// Last update  : 2021-06-18
 // =====================================================================================================
-// Include the HTML header builder
-require('..\scripts\paging\html_header.php');
-// Include the page header builder
-require('..\scripts\paging\page_header.php');
-// Include the HTML footer builder
-require('..\scripts\paging\html_footer.php');
-// Include the menu builder script
-require('..\scripts\paging\main_menu.php');
+require('..\scripts\paging\html_header.php');           // Include the HTML header builder
+require('..\scripts\paging\page_header.php');           // Include the page header builder
+require('..\scripts\paging\html_footer.php');           // Include the HTML footer builder
+require('..\scripts\paging\main_menu.php');             // Include the menu builder script
+require('..\admin\db_access.php');                      // Include the database access script
+require('..\admin\db_requestBuilder.php');              // Include the database request builder script
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 $siteInformations = [];
@@ -28,7 +26,7 @@ creatMainMenu($fileName);                               // Create the main menu
             <div class="row">
                 <article id="linkedin" class="col-8">
                     <div class="row">
-                        <span class="social-brands fa-brands fa-linkedin col-2" alt="LinkedIn logo"></span>
+                        <span class="social-brands linkedin fa-brands fa-linkedin col-2" alt="LinkedIn logo"></span>
                         <h3 id="linkedin-title" class="col-9">LinkedIn</h3>
                         <div id="linkedin-details" class="col-12">
                             <div class="row">
@@ -45,7 +43,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="github" class="col-8">
                     <div class="row">
-                        <span class="social-brands fa-brands fa-github col-2" alt="LinkedIn logo"></span>
+                        <span class="social-brands github fa-brands fa-github col-2" alt="LinkedIn logo"></span>
                         <h3 id="github-title" class="col-9">GitHub</h3>
                         <div id="github-details" class="col-12">
                             <div class="row">
@@ -62,7 +60,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="discord" class="col-8">
                     <div class="row">
-                        <span class="social-brands fa-brands fa-discord col-2" alt="Discord logo"></span>
+                        <span class="social-brands discord fa-brands fa-discord col-2" alt="Discord logo"></span>
                         <h3 id="discord-title" class="col-9">Discord</h3>
                         <div id="discord-details" class="col-12">
                             <div class="row">
@@ -73,7 +71,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="mail" class="col-8">
                     <div class="row">
-                        <span class="social-brands fa-regular fa-envelope col-2" alt="Email icon"></span>
+                        <span class="social-brands mail fa-regular fa-envelope col-2" alt="Email icon"></span>
                         <h3 id="mail-title" class="col-9">Email</h3>
                         <div id="mail-details" class="col-12">
                             <div class="row">
@@ -84,7 +82,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 </article>
                 <article id="odysee" class="col-8">
                     <div class="row">
-                        <span class="social-brands fa-brands fa-odysee col-2" alt="Odysee logo"></span>
+                        <span class="social-brands odysee fa-brands fa-odysee col-2" alt="Odysee logo"></span>
                         <h3 id="odysee-title" class="col-9">Odysee</h3>
                         <div id="odysee-details" class="col-12">
                             <div class="row">
