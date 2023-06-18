@@ -99,6 +99,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...</em>
    |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...</em>
    |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
+   |    |___ <a href="pages/web3humans.php">Humains</a>  : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
    |
    |__ <strong>Ressources</strong>
    |    |
