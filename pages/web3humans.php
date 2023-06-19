@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-18
+// Last update  : 2021-06-19
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -27,6 +27,21 @@ $tabAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                 'U', 'V', 'W', 'X', 'Y', 'Z'];
 $tabHumansOrderedByAlphaLastName = getHumansOrderedByAlphaLastName();
 $strPreviousLetter = "";
+$tabAlphaHumans = [];
+for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
+    $letter = $tabMinNavAlphabet[$i];
+    foreach($tabHumansOrderedByAlphaLastName as $human) {
+        $tabLastNameLetters = str_split($human['LastName']);
+            if($tabLastNameLetters[0] == $letter) {
+                if(isset($tabAlphaHumans[$i])){
+                    $tabAlphaHumans[$i] .= ", " . $human['LastName'] . " " . $human['FirstName'];
+                } else {
+                    $tabAlphaHumans[$i] = $human['LastName'] . " " . $human['FirstName'];
+                }
+                
+            }
+    }
+}
 
 // =====================================================================================================
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
@@ -39,15 +54,21 @@ creatMainMenu($fileName);                               // Create the main menu
                     <h1 id="humans-main-title">Web3 : humains influents</h1>
                 </div>
 <!-- --- --- --- MINI NAVIGATION MENU --- --- --- -->
-                <section id="humans-mini-nav" class="col-2">
+                <nav id="humans-mini-nav" class="col-2">
                     <div class="row">
-<?php   foreach($tabMinNavAlphabet as $letter) { ?>
-                        <a class="col-6" href="#<?php echo $letter;?>"><?php echo $letter;?></a>
+<?php   for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
+            if(isset($tabAlphaHumans[$i])){
+                $strMiniNavTitle = $tabAlphaHumans[$i];
+            } else {
+                $strMiniNavTitle = "Aucun humain répertorié pour cette lettre";
+            }
+?>
+                        <a class="col-6" href="#<?php echo $tabMinNavAlphabet[$i];?>" title="<?php echo $strMiniNavTitle;?>"><?php echo $tabMinNavAlphabet[$i];?></a>
 <?php   } ?>
                     </div>
-                </section>
+                </nav>
 <!-- --- --- --- MAIN CONTENT --- --- --- -->
-                <section id="humans-main-content" class="offset-1 col-9">
+                <section id="humans-main-content" class="offset-2 col-9">
                     <div clas="row">
 <?php   foreach($tabHumansOrderedByAlphaLastName as $human) {
             $strFullName = $human['FirstName'] . " " . $human['LastName'];
@@ -69,6 +90,7 @@ creatMainMenu($fileName);                               // Create the main menu
             $strPicture = "../media/people/" . $human['Picture'];
             $strCompany = $human['FirmId'] != "" ? $human['FirmName']. "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>" : 'Unknown';
             $strFunction = $human['FunctionId'] != "" ? $human['Function'] : 'Unknown';
+            $strFlag = "../media/flags/" . $human['CountryFlag'];
 // Find first letter of the last name and compare it to last "first-letter" to create a link for the mini navigation menu
             $tabLastNameLetters = str_split($human['LastName']);
             foreach($tabAlphabet as $letter) {
@@ -80,13 +102,19 @@ creatMainMenu($fileName);                               // Create the main menu
                         $strRefLink = '';
                     }
                 }
-            } 
-            $strWikiLink = $human['WikiFr'] != "" ? $human['WikiFr'] : $human['WikiEn'];
-            ?>
+            }
+            if($human['WikiFr'] != ""){
+                $strWikiLink = $human['WikiFr'];
+            } elseif($human['WikiEn'] != ""){
+                $strWikiLink = $human['WikiEn'];
+            } else {
+                $strWikiLink = "";
+            }?>
                         <div id="<?php echo $strRefLink;?>"></div>
                         <article id="<?php echo $strFullName;?>" class="col-12">
                             <div class="row">
-                                <h2 class="col-8"><?php echo $strFullTitle;?></h2>
+                                <h2 class="col-7"><?php echo $strFullTitle;?></h2>
+                                <img class="flag col-1" src="<?php echo $strFlag;?>"/>
                                 <h3 class="col-2"><?php echo $strAge;?></h3>
                                 <h5 class="birthdate col-2"><?php echo $strBirthDate;?></h5>
                                 <img class="people-img col-2" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
@@ -109,7 +137,9 @@ creatMainMenu($fileName);                               // Create the main menu
                                         <a class="col-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
                                         <h3 class="col-6">Fonction :</h3>
                                         <p class="col-6"><?php echo $strFunction;?></p>
-                                        <a class="wiki-link col-12" href="<?php echo $strWikiLink;?>" target="_blank">Page Wikipédia de <?php echo $strFullName;?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+<?php       if($human['WikiFr'] != "" || $human['WikiEn'] != ""){ ?>
+                                        <a class="wiki-link col-12" href="<?php echo $strWikiLink;?>" target="_blank">A propos de <?php echo $strFullName;?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+<?php       } ?>
                                     </div>
                                 </div>
                                 <img class="zodiac-img col-2" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSign;?> zodiac sign picture" />
@@ -130,7 +160,6 @@ creatMainMenu($fileName);                               // Create the main menu
         
         
             </div>
-        </section>
 <?php
 createHTMLfooter($fileName);                            // Create the HTML footer
 ?>

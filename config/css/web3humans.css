@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-18
+// Last update  : 2021-06-19
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -24,9 +24,11 @@ article {
     border: 1px inset #06c883;
     box-shadow: inset 0 0 15px #06c883;
 }
-
 /* *** *** *** NAVIGATION *** *** *** */
 #humans-mini-nav {
+    position: fixed;
+    top: 40%;
+    left: 0;
     margin: 0;
     padding: 0;
     padding-left: 30px;
@@ -84,7 +86,7 @@ article h3 {
     font-size: 0.8em;
 }
 /* *** *** *** USER CLASSES *** *** *** */
-.zodiac-img, .birthdate, .wiki-link,
+.zodiac-img, .birthdate, .wiki-link, .flag,
 article a, article p {
     vertical-align: bottom;
     align-items: baseline;
@@ -132,6 +134,10 @@ article p {
 }
 .wiki-link {
     text-align: center;
+    font-size: 0.9em;
+}
+.flag {
+    max-height: 30px;
 }
 /* *** *** *** SOCIALS ICONS *** *** *** */
 .twitter-icon {
