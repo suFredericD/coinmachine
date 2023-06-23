@@ -5,16 +5,25 @@
 // Role         : animation JS script for index.php
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-17
+// Last update  : 2021-06-23
 // =====================================================================================================
 // ================ CONSTANTS ================= //
 const letterTimer = 50;                         // Time between each letter in ms
 let tabTimers = [];                             // Array of timers for each animation
+let newsCounter = 0;                            // Counter for news marquee
+let newsDisplay = 1;                            // Displayed news boolean
 
 // ================ DOM ELEMENTS ================ //
 const siteTitle = document.querySelector('#index-title');
 const siteIntro = document.querySelector('#index-intro');
 const siteIntroParagraphs = siteIntro.querySelectorAll('p');
+
+const newsContainer = document.querySelectorAll('.index-news-marquee');
+const tabNews = document.querySelectorAll('.index-news-marquee li');
+const tabNewsCopy = [];
+tabNews.forEach((news, i) => {
+    tabNewsCopy.push(news.cloneNode(true));
+});
 
 const profileTitle = document.querySelector('#index-intro-cm div h2');
 const profilePicture = document.querySelector('#index-intro-cm div img');
@@ -54,11 +63,24 @@ function timer(){
     tabTimers.push(tabTimers[5] + 6000);
     tabTimers.push(tabTimers[6] + 4000);
 }
+// Function to toggle news marquee
+function toggleLine() {
+    newsCounter = newsCounter < tabNewsCopy.length - 1 ? newsCounter + 1 : 0;
+    tabNews[0].querySelector('a').innerHTML = tabNewsCopy[newsCounter].querySelector('a').innerHTML;
+    tabNews[0].querySelector('a').href = tabNewsCopy[newsCounter].querySelector('a').href;
+    tabNews[0].querySelector('a').title = tabNewsCopy[newsCounter].querySelector('a').title;
+}
+setInterval(function(){
+    toggleLine();
+}, 5000);
 // ================ EVENT LISTENERS ================ //
 $("#see-map").click(function () {
     $("#arborescence").slideToggle("slow");
 });
 // ================ ANIMATIONS TIMEOUTS ================ //
+for(let i = 1; i < tabNews.length; i++){
+    tabNews[i].style.display = "none";
+}
 timer();
 setTimeout(function(){
     footer.style.opacity = 0;

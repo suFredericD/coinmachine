@@ -6,15 +6,19 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-17
+// Last update  : 2021-06-22
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder
 require('scripts\paging\html_footer.php');              // Include the HTML footer builder
 require('scripts\paging\main_menu.php');                // Include the main menu builder
+require('admin\db_access.php');                         // Include the database access informations
+require('admin\db_requestBuilder.php');                 // Include the database access functions
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 $siteInformations = [];
+
+$tabNewsDetails = get5LastNewsDetailsByDate();          // Get the news details
 
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
 createPageheader($fileName);                            // Create the page header
@@ -24,37 +28,25 @@ creatMainMenu($fileName);                               // Create the main menu
         </nav>
         <section id="index-main" class="container-fluid col-12">
             <div class="row">
+                <article id="index-news" clas="col-11"><hr>
+                    <div class="row">
+                        <h4 class="breaking-news col-12"><span>NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - BREAKING NEWS - </span></h4>
+                        <ul class="index-news-marquee col-12">
+<?php   foreach($tabNewsDetails as $newsDetails) {
+            $dateNews = date_create($newsDetails['Date']);
+            $strTextNews = "<span class=\"index-news-date\">[" . date_format($dateNews, "d/m") . "]</span> " . $newsDetails['Title'] . "<i class=\"fa-solid fa-arrow-up-right-from-square\"></i>";
+?>
+                            <li><a href="<?php echo $newsDetails['Url']; ?>" title="<?php echo $newsDetails['Title']; ?>" target="_blank"><?php echo $strTextNews;?></a></li>
+<?php   } ?>
+                        </ul>
+                    </div><hr>
+                </article>
                 <h1 id="index-title" class="col-11">CoinMachine Plateforme</h1>
                 <div id="index-intro" class="col-11">
                     <p>CoinMachine Plateforme est dédiée à l'éducation et au consulting en blockchain et cryptomonnaies.</p>
                     <p>Vous trouverez ici des ressources, des tutoriels, des outils, des liens utiles, des actualités, des analyses, des projets...</p>
                     <p>Le but est d'aider chacun à comprendre les blockchains et les cryptomonnaies, à se familiariser avec les outils et les usages, à être accompagné dans leurs utilisations.</p>
                 </div>
-<!-- --- --- --- DISCLAIMER --- --- --- -->
-                <section id="disclaimer-section" class="col-11">
-                    <div class="row">
-                        <div class="disclaimer-warning col-12"><div class="warning-bar"></div></div>
-                        <div id="disclaimer-main" class="offset-1 col-10">
-                            <div class="row">
-                                <span class="fa-solid fa-warning col-2"></span>
-                                <h2 class="disclaimer-title col-8">DISCLAIMER</h2>
-                                <span class="fa-solid fa-warning col-2"></span>
-                                <article id="disclaimer-content" class="offset-1 col-11">
-                                    <p><ul>Les informations fournies sur ce site sont <mark>à titre informatif et éducatif uniquement</mark> et <ins>ne constituent en aucun cas</ins> :
-                                        <li>des conseils financiers, d'investissement ou de toute autre nature</li>
-                                        <li>une offre, une sollicitation ou une recommandation d'aucune sorte</li>
-                                        <li> une offre d'achat ou de vente de titres, de produits ou de services</li>
-                                    </ul></p>
-                                    <p>Tout investissement dans des actifs financiers, y compris les crypto-monnaies, <ins>comporte des risques importants</ins>. Il est essentiel de procéder à vos propres recherches approfondies et de consulter un conseiller financier qualifié avant de prendre toute décision d'investissement.</p>
-                                    <p><strong>Nous déclinons <ins>toute responsabilité quant aux pertes ou aux dommages résultant de l'utilisation des informations fournies</ins> sur ce site.</strong> Nous vous encourageons à <ins>faire preuve de prudence et à prendre des décisions éclairées en fonction de votre propre jugement et de votre situation financière.</ins></p>
-                                    <p>Rappelez-vous que <ins>les marchés financiers et les crypto-monnaies sont sujets à une <strong>volatilité importante</strong></ins>. Les performances passées ne garantissent pas les résultats futurs. Vous êtes seul responsable de vos actions et de vos investissements.</p>
-                                    <p>En utilisant ce site, <ins>vous reconnaissez comprendre et accepter ce disclaimer</ins> et vous dégagez de toute responsabilité envers notre équipe et l'entité derrière ce site pour toute perte ou préjudice subi.</p>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="disclaimer-warning col-12"><div class="warning-bar"></div></div>
-                    </div>
-                </section>
 <!-- --- --- My profile presentation --- --- -->
                 <div id="index-intro-cm" class="col-11">
                     <div class="row">
@@ -84,6 +76,31 @@ creatMainMenu($fileName);                               // Create the main menu
                         </p>
                     </div>
                 </div><hr>
+<!-- --- --- --- DISCLAIMER --- --- --- -->
+<section id="disclaimer-section" class="col-11">
+                    <div class="row">
+                        <div class="disclaimer-warning col-12"><div class="warning-bar"></div></div>
+                        <div id="disclaimer-main" class="offset-1 col-10">
+                            <div class="row">
+                                <span class="fa-solid fa-warning col-2"></span>
+                                <h2 class="disclaimer-title col-8">DISCLAIMER</h2>
+                                <span class="fa-solid fa-warning col-2"></span>
+                                <article id="disclaimer-content" class="offset-1 col-11">
+                                    <p><ul>Les informations fournies sur ce site sont <mark>à titre informatif et éducatif uniquement</mark> et <ins>ne constituent en aucun cas</ins> :
+                                        <li>des conseils financiers, d'investissement ou de toute autre nature</li>
+                                        <li>une offre, une sollicitation ou une recommandation d'aucune sorte</li>
+                                        <li> une offre d'achat ou de vente de titres, de produits ou de services</li>
+                                    </ul></p>
+                                    <p>Tout investissement dans des actifs financiers, y compris les crypto-monnaies, <ins>comporte des risques importants</ins>. Il est essentiel de procéder à vos propres recherches approfondies et de consulter un conseiller financier qualifié avant de prendre toute décision d'investissement.</p>
+                                    <p><strong>Nous déclinons <ins>toute responsabilité quant aux pertes ou aux dommages résultant de l'utilisation des informations fournies</ins> sur ce site.</strong> Nous vous encourageons à <ins>faire preuve de prudence et à prendre des décisions éclairées en fonction de votre propre jugement et de votre situation financière.</ins></p>
+                                    <p>Rappelez-vous que <ins>les marchés financiers et les crypto-monnaies sont sujets à une <strong>volatilité importante</strong></ins>. Les performances passées ne garantissent pas les résultats futurs. Vous êtes seul responsable de vos actions et de vos investissements.</p>
+                                    <p>En utilisant ce site, <ins>vous reconnaissez comprendre et accepter ce disclaimer</ins> et vous dégagez de toute responsabilité envers notre équipe et l'entité derrière ce site pour toute perte ou préjudice subi.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="disclaimer-warning col-12"><div class="warning-bar"></div></div>
+                    </div>
+                </section>
 <!-- --- --- Website tree map --- --- -->
                 <label id="see-map" for="arborescence" class="col-2">Voir le plan<span class="fa-solid fa-caret-down"></span></label>
                 <pre id="arborescence" class="col-11">

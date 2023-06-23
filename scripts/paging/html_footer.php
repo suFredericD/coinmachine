@@ -42,6 +42,7 @@ function createHTMLfooter($fileName){
     <script src="<?php echo $strSpecialJSFile;?>" crossorigin="anonymous"></script>
 <?php   }?>
 <!-- --- --- --- Add JavaScript here --- --- --- -->
+
 </body>
 <?php
 }
