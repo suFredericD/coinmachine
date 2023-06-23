@@ -17,7 +17,13 @@
     margin-bottom: 5px;
     padding: 0;
     padding-bottom: 10px;
-    border: 2px dotted #06c883;
+    border: 1px dotted #06c883;
+    transform: skew(-5deg,0);
+    box-shadow: inset -1px -1px 4px 1px #ebef7b;
+}
+.blockchain .row {
+    position: relative;
+    transform: skew(0,0);
 }
 .bc-description {
     opacity: 0.9;

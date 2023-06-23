@@ -51,7 +51,7 @@ creatMainMenu($fileName);                               // Create the main menu
             $strLogoFile = "../media/tokens/" . $tabBlockchainsInfos[$i]['LogoFile'];
             $tabBlockchainDescription = explode("<br>", $tabBlockchainsInfos[$i]['Description']);
 ?>
-                        <article class="blockchain col-12">
+                        <article class="blockchain col-11">
                             <div class="row">
                                 <img class="bc-token-logo col-2" src="<?php echo $strLogoFile;?>" alt="<?php echo $tabBlockchainsInfos[$i]['Name'];?> logo" />
                                 <div class="bc-details col-10">

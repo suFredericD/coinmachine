@@ -71,7 +71,7 @@ function creatMainMenu($fileName){
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>"><span class="fa-solid fa-chart-line"></span>CeXchanges</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strHumans;?>"><span class="fa-solid fa-chart-line"></span>Humains</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strHumans;?>"><span class="fa-solid fa-people-group"></span>Humains</a></li>
                             </ul>
                         </li>
 <!-- Ressources section -->

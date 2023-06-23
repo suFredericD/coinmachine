@@ -26,7 +26,18 @@ function createPageheader($fileName){
                 <div id="site-title" class="col-xs-8 col-sm-8 col-md-9 col-10">
                     <h1>CoinMachine</h1>
                     <h2>IT & Web3</h2>
-                    <h3>Blockchain & Cryptocurrency</h3>
+                    <h3>Blockchain &&nbsp;
+                        <div class="scroller">
+                            <span>
+                                Cryptocurrency<br />
+                                Wallets<br />
+                                DeFi<br />
+                                CeFi<br />
+                                Farming<br />
+                                Staking
+                            </span>
+                        </div>    
+                    </h3>
                 </div>
             </div>
         </header>

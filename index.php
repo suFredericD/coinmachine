@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-22
+// Last update  : 2021-06-23
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder
@@ -36,7 +36,7 @@ creatMainMenu($fileName);                               // Create the main menu
             $dateNews = date_create($newsDetails['Date']);
             $strTextNews = "<span class=\"index-news-date\">[" . date_format($dateNews, "d/m") . "]</span> " . $newsDetails['Title'] . "<i class=\"fa-solid fa-arrow-up-right-from-square\"></i>";
 ?>
-                            <li><a href="<?php echo $newsDetails['Url']; ?>" title="<?php echo $newsDetails['Title']; ?>" target="_blank"><?php echo $strTextNews;?></a></li>
+                            <li><a href="<?php echo $newsDetails['Url']; ?>" title="<?php echo $newsDetails['Tooltip']; ?>" target="_blank"><?php echo $strTextNews;?></a></li>
 <?php   } ?>
                         </ul>
                     </div><hr>

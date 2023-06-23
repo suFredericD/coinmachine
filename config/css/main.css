@@ -5,7 +5,7 @@
 // Role         : main CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-15
+// Last update  : 2023-06-23
 // ===================================================================================================== */
 /* 
     green : #60e660
@@ -186,6 +186,29 @@ footer .row p a:hover {
     text-decoration: underline;
     color: #00a36a;
 }
+/* Scroller styling */
+.scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+  }
+  .scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide-scroll 15s infinite;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+  }
 /* *** *** *** ANIMATIONS *** *** *** */
 @keyframes green-yellow {
     0% {
@@ -198,6 +221,38 @@ footer .row p a:hover {
         color: #ebef7b;
     }
 }
+@keyframes slide-scroll {
+    0% {
+      top: 0;
+    }
+    10% {
+        top: -1.2em;
+    }
+    20% {
+        top: -2.4em;
+    }
+    30% {
+      top: -3.6em;
+    }
+    40% {
+      top: -4.8em;
+    }
+    50% {
+        top: -6.0em;
+    }
+    60% {
+        top: -4.8em;
+    }
+    70% {
+        top: -3.6em;
+    }
+    80% {
+        top: -2.4em;
+    }
+    90% {
+        top: -1.2em;
+    }
+  }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
 
