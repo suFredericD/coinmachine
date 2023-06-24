@@ -30,7 +30,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   for($i = 0; $i < count($tabCexchanges); $i++){
             $strLogo = "../media/logos/" . $tabCexchanges[$i]['Logo'];
 ?>
-                <article id="cex<?php echo $tabCexchanges[$i]['OrderId'];?>" class="col-12">
+                <article id="cex<?php echo $tabCexchanges[$i]['OrderId'];?>" class="col-11">
                     <div class="row">
                         <a class="cex-link-img col-4" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
                             <img class="" src="<?php echo $strLogo;?>" alt="<?php echo $tabCexchanges[$i]['Name'];?> logo" /></a>

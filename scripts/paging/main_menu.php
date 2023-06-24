@@ -26,6 +26,7 @@ function creatMainMenu($fileName){
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strCexchanges = $strPagesPath . "cexchanges.php";
     $strHumans = $strPagesPath . "web3humans.php";
+    $strWeb3News = $strPagesPath . "web3news.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
     $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
@@ -78,11 +79,12 @@ function creatMainMenu($fileName){
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressources</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>"><span class="fa-solid fa-graduation-cap"></span>Tutoriels</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3News;?>"><span class="fa-solid fa-radio"></span>News</a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>"><span class="fa-solid fa-graduation-cap"></span>Tutoriels</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>"><span class="fa-solid fa-toolbox"></span>ToolBox</a></li>
                                 <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr"><span class="fa-solid fa-photo-film"></span>Medias</li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news"><span class="fa-regular fa-newspaper"></span>Actualités</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news"><span class="fa-regular fa-newspaper"></span>Journaux</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts"><span class="fa-solid fa-chart-line"></span>Charts</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube"><span class="fa-brands fa-youtube"></span>YouTubers</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter"><span class="fa-brands fa-twitter"></span>Twittos</a></li>

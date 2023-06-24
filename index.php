@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-23
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder
@@ -116,14 +116,15 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...</em>
    |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...</em>
    |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
-   |    |___ <a href="pages/web3humans.php">Humains</a>  : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
+   |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
    |
    |__ <strong>Ressources</strong>
    |    |
+   |    |___ <a href="pages/web3news.php">News</a>       : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
    |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em>réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...</em>
    |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em>liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
    |    |___ <a href="pages/web3medias.php">Medias</a>     : <em>médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...</em>
-   |            |___ <a href="pages/web3medias.php#news">Actualités</a>
+   |            |___ <a href="pages/web3medias.php#news">Journaux</a>
    |            |___ <a href="pages/web3medias.php#charts">Charts</a>
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
    |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>

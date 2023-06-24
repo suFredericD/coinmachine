@@ -1,0 +1,115 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3news.css
+// Role         : web3news.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-24
+// Last update  : 2021-06-24
+// ===================================================================================================== */
+
+/* *** *** *** CONTAINERS *** *** *** */
+#web3-news-main-content {
+    margin: 10px auto;
+    padding: 0;
+}
+.news-container {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px inset #06c883;
+    box-shadow: inset 0 0 10px #06c883;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+
+/* *** *** *** TITRAGES *** *** *** */
+#web3-news-label {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#web3-news-label {
+    margin: 10px auto;
+    font-family: "Audiowide";
+    font-size: 2.5rem;
+    text-align: right;
+}
+.news-title {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-family: "Audiowide";
+    font-size: 1.5em;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.img-news {
+    align-self: center;
+}
+.news-date, .news-source, .news-text, .news-link {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.news-date {
+    margin: 0 auto;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1.2em;
+    text-align: left;
+}
+.news-source {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.2em;
+}
+.news-text {
+    opacity: 0.9;
+    font-family: "Lekton";
+    font-size: 1em;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 30px;
+}
+.news-link {
+    text-decoration: none;
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+.news-link:hover {
+    text-decoration: underline;
+    background-image: linear-gradient(45deg, #06acc8, #8306c8);
+}
+.news-link span {
+    margin-right: 5px;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+ 
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}

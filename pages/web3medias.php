@@ -34,7 +34,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 <nav id="medias-mini-menu" class="col-2">
                     <h4><a href="#web3-medias-label">Medias web3</a></h4>
                     <ul>
-                        <li><a href="#news">Actualités</a></li>
+                        <li><a href="#news">Journaux</a></li>
                         <li><a href="#charts">Charts</a></li>
                         <li><a href="#youtube">YouTubers</a></li>
                         <li><a href="#twitter">Twittos</a></li>
@@ -44,7 +44,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 <section id="medias-main-content" class="offset-2 col-10">
                     <div id="web3-medias-news" class="row">
                         <section class="col-12">
-                            <h2><a id="news">Actualités</a></h2>
+                            <h2><a id="news">Journaux</a></h2>
 <?php   for($i = 0; $i < count($tabNewsMediasInfos); $i++){
             $strLogo = "../media/logos/" . $tabNewsMediasInfos[$i]['LogoFile'];
 ?>

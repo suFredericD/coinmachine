@@ -5,7 +5,7 @@
 // Role         : web3wallets.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-17
+// Last update  : 2023-06-24
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -24,6 +24,7 @@
     padding: 10px;
     border: 1px outset #06c883;
     box-shadow: 3px 3px 3px #005c17;
+    transform: skew(-5deg,0);
 }
 .wallet-compatibilities {
     padding: 5px;

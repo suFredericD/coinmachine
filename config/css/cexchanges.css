@@ -5,7 +5,7 @@
 // Role         : cexchanges.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-17
+// Last update  : 2023-06-24
 // ===================================================================================================== */
 :root {
     --twitter: #1da1f2;
@@ -28,6 +28,11 @@
 #cex1, #cex2, #cex3, #cex4, #cex5, #cex6 {
     margin: 10px auto;
     padding: 5px;
+    transform: skew(-10deg,0);
+}
+#cex1 .row, #cex2 .row, #cex3 .row,
+#cex4 .row, #cex5 .row, #cex6 .row {
+    transform: skew(0,0);
 }
 #cex1 {
     border: 2px inset var(--binance);
