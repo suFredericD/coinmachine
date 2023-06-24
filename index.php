@@ -117,6 +117,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...</em>
    |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
    |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
+   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire des mots et expressions à connaître, pour apprendre, pour rappel...</em>
    |
    |__ <strong>Ressources</strong>
    |    |

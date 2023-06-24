@@ -1,0 +1,154 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3glossary.css
+// Role         : web3glossary.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-24
+// Last update  : 2021-06-24
+// ===================================================================================================== */
+
+/* *** *** *** CONTAINERS *** *** *** */
+#web3-glossary-main-content {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 100px;
+}
+.glossary-item {
+    margin: 10px auto;
+    padding: 10px;
+    transform: skew(-10deg);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    border: 1px inset #06c883;
+    box-shadow: inset 0 0 15px #06c883;
+}
+/* *** *** *** NAVIGATION *** *** *** */
+#glossary-mini-nav {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    font-family: "Frijole";
+    font-size: 1.5em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#glossary-mini-nav .row a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#glossary-mini-nav .row a:hover {
+    color: #8306c8;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#web3-glossary-label {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#web3-glossary-label span{
+    margin-left: 10px;
+}
+#web3-glossary-label {
+    margin: 10px auto;
+    font-family: "Audiowide";
+    font-size: 2.5rem;
+    text-align: right;
+    letter-spacing: 0.15em;
+}
+.glossary-item-title {
+    margin: 5px auto;
+    padding-left: 30px;
+    font-family: "Audiowide", cursive;
+    font-size: 1.75rem;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+.glossary-item-title span {
+    font-size: 0.5em;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+.glossary-item-text {
+    margin: 2px auto;
+    padding: 0 20px;
+    font-family: "Lekton", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 0.999em;
+}
+.glossary-item-text a {
+    opacity: 0.9;
+    font-family: "Aldrich", monospace;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.glossary-item-text a:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+}
+.glossary-item-text a span {
+    font-size: 0.9em;
+    color: transparent;
+    margin-right: 10px;
+}
+.glossary-item-illustration {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 30px;
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: right;
+}
+.glossary-item-illustration::before {
+    content: "\"";
+}
+.glossary-item-illustration::after {
+    content: "\"";
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+ 
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
