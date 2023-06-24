@@ -5,7 +5,7 @@
 // Role         : web3tutorials.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-13
-// Last update  : 2023-06-14
+// Last update  : 2023-06-24
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -106,11 +106,14 @@
     margin-right: 50px;
     margin-bottom: 10px;
     text-align: right;
-    font-size: 2em;
+    font-size: 2.5em;
     font-variant: small-caps;
     font-weight: 700;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.1em;
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+#tutorials-main-label span {
+    margin-left: 10px;
 }
 #tuto-list section h2 {
     font-size: 1.8em;

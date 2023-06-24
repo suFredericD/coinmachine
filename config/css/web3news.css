@@ -29,6 +29,9 @@
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
+#web3-news-label span{
+    margin-left: 10px;
+}
 #web3-news-label {
     margin: 10px auto;
     font-family: "Audiowide";

@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-19
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -51,7 +51,7 @@ creatMainMenu($fileName);                               // Create the main menu
         <section id="humans-container" class="col-11">
             <div class="row">
                 <div class="col-12">
-                    <h1 id="humans-main-title">Web3 : humains influents</h1>
+                    <h1 id="humans-main-title">Web3 : humains influents<span class="fa-solid fa-people-group"></span></h1>
                 </div>
 <!-- --- --- --- MINI NAVIGATION MENU --- --- --- -->
                 <nav id="humans-mini-nav" class="col-2">

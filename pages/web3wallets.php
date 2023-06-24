@@ -6,7 +6,7 @@
 // Role         : web3wallets presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-17
+// Last update  : 2023-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -27,7 +27,7 @@ createPageheader($fileName);                            // Create the page heade
 creatMainMenu($fileName);                               // Create the main menu
 ?>
         
-        <label id ="wallets-main-label" for="wallets-main" class="col-10">Wallets dashboard</label>
+        <label id ="wallets-main-label" for="wallets-main" class="col-10">Wallets dashboard<span class="fa-solid fa-wallet"></span></label>
         <nav id="wallet-mini-menu" class="col-3">
             <ul class="row">
                 <li id="wmm-title" class="col-12" title="Back to top"><a href="#wallets-main-label">Wallets</a></li>

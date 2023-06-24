@@ -6,7 +6,7 @@
 // Role         : selfmade tutorials about blockchains and web3
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-14
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -25,7 +25,7 @@ createHTMLheader($fileName, $siteInformations);         // Create the HTML heade
 createPageheader($fileName);                            // Create the page header
 creatMainMenu($fileName);                               // Create the main menu
 ?>
-        <label id ="tutorials-main-label" for="tutorials-main" class="col-10">Tutoriels dashboard</label>
+        <label id ="tutorials-main-label" for="tutorials-main" class="col-10">Tutoriels dashboard<span class="fa-solid fa-graduation-cap"></span></label>
         <section id ="tutorials-main" class="col-11">
             <div class="row">
 <!-- Little menu -->

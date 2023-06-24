@@ -6,7 +6,7 @@
 // Role         : known and used blockchains informations
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-17
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -30,7 +30,7 @@ createPageheader($fileName);                            // Create the page heade
 creatMainMenu($fileName);                               // Create the main menu
 ?>
 
-        <label id ="bc-dashboard-label" for="bc-dashboard" class="col-10">Blockchains knowledge base</label>
+        <label id ="bc-dashboard-label" for="bc-dashboard" class="col-10">Blockchains knowledges<span class="fa-solid fa-server"></span></label>
         <section id ="bc-dashboard" class="col-11">
             <div class="row">
 <!-- Little menu -->

@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-14
+// Last update  : 2021-06-24
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -178,7 +178,7 @@
     color: #141bff;
 }
 /* *** *** *** TITRAGES *** *** *** */
-#toobox-main-label{
+#toobox-main-label {
     text-align: right;
     margin: 0;
     padding: 0;
@@ -187,12 +187,15 @@
     font-size: 2.5em;
     font-style: italic;
     font-weight: 700;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.15em;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+#toobox-main-label span{
+    margin-left: 10px;
 }
 .toolbox-item-container .row h3,
 .toolbox-item-container .row h4 {

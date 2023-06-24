@@ -26,7 +26,7 @@ createPageheader($fileName);                            // Create the page heade
 creatMainMenu($fileName);                               // Create the main menu
 ?>
 
-        <label id ="web3-news-label" for="web3-news" class="col-10">Breaking News</label>
+        <label id ="web3-news-label" for="web3-news" class="col-10">Breaking News<span class="fa-solid fa-radio"></span></label>
         <section id ="web3-news" class="col-11">
             <div class="row">
 <!-- Main content -->

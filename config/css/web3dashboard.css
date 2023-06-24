@@ -5,7 +5,7 @@
 // Role         : web3medias.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-17
+// Last update  : 2021-06-24
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -109,7 +109,9 @@
     font-size: 2.5rem;
     text-align: right;
 }
-
+#bc-dashboard-label span {
+    margin-left: 10px;
+}
 #bc-main-content article h3 {
     margin-top: 10px;
     padding-left: 20px;

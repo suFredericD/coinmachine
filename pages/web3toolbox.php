@@ -6,7 +6,7 @@
 // Role         : known and used blockchains tools
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-14
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -27,7 +27,7 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
 
 
-        <label id ="toobox-main-label" for="toobox-main" class="col-10">Useful ToolBox</label>
+        <label id ="toobox-main-label" for="toobox-main" class="col-10">Useful ToolBox<span class="fa-solid fa-toolbox"></span></label>
         <section id ="toobox-main" class="col-11">
             <div class="row">
 <!-- Little menu -->

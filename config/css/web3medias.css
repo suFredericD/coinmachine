@@ -5,7 +5,7 @@
 // Role         : web3medias.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-12
+// Last update  : 2021-06-24
 // ===================================================================================================== */
 /* 
     green : #60e660
@@ -110,11 +110,19 @@
     margin: 10px auto;
     font-family: "Frijole";
     font-size: 2.5rem;
+    text-align: right;
+    letter-spacing: 0.15em;
+}
+#web3-medias-label span {
+    margin-left: 10px;
 }
 #medias-main-content div section h2 {
     margin-top: 10px;
     font-family: "Frijole";
     font-size: 2rem;
+}
+#medias-main-content div section h2 span{
+    margin-left: 10px;
 }
 #medias-main-content article h3, #web3-medias-youtube article h3, 
 #web3-medias-charts article h3, #web3-medias-twitter article h3 {

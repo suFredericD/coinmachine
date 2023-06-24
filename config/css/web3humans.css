@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-19
+// Last update  : 2021-06-24
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -60,7 +60,7 @@ article {
 }
 #humans-main-title {
     font-family: "Audiowide", sans-serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 600;
     letter-spacing: 0.2em;
     padding-bottom: 10px;
@@ -71,6 +71,9 @@ article {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#humans-main-title span {
+    margin-left: 10px;
 }
 article h2 {
     font-family: "Audiowide", sans-serif;

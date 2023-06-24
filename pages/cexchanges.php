@@ -6,7 +6,7 @@
 // Role         : CeXchanges presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-17
+// Last update  : 2023-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -26,7 +26,7 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
         <section id="cex-master" class="col-11">
             <div class="row">
-                <h1 class="col-12">CeXchanges dashboard</h1>
+                <h1 class="col-12">CeXchanges dashboard<span class="fa-solid fa-chart-line"></span></h1>
 <?php   for($i = 0; $i < count($tabCexchanges); $i++){
             $strLogo = "../media/logos/" . $tabCexchanges[$i]['Logo'];
 ?>

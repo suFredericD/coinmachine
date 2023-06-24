@@ -6,7 +6,7 @@
 // Role         : known and used blockchains medias informations
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-15
+// Last update  : 2021-06-24
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -27,8 +27,8 @@ createHTMLheader($fileName, $siteInformations);         // Create the HTML heade
 createPageheader($fileName);                            // Create the page header
 creatMainMenu($fileName);                               // Create the main menu
 ?>
-        <label id ="web3-medias-label" for="web3-medias">Medias web3</label>
-        <section id ="web3-medias" class="col-11">
+        <label id="web3-medias-label" for="web3-medias" class="col-11">Medias web3<span class="fa-solid fa-photo-film"></span></label>
+        <section id="web3-medias" class="col-11">
             <div class="row">
 <!-- Little menu -->
                 <nav id="medias-mini-menu" class="col-2">
@@ -44,7 +44,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 <section id="medias-main-content" class="offset-2 col-10">
                     <div id="web3-medias-news" class="row">
                         <section class="col-12">
-                            <h2><a id="news">Journaux</a></h2>
+                            <h2><a id="news">Journaux<span class="fa-regular fa-newspaper"></span></a></h2>
 <?php   for($i = 0; $i < count($tabNewsMediasInfos); $i++){
             $strLogo = "../media/logos/" . $tabNewsMediasInfos[$i]['LogoFile'];
 ?>
@@ -63,7 +63,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                     <div id="web3-medias-charts" class="row">
                         <section id="#charts" class="col-12">
-                            <h2><a id="charts">Charts</a></h2>
+                            <h2><a id="charts">Charts<span class="fa-solid fa-chart-line"></span></a></h2>
 <?php   for($i = 0; $i < count($tabChartsMediasInfos); $i++){
             $strLogo = "../media/logos/" . $tabChartsMediasInfos[$i]['LogoFile'];
 ?>
@@ -82,7 +82,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                     <div id="web3-medias-youtube" class="row">
                         <section id="#youtube" class="col-12">
-                            <h2><a id="youtube">YouTubers</a></h2>
+                            <h2><a id="youtube">YouTubers<span class="fa-brands fa-youtube"></span></a></h2>
 <?php   for($i = 0; $i < count($tabYoutubeChannelsInfos); $i++){
             $strLogo = "../media/logos/" . $tabYoutubeChannelsInfos[$i]['LogoFile'];
 ?>
@@ -101,7 +101,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                     <div id="web3-medias-twitter" class="row">
                         <section id="#twitter" class="col-12">
-                            <h2><a id="twitter">Twittos</a></h2>
+                            <h2><a id="twitter">Twittos<span class="fa-brands fa-twitter"></span></a></h2>
 <?php   for($i = 0; $i < count($tabTwitterInfos); $i++){
             $strLogo = "../media/logos/" . $tabTwitterInfos[$i]['LogoFile'];
 ?>

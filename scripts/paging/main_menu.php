@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-06-18
+// Last update  : 2023-06-24
 // =====================================================================================================
 function creatMainMenu($fileName){
     if($fileName == '/index.php'){
@@ -26,6 +26,7 @@ function creatMainMenu($fileName){
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strCexchanges = $strPagesPath . "cexchanges.php";
     $strHumans = $strPagesPath . "web3humans.php";
+    $strGlossary = $strPagesPath . "web3glossary.php";
     $strWeb3News = $strPagesPath . "web3news.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
@@ -63,7 +64,7 @@ function creatMainMenu($fileName){
                                 <li><a class="nav-link" href="<?php echo $strDisclaimer;?>"><span class="fa-solid fa-triangle-exclamation"></span>Disclaimer</a></li>
                             </ul>
                         </li>
-<!-- Blockchain section -->
+<!-- -- -- DATA SECTION -- -- -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Datas</a>
                             <ul class="dropdown-menu ddm-user">
@@ -73,6 +74,8 @@ function creatMainMenu($fileName){
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>"><span class="fa-solid fa-chart-line"></span>CeXchanges</a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strHumans;?>"><span class="fa-solid fa-people-group"></span>Humains</a></li>
+                                <li><hr class="dropdown-divider ddm-hr"></li>
+                                <li><a class="dropdown-item" href="<?php echo $strGlossary;?>"><span class="fa-solid fa-book-bookmark"></span>Glossaire</a></li>
                             </ul>
                         </li>
 <!-- Ressources section -->
