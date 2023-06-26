@@ -5,7 +5,7 @@
 // Role         : web3glossary.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-24
+// Last update  : 2021-06-26
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -55,6 +55,22 @@
 }
 #glossary-mini-nav .row a:hover {
     color: #8306c8;
+}
+#link-to-top {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    animation: link-to-top 2s infinite;
+}
+#link-to-top:hover {
+    background-image: linear-gradient(45deg, #8306c8, #06acc8);
+    animation: none;
+    cursor: pointer;
 }
 /* *** *** *** TITRAGES *** *** *** */
 #web3-glossary-label {
@@ -129,7 +145,17 @@
     content: "\"";
 }
 /* *** *** *** ANIMATIONS *** *** *** */
-
+@keyframes link-to-top {
+    0% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+    50% {
+        background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+}
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
  

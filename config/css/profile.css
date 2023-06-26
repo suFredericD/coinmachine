@@ -3,6 +3,7 @@
         Context     : coder without experience in corporations aiming to work in web3.0
         Author      : CoinMachine
         Created     : 2023-28-05
+        Modified    : 2023-26-06
 */
 body {
     background: black;
@@ -202,13 +203,27 @@ body {
     margin: 2px;
     padding: 10px;
     border: 1px dotted lightgreen;
-    text-align: left;
+    text-align: center;
     animation: matrix-border-animation 4s;
     animation-iteration-count: 2;
     animation-delay: 1s;
 }
+#master-founderz {
+    width: 66%;
+    margin: 2px auto;
+    align-self: center;
+}
+
+#master-founderz:hover {
+    border: 1px inset lightgreen;
+}
+#master-founderz-link {
+    margin: 0;
+    padding: 0;
+}
 .upg-article p, .upg-article h3 {
     margin: 0 auto;
+    text-align: left;
 }
 .upg-article-credits {
     font-family: Aldrich, sans-serif;
@@ -222,6 +237,7 @@ body {
     margin-bottom: 4px;
     font-family: Aldrich, sans-serif;
     color: darkgray;
+    text-align: left;
 }
 .text-offset {
     font-family: Ubuntu, sans-serif;
@@ -244,6 +260,7 @@ body {
     font-size: 12px;
     color: lightgray;
     column-count: 1;
+    text-align: left;
 }
 .skills-infos {
     font-family: Ubuntu, sans-serif;
@@ -251,6 +268,7 @@ body {
     color: lightgray;
     column-count: 2;
     column-gap: 20px;
+    text-align: left;
 }
 .skills-icon {
     max-width: 66%;
@@ -272,7 +290,6 @@ body {
     width: 75%;
     animation: matrix-border-animation 4s;
     animation-iteration-count: 2;
-    
 }
 .known-activities-section h2 {
     font-family: Black Ops One, cursive;

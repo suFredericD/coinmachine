@@ -6,7 +6,7 @@
 // Role         : epxlantions about topics and expressions about web3
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-24
+// Last update  : 2021-06-26
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -52,6 +52,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <!-- --- --- --- MINI NAVIGATION MENU --- --- --- -->
                 <nav id="glossary-mini-nav" class="col-2">
                     <div class="row">
+                        <a id="link-to-top" href="web3glossary.php#site-title" class="col-12">Back to top</a>
 <?php   for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
             if(isset($tabAlphaGlossary[$i])){
                 $strMiniNavTitle = $tabAlphaGlossary[$i];
