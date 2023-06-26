@@ -87,7 +87,7 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
                         <div id="<?php echo $strRefLink;?>" class="glossary-item col-12">
                             <div class="row">
-                                <h2 class="glossary-item-title col-12"><?php echo $strTitle;?></h2>
+                                <h2 id="<?php echo $glossary['Expression'];?>" class="glossary-item-title col-12"><?php echo $strTitle;?></h2>
 <?php       $tabText = explode("<br>", $glossary['Text']);
             foreach($tabText as $text) {
 ?>
