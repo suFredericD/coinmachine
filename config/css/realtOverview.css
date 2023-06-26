@@ -1,0 +1,284 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : realtOverview.css
+// Role         : realtOverview.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-06-26
+// Last update  : 2021-06-26
+// ===================================================================================================== */
+:root {
+    --main-bg-color: #888;
+    --main-realt-blue: #294378;
+    --main-realt-blue-light: #156cab;
+    --main-realt-white: #BBB;
+    --main-realt-black: #333;
+    --main-realt-orange: #af9500;
+}
+/* *** *** *** CONTAINERS *** *** *** */
+#realt-main-section, #realt-whatis, #realt-advantages {
+    margin: 10px auto;
+    padding: 0;
+    background-color: var(--main-realt-white)
+}
+#realt-main-section {
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: 8px 8px 10px var(--main-realt-blue-light);
+}
+#realt-introbyrealt {
+    margin-top: 20px;
+    padding-right: 20px;
+}
+#realt-intro-info-container {
+    display: none;
+    margin-top: 10px;
+}
+.realt-intro-info-details {
+    opacity: 0.95;
+    display: none;
+    margin-bottom: 6px;
+    padding: 0;
+}
+#realt-tutorial-content {
+    display: none;
+    margin: 10px auto;
+}
+/* *** *** *** MINI NAVIGATION MENU *** *** *** */
+#tuto-toggle {
+    margin-top: 10px;
+    color: var(--main-realt-blue-light);
+    text-shadow: var(--main-realt-black);
+    font-size: 1.1rem;
+    text-align: center;
+}
+#tuto-toggle:hover {
+    cursor: pointer;
+    color: var(--main-realt-black);
+    text-shadow: var(--main-realt-blue-light);
+}
+#tuto-toggle span {
+    margin: 0 10px;
+}
+/* *** *** *** TITRAGES *** *** *** */
+.realt-name {
+    font-family: "Helvetica";
+    
+    font-weight: 900;
+}
+#realt-label, .realt-intro-info-title,
+.realt-intro-info-title span, #realt-introbyrealt-article h2,
+#realt-whatis-article h2, #realt-advantages h2,
+#realt-tutorial-article {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#realt-label {
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.realt-intro-info-title,
+.realt-intro-info-title span, #realt-introbyrealt-article h2,
+#realt-whatis-article h2, #realt-advantages h2,
+#realt-tutorial-article {
+    background-image: linear-gradient(45deg, var(--main-realt-black), var(--main-realt-blue));
+}
+#realt-label span{
+    margin-left: 10px;
+}
+#realt-label {
+    margin: 10px auto;
+    font-family: "Audiowide";
+    font-size: 2.5rem;
+    text-align: right;
+}
+#realt-introbyrealt-article h2,
+#realt-whatis-article h2, #realt-advantages h2,
+#realt-tutorial-article {
+    margin: 5px auto;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-variant: small-caps;
+    text-align: right;
+}
+#realt-introbyrealt-article h2 a {
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-variant: normal;
+    font-style: italic;
+    color: var(--main-realt-black);
+    text-decoration: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.realt-intro-info-title {
+    margin: 2px auto;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    text-align: right;
+}
+.realt-intro-info-title:hover {
+    background-image: linear-gradient(45deg, var(--main-realt-blue), var(--main-realt-orange));
+    text-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+}
+.realt-intro-info-title span {
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+#realt-introbyrealt-intro {
+    margin: 10px auto;
+    font-family: "Helvetica";
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+    color: var(--main-realt-black);
+}
+#realt-intro-know-more, #realt-intro-know-more span {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-realt-black), var(--main-realt-blue));
+}
+#realt-intro-know-more {
+    margin: 10px auto;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    text-align: right;
+    animation: color-blink 3s infinite;
+}
+#realt-intro-know-more:hover {
+    background-image: linear-gradient(45deg, var(--main-realt-blue), var(--main-realt-orange));
+    text-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+    animation: none;
+}
+#realt-intro-know-more span {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.75em;
+}
+.realt-intro-info-text, .realt-whatis-text, .realt-advantages-text {
+    margin: 2px auto;
+    padding-right: 20px;
+    font-family: "Helvetica";
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: justify;
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    text-indent: 30px;
+    color: #000;
+    line-height: 0.99rem;
+    
+}
+.realt-intro-info-text a,
+.realt-whatis-text a {
+    color: var(--main-realt-blue-light);
+    font-style: italic;
+}
+.realt-intro-info-text a:hover,
+.realt-whatis-text a:hover {
+    color: var(--main-realt-blue);
+    text-shadow: 1px 1px 1px #000;
+}
+.realt-intro-img{
+    align-self: center;
+    vertical-align: middle;
+}
+#realt-advantages-article img,
+#realt-tutorial-article img{
+    box-shadow: 2px 2px 4px var(--main-realt-blue-light);
+}
+.img-tuto {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    align-self: center;
+}
+/* *** *** *** TUTORIAL *** *** *** */
+.rta-intro {
+    margin: 5px auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "Helvetica";
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-variant: normal;
+    text-align: justify;
+    color: #000;
+}
+.rtc-steps-list, .rtc-steps-list li {
+    margin: 5px auto;
+}
+.rtc-steps, .rtc-steps h3,
+.rtc-steps a, .rtc-steps p {
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-realt-black), var(--main-realt-blue));
+}
+.rtc-steps h3 {
+
+}
+.rtc-steps a, .rtc-steps p {
+    font-variant: normal;
+}
+.rtc-steps a {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+.rtc-steps a:hover {
+    background-image: linear-gradient(45deg, var(--main-realt-blue), var(--main-realt-black));
+    text-shadow: 1px 1px 1px #000;
+}
+.rtc-steps a span, .rtc-steps p a span {
+    margin-left: 5px;
+    font-size: 1em;
+}
+.rtc-steps p a span {
+    font-size: 0.9rem;
+}
+.rtc-steps p {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.9rem;
+}
+
+.kyc-list {
+    margin-bottom: 10px;
+    font-variant: normal;
+    font-size: 0.9rem;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+ 
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}
