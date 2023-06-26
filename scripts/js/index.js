@@ -55,9 +55,9 @@ function countTime(element){
 // Function to store animations timers in an array
 function timer(){
     tabTimers.push(750);
-    tabTimers.push(countTime(siteTitle) + countTime(siteIntroParagraphs[0]));
-    tabTimers.push(tabTimers[1] + countTime(siteIntroParagraphs[1]));
-    tabTimers.push(tabTimers[2] + countTime(siteIntroParagraphs[2]));
+    tabTimers.push(countTime(siteTitle) + countTime(siteIntroParagraphs[0]) - 1250);
+    tabTimers.push(tabTimers[1] + countTime(siteIntroParagraphs[1]) - 1750);
+    tabTimers.push(tabTimers[2] + countTime(siteIntroParagraphs[2]) - 1750);
     tabTimers.push(tabTimers[3] + 5000);
     tabTimers.push(tabTimers[4] + 1000);
     tabTimers.push(tabTimers[5] + 6000);
@@ -87,13 +87,13 @@ setTimeout(function(){
     typewritter(siteTitle);
 }, tabTimers[0]);
 setTimeout(function(){
-    typewritter(siteIntroParagraphs[0]);
+    siteIntroParagraphs[0].style.opacity = 0.95;
 }, tabTimers[1]);
 setTimeout(function(){
-    typewritter(siteIntroParagraphs[1]);
+    siteIntroParagraphs[1].style.opacity = 0.95;
 }, tabTimers[2]);
 setTimeout(function(){
-    typewritter(siteIntroParagraphs[2]);
+    siteIntroParagraphs[2].style.opacity = 0.95;
 }, tabTimers[3]);
 setTimeout(function(){
     disclaimer.style.display = "none";

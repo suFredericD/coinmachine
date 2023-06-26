@@ -62,7 +62,7 @@ creatMainMenu($fileName);                               // Create the main menu
                                     Mon expertise s'étend à la gestion des wallets et des transactions web3, aux concepts de DAO et de gouvernance, ainsi qu'à l'évaluation des tokenomics.
                                 </p>
                                 <p class="intro-cm-shorttext col-12">
-                                    Possèdant une compréhension horizontale des enjeux politiques, économiques et technologiques de la décentralisation, ainsi qu'une connaissance approfondie des domaines de la blockchain, de la DeFi, des NFTs, du GameFi et des Métavers.
+                                    J'ai développé une compréhension horizontale des enjeux politiques, économiques et technologiques de la décentralisation, ainsi qu'une connaissance approfondie des domaines de la blockchain, de la DeFi, des NFTs, du GameFi et des Métavers.
                                 </p>
                             </div>
                         </div>
