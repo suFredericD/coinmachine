@@ -26,19 +26,24 @@ $tabAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
 $strPreviousLetter = "";
 $tabGlossary = getGlossaryAlphaList();                  // Get the alphabetical glossary from the database
 $tabAlphaGlossary = [];
+$tabAlphaGlossaryCount = [];
 for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
     $letter = $tabMinNavAlphabet[$i];
+    $intWordsCount = 0;
     foreach($tabGlossary as $glossary) {
         $tabLastNameLetters = str_split($glossary['Expression']);
             if($tabLastNameLetters[0] == $letter) {
                 if(isset($tabAlphaGlossary[$i])){
                     $tabAlphaGlossary[$i] .= ", " . $glossary['Expression'];
+                    $intWordsCount++;
                 } else {
                     $tabAlphaGlossary[$i] = $glossary['Expression'];
+                    $intWordsCount++;
                 }
                 
             }
     }
+    $tabAlphaGlossaryCount[$i] = $intWordsCount;
 }
 // Page building main functions
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
@@ -59,8 +64,9 @@ creatMainMenu($fileName);                               // Create the main menu
             } else {
                 $strMiniNavTitle = "Aucune expression répertoriée pour cette lettre";
             }
+            $strDisplayLink = $tabMinNavAlphabet[$i] . " <span class=\"words-count\">(" . $tabAlphaGlossaryCount[$i] . ")</span>";
 ?>
-                        <a class="col-6" href="#<?php echo $tabMinNavAlphabet[$i];?>" title="<?php echo $strMiniNavTitle;?>"><?php echo $tabMinNavAlphabet[$i];?></a>
+                        <a class="col-6" href="#<?php echo $tabMinNavAlphabet[$i];?>" title="<?php echo $strMiniNavTitle;?>"><?php echo $strDisplayLink;?></a>
 <?php   } ?>
                     </div>
                 </nav>

@@ -56,6 +56,10 @@
 #glossary-mini-nav .row a:hover {
     color: #8306c8;
 }
+.words-count {
+    font-family: "Lekton";
+    font-size: 0.9rem;
+}
 #link-to-top {
     margin: 0;
     padding: 0;
