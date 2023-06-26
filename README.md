@@ -17,34 +17,40 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 ## Main Navigation
 
 ### Profil
-- [Profile FR](profile_fr_link)
-- [Profile EN](profile_en_link)
 
-- [Contacts](contacts_link)
-- [Disclaimer](disclaimer_link)
+- [Profile FR]
+- [Profile EN]
+
+- [Contacts]
+- [Disclaimer]
+
 - ---
 ### Datas
-- [Blockchains](blockchains_link)
-- [Wallets](wallets_link)
 
-- [CeXchanges](cexchanges_link)
-- [Humains](humans_link)
+- [Blockchains]
+- [Wallets]
 
-- [Glossaire](glossary_link)
+- [CeXchanges]
+- [Humains]
+
+- [Glossaire]
 <!-- Protocols -->
 - ---
 ### Ressources
-- [News](news_link)
 
-- [Tutoriels](tutorials_link)
-- [ToolBox](toolbox_link)
+- [News]
 
-- [Medias](medias_link)
-  - [Actualités](news_link)
-  - [Charts](charts_link)
-  - [YouTubers](youtubers_link)
-  - [Twittos](twittos_link)
+- [Tutoriels]
+- [ToolBox]
+
+- [Medias]
+  - [Actualités]
+  - [Charts]
+  - [YouTubers]
+  - [Twittos]
+
 - ---
 ## Projets
 
+- [RealT]
 

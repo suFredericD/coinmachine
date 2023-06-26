@@ -130,7 +130,8 @@ creatMainMenu($fileName);                               // Create the main menu
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
    |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>
    |
-   |__ <strong>Projects</strong>
+   |__ <strong>Projets</strong>
+        |___ <a href="">RealT</a>       : <em>une plateforme incontournable d'investissement immobilier tokenisé...</em>
                 </pre>
 <!-- --- --- END of content --- --- -->
             </div>
