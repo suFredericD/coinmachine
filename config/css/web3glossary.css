@@ -5,7 +5,7 @@
 // Role         : web3glossary.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-26
+// Last update  : 2021-06-27
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -19,7 +19,6 @@
 .glossary-item {
     margin: 10px auto;
     padding: 10px;
-    transform: skew(-10deg);
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;

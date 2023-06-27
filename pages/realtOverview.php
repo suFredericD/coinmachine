@@ -6,7 +6,7 @@
 // Role         : known fresh informations about Realt platform
 // Author       : CoinMachine
 // Creation     : 2023-06-26
-// Last update  : 2021-06-26
+// Last update  : 2021-06-27
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -31,14 +31,13 @@ creatMainMenu($fileName);                               // Create the main menu
 <!-- What is Realt ? -->
                 <section id="realt-whatis" class="offset-1 col-11">
                     <article id="realt-whatis-article" class="row">
-                        <div class="realt-intro-img col-4"><img class="img-fluid" src="../media/logos/realT.png" alt="RealT logo"></div>
+                        <div class="realt-intro-img col-4"><img class="img-fluid" src="../media/thumbnails/realt/RealT-tokenisation-immobiliere.png" alt="RealT logo"></div>
                         <div class="col-8">
                             <div class="row">
                                 <h2 class="col-12">Qu'est-ce que <span class="realt-name">RealT ?</span></h2>
                                 <p class="realt-whatis-text col-12"><span class="realt-name">RealT</span> est une plateforme qui offre des investissements simplifiés dans l'immobilier. Leur mission est de démocratiser l'accès aux opportunités dans l'investissement immobilier, trouvées par leur équipe d'experts dans ce domaine.</p>
                                 <p class="realt-whatis-text col-12">La propriété de ces biens immobiliers est représentée par des tokens (jetons numériques) hébergés sur la blockchain Ethereum. <span class="realt-name">RealT</span> remplace l'acte papier par des tokens qui permettent un nouveau mécanisme de détention des biens, basé sur la blockchain Ethereum.</p>
                                 <p class="realt-whatis-text col-12">Vendus environ $50, les tokens émis permettent de rendre accessible au plus grand nombre l'investissemnt immobilier, le prorata des loyers de la propriété étant versé automatiquement à chaque détenteur de jetons tous les lundis.</p>
-                                <p class="realt-whatis-text col-12">La numérisation de l'acte papier en token offre des avantages uniques en matière de propriété immobilière, qui sont explorés dans d'autres domaines du <a href="https://realt.co/education/" title="Consulter le wiki de RealT (en anglais)..." target="_blank">Wiki officiel <span class="realt-name">RealT</span></a>.</p>
                             </div>
                         </div>
                     </article>
@@ -54,22 +53,56 @@ creatMainMenu($fileName);                               // Create the main menu
                                 <p class="realt-advantages-text col-12">En transformant l'immobilier en jetons numériques, l'immobilier est accessible à un nombre beaucoup plus grand d'acheteurs potentiels, à la fois en raison du fractionnement des jetons et de la portée potentielle des marchés basés sur Internet. Les plus grands acteurs du marché que les jetons numériques peuvent atteindre augmentent la liquidité de l'immobilier. De plus, les applications financières sur Ethereum (et xDai) offrent des solutions pour accéder à la liquidité pour des actifs tokenisés de valeur.</p>
                             </div>
                         </div>
-                        <div class="img-tuto col-4"><img class="img-fluid" src="../media/thumbnails/realT/screencapture-realt-001.png" alt="RealT logo"></div>
+                        <div class="col-4"><img class="img-fluid" src="../media/thumbnails/realT/screencapture-realt-001.png" alt="RealT logo"></div>
+                        <div class="rta-article col-6">
+                            <div class="row">
+                                <div class="img-tuto offset-3 col-1"><img class="img-fluid" src="../media/icons/unique-coins.png" alt="unique coins icon" /></div>
+                                <h4 class="rta-subtitle col-8">Tokens uniques</h4>
+                                <p class="rta-details col-12">La propriété de chaque bien immobilier est répartie entre un nombre limité de jetons représentatifs.</p>
+                                <p class="rta-details col-12">En fonction de la part de jetons détenue, les propriétaires peuvent percevoir des revenus locatifs et participer aux décisions relatives à la propriété.</p>
+                            </div>
+                        </div>
+                        <div class="rta-article col-6">
+                            <div class="row">
+                                <div class="img-tuto offset-3 col-1"><img class="img-fluid" src="../media/icons/managed.png" alt="managed icon" /></div>
+                                <h4 class="rta-subtitle col-8">Gestion immobilière</h4>
+                                <p class="rta-details col-12">Chaque bien immobilier de <span class="realt-name">RealT</span> est géré par une société de gestion immobilière qui s'occupe du bien au nom des propriétaires de RealToken.</p>
+                                <p class="rta-details col-12">La société de gestion immobilière trouve des locataires, perçoit les loyers et gère les réparations, de sorte que le groupe diversifié de propriétaires de RealToken n'ait pas à le faire.</p>
+                            </div>
+                        </div>
+                        <div class="rta-article col-6">
+                            <div class="row">
+                                <div class="img-tuto offset-2 col-1"><img class="img-fluid" src="../media/icons/llc-owned.png" alt="managed icon" /></div>
+                                <h4 class="rta-subtitle col-9">Propriété détenue par une société</h4>
+                                <p class="rta-details col-12">L'immobilier ne peut pas être directement tokenisé, mais les entités juridiques le peuvent.</p>
+                                <p class="rta-details col-12">Chaque bien immobilier est détenu par une société (soit une société par actions, soit une société à responsabilité limitée).</p>
+                                <p class="rta-details col-12">Chaque société est tokenisée sous la forme d'un ensemble unique de RealTokens et est mise en vente.</p>
+                            </div>
+                        </div>
+                        <div class="rta-article col-6">
+                            <div class="row">
+                                <div class="img-tuto offset-2 col-1"><img class="img-fluid" src="../media/icons/payments.png" alt="managed icon" /></div>
+                                <h4 class="rta-subtitle col-9">Paiements des loyers hebdomadaires</h4>
+                                <p class="rta-details col-12">Grâce aux blockchains, nous n'avons plus besoin d'attendre 30 jours pour recevoir un virement bancaire.</p>
+                                <p class="rta-details col-12">Posséder un bien immobilier avec <span class="realt-name">RealT</span> vous permet de percevoir votre loyer chaque semaine.</p>
+                                <p class="rta-details col-12">Le loyer est payé à l'aide d'un stablecoin adossé au dollar américain et est envoyé sur votre portefeuille Gnosis Chain ou Ethereum.</p>
+                            </div>
+                        </div>
                     </article>
                 </section>
 <!-- How to buy Realt tokens ? -->
                 <section id="realt-tutorial" class="col-12">
                     <article id="realt-tutorial-article" class="row">
-                        <div class="col-5"><img class="img-fluid" src="../media/thumbnails/realT/screencapture-realt-002.png" alt="RealT logo"></div>
+                        <div class="col-5"><img class="img-fluid" src="../media/thumbnails/realT/screencapture-realt-002.png" alt="RealT marketplace"></div>
                         <div class="col-7">
                             <div class="row">
                                 <h2 class="col-12">S'inscrire et acheter ses premiers tokens</h2>
-                                <p class="rta-intro col-12">Le processus d'inscription, de vérifiaction d'identité et d'achat immobilier sur RealT est simple et fluide, résolument optimisé pour prendre en charge même les plus néophytes.</p>
+                                <p class="rta-intro col-12">Le processus d'inscription, de vérification d'identité et d'achat immobilier sur RealT est simple et fluide, résolument optimisé pour prendre en charge même les plus néophytes.</p>
                             </div>
                         </div>
                         <p id="tuto-toggle" class="rta-intro col-12" onclick="toggleTutoBlock();">
                             <span class="fa-solid fa-caret-down"></span><span class="fa-solid fa-caret-down"></span>
-                            Voyons comment faire, en 10 étapes simples...
+                            Cliquer pour découvrir le tutoriel
                             <span class="fa-solid fa-caret-down"></span><span class="fa-solid fa-caret-down"></span>
                         </p>
                         <div id="realt-tutorial-content" class="col-12"> 
@@ -403,7 +436,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         <img class="col-3" src="../media/logos/realT.png" alt="RealT logo">
                         <h2 class="col-9">
                             Une introduction à l'immobilier tokenisé<br />
-                            <em>by RealT</em><br />
+                            <em>by <span class="realt-name">RealT</span></em><br />
                             <a href="https://realt.co/an-introduction-to-tokenized-real-estate/" target="_blank" title="See original introduction by RealT in english...">traduction de <u class="underline">l'original</u></a>
                         </h2>
                         <p id="realt-introbyrealt-intro"class="offset-2 col-10">De DaVinci à De Beers, la façon dont nous investissons dans les actifs est sur le point de changer fondamentalement avec l'arrivée de la tokenisation. Chez RealT, nous croyons que la tokenisation des actifs est la prochaine étape logique dans l'évolution technologique du commerce, en particulier en ce qui concerne le marché immobilier. Ce changement de paradigme, vers la tokenisation, nous permettra de transcender la vision centrée sur la monnaie fiduciaire de l'économie vers une économie token plus démocratique, inclusive et efficiente.</p>
@@ -449,8 +482,8 @@ creatMainMenu($fileName);                               // Create the main menu
                                     <span class="fa-solid fa-angles-down"></span><span class="fa-solid fa-angles-down"></span>
                                     Mondialisation</h3>
                                 <div class="realt-intro-info-details col-12"><div class="row">
-                                    <div class="img-tuto col-4"><img class="img-fluid" src="../media/thumbnails/realT/world.jpg" alt="RealT explanation"></div>
-                                    <p class="realt-intro-info-text col-8">Lorsque la tokenisation des actifs atteindra le grand public, le commerce mondial d'actifs physiques (auparavant) illiquides pourrait devenir une réalité quotidienne. À mesure que les actifs deviennent de plus en plus tokenisés, le commerce mondial devient moins difficile et ouvre la voie au développement de nouveaux marchés pour des actifs précédemment sous-utilisés et illiquides. En conséquence, des personnes des quatre coins du monde pourront détenir des fractions du même actif physique ou échanger différents types d'actifs directement et instantanément.</p>
+                                    <div class="img-tuto col-3"><img class="img-fluid" src="../media/thumbnails/realT/world.jpg" alt="RealT explanation"></div>
+                                    <p class="realt-intro-info-text col-9">Lorsque la tokenisation des actifs atteindra le grand public, le commerce mondial d'actifs physiques (auparavant) illiquides pourrait devenir une réalité quotidienne.<br />À mesure que les actifs deviennent de plus en plus tokenisés, le commerce mondial devient moins difficile et ouvre la voie au développement de nouveaux marchés pour des actifs précédemment sous-utilisés et illiquides.<br />En conséquence, des personnes des quatre coins du monde pourront détenir des fractions du même actif physique ou échanger différents types d'actifs directement et instantanément.</p>
                                 </div></div>
                                 <h3 class="realt-intro-info-title col-12" onclick="toggleAny(5);">
                                     <span class="fa-solid fa-angles-down"></span><span class="fa-solid fa-angles-down"></span>

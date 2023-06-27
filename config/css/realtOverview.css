@@ -5,7 +5,7 @@
 // Role         : realtOverview.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-26
-// Last update  : 2021-06-26
+// Last update  : 2021-06-27
 // ===================================================================================================== */
 :root {
     --main-bg-color: #888;
@@ -44,6 +44,10 @@
 #realt-tutorial-content {
     display: none;
     margin: 10px auto;
+}
+.rta-article {
+    margin: 10px auto;
+    padding: 0;
 }
 /* *** *** *** MINI NAVIGATION MENU *** *** *** */
 #tuto-toggle {
@@ -128,6 +132,19 @@
 .realt-intro-info-title span {
     margin-right: 10px;
     font-size: 0.9em;
+}
+.rta-subtitle {
+    font-family: "MontSerat", sans-serif;
+    font-size: 1.25em;
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-realt-blue), var(--main-realt-black));
 }
 /* *** *** *** USER CLASSES *** *** *** */
 #realt-introbyrealt-intro {
@@ -227,9 +244,6 @@
     color: transparent;
     background-image: linear-gradient(45deg, var(--main-realt-black), var(--main-realt-blue));
 }
-.rtc-steps h3 {
-
-}
 .rtc-steps a, .rtc-steps p {
     font-variant: normal;
 }
@@ -252,11 +266,21 @@
     font-family: "Helvetica", sans-serif;
     font-size: 0.9rem;
 }
-
 .kyc-list {
     margin-bottom: 10px;
     font-variant: normal;
     font-size: 0.9rem;
+}
+.rta-details  {
+    margin: 0;
+    padding: 0 40px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.9rem;
+    line-height: 0.99em;
+    text-indent: 20px;
+    text-align: justify;
+    vertical-align: middle;
+    color: var(--main-realt-black);
 }
 /* *** *** *** ANIMATIONS *** *** *** */
 

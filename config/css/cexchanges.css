@@ -28,11 +28,6 @@
 #cex1, #cex2, #cex3, #cex4, #cex5, #cex6 {
     margin: 10px auto;
     padding: 5px;
-    transform: skew(-10deg,0);
-}
-#cex1 .row, #cex2 .row, #cex3 .row,
-#cex4 .row, #cex5 .row, #cex6 .row {
-    transform: skew(0,0);
 }
 #cex1 {
     border: 2px inset var(--binance);

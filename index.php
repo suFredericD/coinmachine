@@ -19,6 +19,12 @@ $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the c
 $siteInformations = [];
 
 $tabNewsDetails = get5LastNewsDetailsByDate();          // Get the news details
+$intBlockchains = getItemsCountInTable('blockchain');   // Get the number of blockchains
+$intWallets = getItemsCountInTable('wallet');           // Get the number of wallets
+$intCexchanges = getItemsCountInTable('cexchange');     // Get the number of centralised exchanges
+$intGlossary = getItemsCountInTable('glossary');        // Get the number of items in the glossary
+$intTutorials = getTutorialsCount();                    // Get the number of tutorials
+$intToolbox = getItemsCountInTable('toolbox');          // Get the number of items in the toolbox
 
 createHTMLheader($fileName, $siteInformations);         // Create the HTML header
 createPageheader($fileName);                            // Create the page header
@@ -113,25 +119,25 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/disclaimer.php">Disclaimer</a>
    |
    |__ <strong>Datas</strong>
-   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...</em>
-   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur les portefeuilles, les standards de tokens supportés, les liens officiels...</em>
-   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
+   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documentaires à propos de <?php echo $intBlockchains;?> blockchains (Bitcoin, Ethereum, BSC...)</em>
+   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur <?php echo $intWallets;?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
+   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur <?php echo $intCexchanges;?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
    |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
-   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire des mots et expressions à connaître, pour apprendre, pour rappel...</em>
+   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire de <?php echo $intGlossary;?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
    |
    |__ <strong>Ressources</strong>
    |    |
    |    |___ <a href="pages/web3news.php">News</a>       : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
-   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em>réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...</em>
-   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em>liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
+   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em><?php echo $intTutorials;?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
+   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em><?php echo $intToolbox;?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
    |    |___ <a href="pages/web3medias.php">Medias</a>     : <em>médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...</em>
    |            |___ <a href="pages/web3medias.php#news">Journaux</a>
    |            |___ <a href="pages/web3medias.php#charts">Charts</a>
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
    |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>
    |
-   |__ <strong>Projets</strong>
-        |___ <a href="">RealT</a>       : <em>une plateforme incontournable d'investissement immobilier tokenisé...</em>
+   |__ <strong>Bons plans</strong>
+        |___ <a href="pages/realtOverview.php">RealT</a>       : <em>une plateforme incontournable d'investissement immobilier tokenisé...</em>
                 </pre>
 <!-- --- --- END of content --- --- -->
             </div>

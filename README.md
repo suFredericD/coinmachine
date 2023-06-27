@@ -25,32 +25,35 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 - [Disclaimer]
 
 - ---
+
 ### Datas
 
 - [Blockchains]
 - [Wallets]
 
 - [CeXchanges]
-- [Humains]
+- [Humans]
 
-- [Glossaire]
+- [Glossary]
+
 <!-- Protocols -->
 - ---
+
 ### Ressources
 
 - [News]
 
-- [Tutoriels]
+- [Tutorials]
 - [ToolBox]
 
 - [Medias]
-  - [Actualités]
+  - [Newspapers]
   - [Charts]
   - [YouTubers]
   - [Twittos]
 
 - ---
-## Projets
+
+## Bons plans
 
 - [RealT]
-
