@@ -6,9 +6,24 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-06-26
+// Last update  : 2023-06-27
 // =====================================================================================================
 function creatMainMenu($fileName){
+    $intBlockchains = getItemsCountInTable('blockchain');
+    $intWallets = getItemsCountInTable('wallet');
+    // $intProtocols = getItemsCountInTable('protocol');
+    $intCexchanges = getItemsCountInTable('cexchange');
+    $intHumans = getItemsCountInTable('human');
+    $intGlossary = getItemsCountInTable('glossary');
+    $intNews = getItemsCountInTable('news');
+    $intTutorials = getTutorialsCount();
+    $intToolbox = getItemsCountInTable('toolbox');
+    $intMedias = getItemsCountInTable('media');
+    $intNewspapers = getMediasCountById(2);
+    $intYoutubers = getMediasCountById(1);
+    $intTwittos = getMediasCountById(4);
+    $intCharts = getMediasCountById(3);
+    
     if($fileName == '/index.php'){
         $strPagesPath = "pages/";
         $strMediaPath = "media/";
@@ -35,6 +50,21 @@ function creatMainMenu($fileName){
     $strDisclaimer = $strPagesPath . "disclaimer.php";
     $strRealToverview = $strPagesPath . "realtOverview.php";
 
+    $strBlockchainsContent = "<span class=\"fa-solid fa-server\"></span>Blockchains (" . $intBlockchains . ")";
+    $strWalletsContent = "<span class=\"fa-solid fa-wallet\"></span>Wallets (" . $intWallets . ")";
+    // $strProtocolsContent = "(" . $intProtocols . ")";
+    $strCexchangesContent = "<span class=\"fa-solid fa-chart-line\"></span>CeXchanges (" . $intCexchanges . ")";
+    $strHumansContent = "<span class=\"fa-solid fa-people-group\"></span>Humains (" . $intHumans . ")";
+    $strGlossaryContent = "<span class=\"fa-solid fa-book-bookmark\"></span>Glossaire (" . $intGlossary . ")";
+    $strNewsContent = "<span class=\"fa-solid fa-radio\"></span>News (" . $intNews . ")";
+    $strTutorialsContent = "<span class=\"fa-solid fa-graduation-cap\"></span>Tutoriels (" . $intTutorials . ")";
+    $strToolboxContent = "<span class=\"fa-solid fa-toolbox\"></span>ToolBox (" . $intToolbox . ")";
+    $strMediasContent = "<span class=\"fa-solid fa-photo-film\"></span>Medias (" . $intMedias . ")";
+    $strNewspapersContent = "<span class=\"fa-solid fa-newspaper\"></span>Journaux (" . $intNewspapers . ")";
+    $strYoutubersContent = "<span class=\"fa-brands fa-youtube\"></span>YouTubers (" . $intYoutubers . ")";
+    $strTwittosContent = "<span class=\"fa-brands fa-twitter\"></span>Twittos (" . $intTwittos . ")";
+    $strChartsContent = "<span class=\"fa-solid fa-chart-line\"></span>Charts (" . $intCharts . ")";
+    
     $strProfileFileFRTitle = "Découvrez mon profile (version française)";
     $strProfileFileENTitle = "Discover my profile (english version)";
     $strWeb3dashboardTitle = "Blockchains : fondamentaux, articles, vidéos, documenataires à propos de Bitcoin, Ethereum, BSC...";
@@ -85,29 +115,29 @@ function creatMainMenu($fileName){
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Datas</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>" title="<?php echo $strWeb3dashboardTitle;?>"><span class="fa-solid fa-server"></span>Blockchains</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWallets;?>" title="<?php echo $strWalletsTitle;?>"><span class="fa-solid fa-wallet"></span>Wallets</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3dashboard;?>" title="<?php echo $strWeb3dashboardTitle;?>"><?php echo $strBlockchainsContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWallets;?>" title="<?php echo $strWalletsTitle;?>"><?php echo $strWalletsContent;?></a></li>
                                 <!-- <li><a class="dropdown-item" href="<?php ?>">Protocols</a></li> -->
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>" title="<?php echo $strCexchangesTitle;?>"><span class="fa-solid fa-chart-line"></span>CeXchanges</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strHumans;?>" title="<?php echo $strHumansTitle;?>"><span class="fa-solid fa-people-group"></span>Humains</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>" title="<?php echo $strCexchangesTitle;?>"><?php echo $strCexchangesContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strHumans;?>" title="<?php echo $strHumansTitle;?>"><?php echo $strHumansContent;?></a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <li><a class="dropdown-item" href="<?php echo $strGlossary;?>" title="<?php echo $strGlossaryTitle;?>"><span class="fa-solid fa-book-bookmark"></span>Glossaire</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strGlossary;?>" title="<?php echo $strGlossaryTitle;?>"><?php echo $strGlossaryContent;?></a></li>
                             </ul>
                         </li>
 <!-- Ressources section -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ressources</a>
                             <ul class="dropdown-menu ddm-user">
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3News;?>" title="<?php echo $strWeb3NewsTitle;?>"><span class="fa-solid fa-radio"></span>News</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3News;?>" title="<?php echo $strWeb3NewsTitle;?>"><?php echo $strNewsContent;?></a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>" title="<?php echo $strWeb3TutorialsTitle;?>"><span class="fa-solid fa-graduation-cap"></span>Tutoriels</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>" title="<?php echo $strWeb3ToolboxTitle;?>"><span class="fa-solid fa-toolbox"></span>ToolBox</a></li>
-                                <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr"><span class="fa-solid fa-photo-film"></span>Medias</li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news" title="<?php echo $strWeb3MediasTitle;?>"><span class="fa-regular fa-newspaper"></span>Journaux</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts"><span class="fa-solid fa-chart-line"></span>Charts</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube"><span class="fa-brands fa-youtube"></span>YouTubers</a></li>
-                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter"><span class="fa-brands fa-twitter"></span>Twittos</a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>" title="<?php echo $strWeb3TutorialsTitle;?>"><?php echo $strTutorialsContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>" title="<?php echo $strWeb3ToolboxTitle;?>"><?php echo $strToolboxContent;?></a></li>
+                                <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr"><?php echo $strMediasContent;?></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#news" title="<?php echo $strWeb3MediasTitle;?>"><?php echo $strNewspapersContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#charts"><?php echo $strChartsContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#youtube"><?php echo $strYoutubersContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter"><?php echo $strTwittosContent;?></a></li>
                             </ul>
                         </li>
 <!-- Projets section -->

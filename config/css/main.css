@@ -5,7 +5,7 @@
 // Role         : main CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-23
+// Last update  : 2023-06-27
 // ===================================================================================================== */
 /* 
     green : #60e660
@@ -96,7 +96,7 @@ body {
 }
 #main-navbar-container a, #main-navbar-container ul li a {
     width: fit-content;
-    min-width: 120px;
+    min-width: 150px;
     margin: 0 10px;
     padding: 5px 15px;
     font-family: "Aldrich";
@@ -116,8 +116,8 @@ body {
 }
 .ddm-user {
     flex-wrap: nowrap;
-    min-width: 15rem;
-    width: 100%;
+    min-width: 18rem;
+    width: 180px;
     padding-left: 10px;
     opacity: 0.85;
     background-color: #000;
@@ -153,6 +153,9 @@ body {
     font-variant: small-caps;
     font-size: 1.4em;
     color: #ebef7b;
+}
+.ddm-subtitle span {
+    margin-right: 10px;
 }
 #user-toggler, #user-toggler span {
     color: #06c883;
