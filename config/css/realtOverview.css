@@ -5,7 +5,7 @@
 // Role         : realtOverview.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-26
-// Last update  : 2021-06-27
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 :root {
     --main-bg-color: #888;
@@ -210,7 +210,6 @@
     align-self: center;
     vertical-align: middle;
 }
-#realt-advantages-article img,
 #realt-tutorial-article img{
     box-shadow: 2px 2px 4px var(--main-realt-blue-light);
 }
@@ -292,17 +291,139 @@
 
 }
 @media screen and (max-width: 992px) {
-
+    #realt-tutorial-article h2 {
+        padding-right: 30px;
+    }
+    #realt-introbyrealt-article h2 {
+        padding-right: 30px;
+    }
+    #realt-intro-info-container h3 {
+        padding-right: 30px;
+    }
+    .realt-intro-info-text {
+        padding-right: 30px;
+    }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
 }
 @media screen and (max-width: 576px) {
-
+    #realt-label {
+        font-size: 1.5em;
+    }
+    #realt-main-section {
+        border-radius: 0;
+    }
+    .realt-intro-img, .realt-intro-img img {
+        border-radius: 25px;
+    }
+    .img-container {
+        display: none;
+    }
+    #realt-advantages-article h2 {
+        font-size: 1.5em;
+    }
+    #realt-tutorial-article h2 {
+        font-size: 0.75em;
+        text-align: center;
+    }
+    #tuto-toggle {
+        font-size: 0.5em;
+    }
+    .rtc-steps .row h3 {
+        font-size: 0.5em;
+    }
+    .rtc-steps .row a {
+        font-size: 0.4em;
+    }
+    .rtc-steps .row p {
+        font-size: 0.25em;
+    }
+    .kyc-list {
+        font-size: 0.3em;
+    }
+    #realt-tutorial-article h2 {
+        font-size: 1.25em;
+    }
+    #realt-introbyrealt-article h2 {
+        font-size: 1em;
+    }
+    #realt-introbyrealt-article p {
+        font-size: 0.75em;
+        text-indent: 20px;
+    }
+    #realt-introbyrealt-article h3 {
+        font-size: 1em;
+        text-indent: 20px;
+    }
 }
 @media screen and (max-width: 480px) {
-
+    #realt-advantages-article h2 {
+        font-size: 1.25em;
+    }
+    .realt-whatis-text,
+    .realt-advantages-text {
+        font-size: 0.8em;
+    }
+    #realt-introbyrealt-article h2 {
+        font-size: 0.75em;
+    }
+    #realt-tutorial-article h2 {
+        font-size: 0.75em;
+    }
+    #tuto-toggle {
+        font-size: 0.3em;
+    }
 }
 @media screen and (max-width: 360px) {
+    #realt-label {
+        font-size: 1em;
+    }
 
+    #ealt-whatis-article h2 {
+        font-size: 1em;
+    }
+
+    .rta-subtitle {
+        font-size: 0.75em;
+        text-align: center;
+    }
+    .realt-whatis-text,
+    .realt-advantages-text,
+    .rta-details {
+        font-size: 0.5em;
+        line-height: 0.99em;
+    }
+    .rta-intro {
+        font-size: 0.25em;
+        line-height: 0.99em;
+        width: 100%;
+    }
+    #realt-tutorial-article {
+        margin: 5px auto;
+    }
+    #realt-tutorial-article h2 {
+        font-size: 0.5em;
+    }
+    #tuto-toggle {
+        font-size: 0.2em;
+    }
+    #realt-tutorial-content {
+        margin: 5px auto;
+    }
+    #realt-introbyrealt-article img {
+        display: none;
+    }
+    #realt-intro-know-more {
+        font-size: 0.5em;
+    }
+    #realt-intro-info-container h3 {
+        font-size: 0.75em;
+    }
+    .img-tuto {
+        display: none;
+    }
+    .realt-intro-info-text {
+        font-size: 0.4em;
+    }
 }

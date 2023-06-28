@@ -74,7 +74,7 @@ creatMainMenu($fileName);                               // Create the main menu
             $strFullName = $human['FirstName'] . " " . $human['LastName'];
             $strFullTitle =  $human['LastName'] . ", <span class=\"firstname\">" . $human['FirstName'] . "</span>";
             $datBirthDate = new DateTime($human['Birth']);
-            if($datBirthDate->format('Y') > 0){
+            if($datBirthDate !="" && $datBirthDate->format('Y') > 0){
                 $strBirthDate = $datBirthDate->format('d/m/Y');
                 $datNow = new DateTime();
                 $intAge = $datNow->diff($datBirthDate);

@@ -50,8 +50,16 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php       for($j = 0; $j < count($tabTutorials); $j++){
                 if($tabTutorials[$j]['DifficultyId'] == $tabDifficultyLevels[$i]['Id']){
                     $strThumbnail = "../media/thumbnails/" . $tabTutorials[$j]['Thumbnail'];
-                    $strTutorialLink = "../" . $tabTutorials[$j]['Path'] . $tabTutorials[$j]['File'];
+                    if(explode(".", $tabTutorials[$j]['File'])[1] == "php"){
+                        $strTutorialLink = "pages/" . $tabTutorials[$j]['File'];
+                        $strTutoLinkContent = "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>";
+                    } else {
+                        $strTutorialLink = "../" . $tabTutorials[$j]['Path'] . $tabTutorials[$j]['File'];
+                        $strTutoLinkContent = "<span class=\"fa-solid fa-file-arrow-down\"></span>";
+                    }
+                    $strTutoLinkContent .= "Consulter le tuto complet";
                     $datTuto = new DateTime($tabTutorials[$j]['Date']);
+                    
 ?>
                                 <article class="tuto-article col-11">
                                     <div class="row">
@@ -61,7 +69,7 @@ creatMainMenu($fileName);                               // Create the main menu
                                             <div class="row">
                                                 <p class="tuto-date col-12"><?php echo $datTuto->format('d/m/Y');?></p>
                                                 <p class="tuto-text col-12"><?php echo $tabTutorials[$j]['Description'];?></p>
-                                                <a class="tuto-link col-12" href="<?php echo $strTutorialLink;?>" target="_blank"><span class="fa-solid fa-file-arrow-down"></span>Consulter le tuto complet</a>
+                                                <a class="tuto-link col-12" href="<?php echo $strTutorialLink;?>" target="_blank"><?php echo $strTutoLinkContent;?></a>
                                             </div>
                                         </div>
                                     </div>
