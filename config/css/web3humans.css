@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -163,4 +163,93 @@ article p {
 .twitter-icon:hover, .facebook-icon:hover,
 .youtube-icon:hover, .linkedin-icon:hover {
     color: #8306c8;
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    #humans-main-title {
+        font-size: 1.5em;
+    }
+    #humans-main-content article h2 {
+        font-size: 1.5em;
+    }
+    #humans-main-content article h3 {
+        font-size: 1em;
+    }
+    #humans-main-content article h5 {
+        font-size: 0.8em;
+    }
+    #humans-main-content article a,
+    #humans-main-content article p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+    #humans-main-title {
+        font-size: 1.25em;
+    }
+    #humans-mini-nav {
+        top: 30%;
+        font-size: 1em;
+    }
+    #humans-main-content article h2 {
+        font-size: 1.25em;
+    }
+    .people-img {
+        max-height: 140px;
+    }
+    .flag {
+        max-height: 100px;
+    }
+    #humans-main-content article h3 {
+        font-size: 0.7em;
+    }
+    #humans-main-content article h5 {
+        font-size: 0.5em;
+    }
+    #humans-main-content article a,
+    #humans-main-content article p {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 480px) {
+    #humans-main-content article h3 {
+        font-size: 0.5em;
+        text-align: left;
+        margin-bottom: 1px;
+    }
+    #humans-main-content article h5 {
+        font-size: 0.4em;
+        margin-bottom: 4px;
+    }
+    #humans-main-content article a,
+    #humans-main-content article p {
+        font-size: 0.6em;
+    }
+    .socials {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #humans-main-title {
+        font-size: 1em;
+    }
+    #humans-mini-nav {
+        top: 25%;
+        font-size: 0.5em;
+    }
+    #humans-main-content article h2 {
+        font-size: 1em;
+    }
+    .people-img {
+        margin-left: 5px;
+    }
 }

@@ -113,36 +113,36 @@ creatMainMenu($fileName);                               // Create the main menu
                         <div id="<?php echo $strRefLink;?>"></div>
                         <article id="<?php echo $strFullName;?>" class="col-12">
                             <div class="row">
-                                <h2 class="col-7"><?php echo $strFullTitle;?></h2>
-                                <img class="flag col-1" src="<?php echo $strFlag;?>"/>
+                                <h2 class="col-12 col-sm-6 col-md-7 col-lg-7 col-xl-7"><?php echo $strFullTitle;?></h2>
+                                <img class="flag col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1" src="<?php echo $strFlag;?>"/>
                                 <h3 class="col-2"><?php echo $strAge;?></h3>
                                 <h5 class="birthdate col-2"><?php echo $strBirthDate;?></h5>
-                                <img class="people-img col-2" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
-                                <div class="col-8">
+                                <img class="people-img col-4 col-sm-5 col-md-3" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
+                                <div class="col-11 col-sm-6 col-md-8">
                                     <div class="row">
-                                        <h3 class="col-6">Réseaux sociaux :</h3>
+                                        <h3 class="col-12 col-sm-6">Réseaux sociaux :</h3>
 <?php       if($human['Twitter'] != ""){ ?>
-                                        <a class="col-2" href="<?php echo $human['Twitter'];?>" title="Compte Twitter de <?php echo $strFullName;?>" target="_blank">
+                                        <a class="socials col-2" href="<?php echo $human['Twitter'];?>" title="Compte Twitter de <?php echo $strFullName;?>" target="_blank">
                                             <span class="twitter-icon fa-brands fa-twitter-square"></span></a>
 <?php       } 
             if($human['Facebook'] != ""){?>
-                                        <a class="col-2" href="<?php echo $human['Facebook'];?>" title="Compte Facebook de <?php echo $strFullName;?>" target="_blank">
+                                        <a class="socials col-2" href="<?php echo $human['Facebook'];?>" title="Compte Facebook de <?php echo $strFullName;?>" target="_blank">
                                             <span class="facebook-icon fa-brands fa-facebook-square"></span></a>
 <?php       } 
             if($human['Linkedin'] != ""){?>
-                                        <a class="col-2" href="<?php echo $human['Linkedin'];?>" title="Compte LinkedIn de <?php echo $strFullName;?>" target="_blank">
+                                        <a class="socials col-2" href="<?php echo $human['Linkedin'];?>" title="Compte LinkedIn de <?php echo $strFullName;?>" target="_blank">
                                             <span class="linkedin-icon fa-brands fa-linkedin"></span></a>
 <?php       } ?>
-                                        <h3 class="col-6">Compagnie :</h3>
-                                        <a class="col-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
-                                        <h3 class="col-6">Fonction :</h3>
-                                        <p class="col-6"><?php echo $strFunction;?></p>
+                                        <h3 class="col-12 col-sm-6">Compagnie :</h3>
+                                        <a class="col-12 col-sm-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
+                                        <h3 class="col-12 col-sm-6">Fonction :</h3>
+                                        <p class="col-12 col-sm-6"><?php echo $strFunction;?></p>
 <?php       if($human['WikiFr'] != "" || $human['WikiEn'] != ""){ ?>
                                         <a class="wiki-link col-12" href="<?php echo $strWikiLink;?>" target="_blank">A propos de <?php echo $strFullName;?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
 <?php       } ?>
                                     </div>
                                 </div>
-                                <img class="zodiac-img col-2" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSign;?> zodiac sign picture" />
+                                <img class="zodiac-img col-1 col-sm-1 col-md-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSign;?> zodiac sign picture" />
                             </div>
                         </article>
 <?php   } ?>
