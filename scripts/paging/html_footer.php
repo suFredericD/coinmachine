@@ -6,10 +6,10 @@
 // Role         : script creating the HTML footer
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-13
+// Last update  : 2023-06-28
 // =====================================================================================================
 function createHTMLfooter($fileName){
-    if($fileName == '/index.php'){
+    if($fileName == '/index.php' || $fileName == '/coinmachine/index.php'){
         $strScriptspath = "scripts/";
         $strPagesPath = "pages/";
     } else {

@@ -126,7 +126,12 @@
 
 }
 @media screen and (max-width: 480px) {
-
+  .disclaimer-title {
+    font-size: 1.5em;
+  }
+  #disclaimer-content {
+    font-size: 0.25em;
+  }
 }
 @media screen and (max-width: 360px) {
 

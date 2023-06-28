@@ -6,11 +6,11 @@
 // Role         : script creating the HTML header
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-17
+// Last update  : 2021-06-28
 // =====================================================================================================
 function createHTMLheader($fileName, $siteInformations){
     $strAuthor = "CoinMachine";
-    if($fileName == '/index.php'){
+    if($fileName == '/index.php' || $fileName == '/coinmachine/index.php'){
         $strCSSpath = "config/css/";
         $strIconPath = "media/icons/";
     } else {

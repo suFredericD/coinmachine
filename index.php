@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder
@@ -83,7 +83,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                 </div><hr>
 <!-- --- --- --- DISCLAIMER --- --- --- -->
-<section id="disclaimer-section" class="col-11">
+<section id="disclaimer-section" class="container-fluid col-11">
                     <div class="row">
                         <div class="disclaimer-warning col-12"><div class="warning-bar"></div></div>
                         <div id="disclaimer-main" class="offset-1 col-10">
@@ -108,7 +108,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     </div>
                 </section>
 <!-- --- --- Website tree map --- --- -->
-                <label id="see-map" for="arborescence" class="col-2">Voir le plan<span class="fa-solid fa-caret-down"></span></label>
+                <label id="see-map" for="arborescence" class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">Voir le plan<span class="fa-solid fa-caret-down"></span></label>
                 <pre id="arborescence" class="col-11">
   <strong>Home</strong>  - - -> <em>you are here</em>
    |

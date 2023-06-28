@@ -2,8 +2,8 @@
         Subject     : Matrix CV CSS file
         Context     : coder without experience in corporations aiming to work in web3.0
         Author      : CoinMachine
-        Created     : 2023-28-05
-        Modified    : 2023-26-06
+        Created     : 2023-05-28
+        Modified    : 2023-06-28
 */
 body {
     background: black;
@@ -555,3 +555,132 @@ a:hover {
         border-color: red;
     }
 }
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {}
+@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
+@media screen and (max-width: 480px) {
+    .header-title {
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+    .header-subtitle {
+        font-size: 1em;
+    }
+    .matrix-container {
+        padding: 10px;
+    }
+    .view_port {
+        height: 10px;
+    }
+    .polling_message {
+        font-size: 0.3em;
+    }
+    .matrix-presentation h1,
+    .matrix-presentation h2 {
+        font-size: 0.8em;
+    }
+    .matrix-presentation h5 {
+        font-size: 0.6em;
+    }
+    .matrix-presentation h5 p {
+        font-size: 0.55em;
+    }
+    .matrix-upper {
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+    }
+    .matrix-lower {
+        margin: 2px auto;
+        padding: 2px;
+    }
+    .contact-title {
+        font-size: 0.7em;
+    }
+    .matrix-column p {
+        margin: 2px auto;
+        padding: 0;
+    }
+    .link-contact, .functions-li {
+        font-size: 0.55em;
+    }
+    .functions, .functions-li {
+        margin-left: 4px;
+        padding-left: 0;
+    }
+    .functions ul {
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    .data-title, .data-subtitle {
+        font-size: 0.8em;
+    }
+    .known-activities-section h2 {
+        font-size: 0.8em;
+    }
+    .known-activities-section p {
+        font-size: 0.6em;
+    }
+    .activities-infos {
+        margin: 0 auto;
+        padding-left: 8px;
+        font-size: 0.5em;
+    }
+    .matrix-section-upgrades h2 {
+        font-size: 0.8em;
+    }
+    .warning-text {
+        font-size: 0.6em;
+    }
+    .upg-article-section {
+        margin: 0 auto;
+        padding: 5px;
+        position: relative;
+        width: 100%;
+    }
+    .upg-article {
+        max-width: 90%;
+    }
+    .upg-article h3 {
+        font-size: 0.8em;
+    }
+    .upg-article h5 {
+        font-size: 0.7em;
+    }
+    .skills-infos{
+        margin: 5px auto;
+        padding-left: 8px;
+        font-size: 0.6em;
+    }
+    .skills-icon {
+        width: 90%;
+        margin: 5px auto;
+        padding: 2px;
+        font-size: 0.7em;
+    }
+    .grant-year {
+        font-size: 0.5em;
+    }
+    .matrix-section-xp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px auto;
+        padding: 5px;
+    }
+    .xp-article {
+        max-width: 90%;
+        margin: 4px auto;
+        padding: 5px;
+        
+    }
+
+    .xp-article p {
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 360px) {}

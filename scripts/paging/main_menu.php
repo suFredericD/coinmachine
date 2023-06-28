@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-06-27
+// Last update  : 2023-06-28
 // =====================================================================================================
 function creatMainMenu($fileName){
     $intBlockchains = getItemsCountInTable('blockchain');
@@ -23,8 +23,8 @@ function creatMainMenu($fileName){
     $intYoutubers = getMediasCountById(1);
     $intTwittos = getMediasCountById(4);
     $intCharts = getMediasCountById(3);
-    
-    if($fileName == '/index.php'){
+
+    if($fileName == '/index.php' || $fileName == '/coinmachine/index.php'){
         $strPagesPath = "pages/";
         $strMediaPath = "media/";
         $strIndexFile = "index.php";

@@ -6,10 +6,10 @@
 // Role         : script creating the page header
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-12
+// Last update  : 2021-06-28
 // =====================================================================================================
 function createPageheader($fileName){
-    if($fileName == '/index.php'){
+    if($fileName == '/index.php' || $fileName == '/coinmachine/index.php'){
         $strMediaPath = "media/";
         $strIndexFile = "index.php";
     } else {

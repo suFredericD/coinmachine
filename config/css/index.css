@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-23
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -378,8 +378,18 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .index-news-marquee {
+        font-size: 0.6em;
+    }
+    .index-news-marquee li a i {
+        font-size: 0.6em;
+    }
     #index-title {
         font-size: 1rem;
+    }
+    #index-intro p {
+        font-size: 0.4em;
+        padding: 0 5px;
     }
     #index-intro-cm-text .row p,
     .intro-cm-fulltext, .intro-cm-contact {
@@ -388,13 +398,29 @@
     #index-intro-cm .row img {
         display: none;
     }
+    .disclaimer-warning {
+        margin: 5px auto;
+        max-height: 20px;
+    }
+    .disclaimer-title {
+        font-size: 1em;
+      }
+      #disclaimer-content {
+        font-size: 0.3em;
+      }
+    #see-map {
+        font-size: 0.5em;
+    }
+    #arborescence{
+        font-size: 0.3em;
+    }
 }
 @media screen and (max-width: 360px) {
     #index-title {
         font-size: 0.8rem;
     }
     #index-intro p {
-        font-size: 0.8rem;
+        font-size: 0.4em;
         padding: 0 5px;
     }
     #index-intro-cm .row h2 {
@@ -402,5 +428,8 @@
     }
     #index-intro-cm .row img {
         display: none;
+    }
+    #see-map {
+        font-size: 0.5em;
     }
 }
