@@ -6,7 +6,7 @@
 // Role         : web3wallets presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-24
+// Last update  : 2023-06-28
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -40,10 +40,10 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   } ?>
             </ul>
         </nav>
-        <section id ="wallets-main" class="offset-6 col-8">
+        <section id ="wallets-main" class="col-11 offset-xl-6 col-xl-8">
             <div class="row">
 <!-- --- --- --- WALLETS DETAILS SUMMARY --- --- --- -->
-                <h3 class="wallet-rubric col-7">Disponibilités</h3>
+                <h3 class="wallet-rubric col-8">Disponibilités</h3>
                 <table id="wallet-dispo-tab" class="col-12">
                     <thead>
                         <tr class="row">
@@ -86,7 +86,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 <table id="wallet-compat-tab" class="col-12">
                     <thead>
                         <tr class="row">
-                            <th class="col-1"></th>
+                            <th class="col-2 col-xl-1"></th>
 <?php   for($i = 0; $i < count($tabWallets); $i++){ ?>
                             <th class="col-1"><a href="<?php echo "#wallet" . $i;?>"><?php echo $tabWallets[$i]['Name'];?></a></th>
 <?php   } ?>
@@ -138,7 +138,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         <div class="col-8">
                             <div class="wallet-details row">
                                 <label class="col-12"><?php echo $tabWallets[$i]['Name'];?></label>
-                                <div class="wallet-features col-3">Mobile</div>
+                                <div class="wallet-features col-5">Mobile</div>
                                 <span class="<?php echo $strSpanClass;?> col-1"></span>
                                 <div class="wallet-features col-7">Wallet Connect</div>
                                 <span class="<?php echo $strWalletConnectClass;?> col-1"></span>

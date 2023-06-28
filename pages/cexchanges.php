@@ -32,11 +32,11 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
                 <article id="cex<?php echo $tabCexchanges[$i]['OrderId'];?>" class="col-11">
                     <div class="row">
-                        <a class="cex-link-img col-4" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
+                        <a class="cex-link-img col-12 col-md-3 col-lg-3 col-xl-4" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
                             <img class="" src="<?php echo $strLogo;?>" alt="<?php echo $tabCexchanges[$i]['Name'];?> logo" /></a>
-                        <div class="col-8">
+                        <div class="col-12 col-md-9 col-lg-9 col-xl-8">
                             <div class="row">
-                                <a class="cex-name col-8" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
+                                <a class="cex-name col-7" href="<?php echo $tabCexchanges[$i]['Url'];?>" title="<?php echo $tabCexchanges[$i]['Tooltip'];?>" target="_blank">
                                     <h2><?php echo $tabCexchanges[$i]['Name'];?></h2></a>
 <?php       if($tabCexchanges[$i]['Twitter'] != ""){ ?>
                                 <a class="col-1" href="<?php echo $tabCexchanges[$i]['Twitter'];?>" title="Compte Twitter de <?php echo $tabCexchanges[$i]['Name'];?>" target="_blank">

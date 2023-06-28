@@ -416,6 +416,21 @@
     }
 }
 @media screen and (max-width: 360px) {
+    hr {
+        margin: 5px auto;
+        padding: 0;
+    }
+    #index-news {
+        margin: 2px auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .breaking-news {
+        font-size: 0.5em;
+    }
+    .index-news-marquee {
+        font-size: 0.4em;
+    }
     #index-title {
         font-size: 0.8rem;
     }
@@ -430,6 +445,9 @@
         display: none;
     }
     #see-map {
-        font-size: 0.5em;
+        font-size: 0.3em;
+    }
+    #arborescence{
+        font-size: 0.2em;
     }
 }

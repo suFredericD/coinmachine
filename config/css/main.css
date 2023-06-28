@@ -326,5 +326,22 @@ footer .row p a:hover {
     }
 }
 @media screen and (max-width: 360px) {
-
+    #site-title h1 {
+        font-size: 20px;
+    }
+    #site-title h2, #site-title h3 {
+        font-size: 0.6em;
+    }
+    #main-navbar-container a, #main-navbar-container ul li a {
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 0.5em;
+    }
+    .ddm-user {
+        margin-right: 100px;
+    }
+    .ddm-subtitle {
+        font-size: 0.6em;
+    }
 }

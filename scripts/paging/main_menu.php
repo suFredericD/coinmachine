@@ -95,7 +95,7 @@ function creatMainMenu($fileName){
 <!-- Navigation links list -->
                     <ul class="navbar-nav">
 <!-- Return home link -->
-<?php   if($fileName != '/index.php'){?>
+<?php   if($fileName != '/index.php' || $fileName != '/coinmachine/index.php'){?>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?php echo $strIndexFile;?>#home">Home</a>
                         </li>

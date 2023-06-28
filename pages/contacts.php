@@ -24,16 +24,16 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
         <section id="contacts-container" class="col-11">
             <div class="row">
-                <article id="linkedin" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                <article id="linkedin" class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-8">
                     <div class="row">
                         <span class="social-brands linkedin fa-brands fa-linkedin col-2" alt="LinkedIn logo"></span>
                         <h3 id="linkedin-title" class="col-9">LinkedIn</h3>
                         <div id="linkedin-details" class="col-12">
                             <div class="row">
-                                <a class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau-10baba184/" target="_blank">
+                                <a class="col-7 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau-10baba184/" target="_blank">
                                     <img class="social-thumbnail" src="../media/thumbnails/linkedin-frederic-daniau.png" alt="LinkedIn profile">
                                 </a>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                <div class="col-10 col-sm-6 col-md-6 col-lg-8 col-xl-8">
                                     <div class="row">
                                         <a class="social-link col-11" href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-daniau-10baba184/" target="_blank">CoinMachine profile<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
                                     </div>
@@ -42,16 +42,16 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                     </div>
                 </article>
-                <article id="github" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                <article id="github" class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-8">
                     <div class="row">
                         <span class="social-brands github fa-brands fa-github col-2" alt="LinkedIn logo"></span>
                         <h3 id="github-title" class="col-9">GitHub</h3>
                         <div id="github-details" class="col-12">
                             <div class="row">
-                                <a class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://github.com/suFredericD" target="_blank">
+                                <a class="col-7 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://github.com/suFredericD" target="_blank">
                                     <img class="social-thumbnail" src="../media/thumbnails/github-suFredericD.png" alt="GitHub profile">
                                 </a>
-                                <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                <div class="col-10 col-sm-6 col-md-6 col-lg-8 col-xl-8">
                                     <div class="row">
                                         <a class="social-link col-11" href="https://github.com/suFredericD" target="_blank">CoinMachine profile<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
                                 </div>
@@ -59,7 +59,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                     </div>
                 </article>
-                <article id="discord" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                <article id="discord" class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-8">
                     <div class="row">
                         <span class="social-brands discord fa-brands fa-discord col-2" alt="Discord logo"></span>
                         <h3 id="discord-title" class="col-9">Discord</h3>
@@ -70,7 +70,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                     </div>
                 </article>
-                <article id="mail" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                <article id="mail" class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-8">
                     <div class="row">
                         <span class="social-brands mail fa-regular fa-envelope col-2" alt="Email icon"></span>
                         <h3 id="mail-title" class="col-9">Email</h3>
@@ -81,16 +81,16 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>                        
                     </div>
                 </article>
-                <article id="odysee" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                <article id="odysee" class="col-11 col-sm-12 col-md-10 col-lg-8 col-xl-8">
                     <div class="row">
                         <span class="social-brands odysee fa-brands fa-odysee col-2" alt="Odysee logo"></span>
                         <h3 id="odysee-title" class="col-9">Odysee</h3>
                         <div id="odysee-details" class="col-12">
                             <div class="row">
-                                <a class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">
+                                <a class="col-7 col-sm-6 col-md-6 col-lg-4 col-xl-4" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">
                                     <img class="social-thumbnail" src="../media/thumbnails/odysee-CoinMaChiNe.png" alt="Odysee channel">
                                 </a>
-                                <a class="social-link col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">CoinMachine channel<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                                <a class="social-link col-10 col-sm-6 col-md-6 col-lg-8 col-xl-8" href="https://odysee.com/@CoinMaChiNe:d" target="_blank">CoinMachine channel<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
                             </div>
                         </div>
                     </div>

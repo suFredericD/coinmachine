@@ -5,7 +5,7 @@
 // Role         : web3wallets.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-15
-// Last update  : 2023-06-24
+// Last update  : 2023-06-28
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -308,4 +308,77 @@ td a:hover, th a:hover {
     margin: 2px 2px;
     padding: 4px 0;
     text-align: center;
+}
+
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+    #wallet-mini-menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+    #wallets-main-label {
+        font-size: 1.25em;
+    }
+    .wallet-rubric {
+        font-size: 0.9em;
+    }
+    #wallet-dispo-tab, #wallet-compat-tab,
+    #wallet-compat-tab thead,
+    #wallet-compat-tab tbody,
+    #wallet-dispo-tab thead tr,
+    #wallet-dispo-tab tbody tr {
+        margin: 0 auto;
+        padding: 0;
+    }
+    #wallet-dispo-tab thead tr th {
+        font-size: 0.5em;
+    }
+    #wallet-dispo-tab tbody tr td {
+        font-size: 0.45em;
+    }
+    #wallet-compat-tab thead tr th {
+        font-size: 0.5em;
+        text-align: right;
+        vertical-align: top;
+    }
+    #wallet-compat-tab tbody tr td {
+        font-size: 0.4em;
+    }
+    .tst {
+        font-size: 0.3em;
+    }
+    .wallet-container {
+        transform: skew(0deg,0deg);
+    }
+    .wallet-details label {
+        font-size: 1.2em;
+    }
+    .wallet-features {
+        font-size: 0.8em;
+    }
+    .wallet-browser-link {
+        font-size: 0.8em;
+    }
+    .wallet-description {
+        font-size: 0.75em;
+    }
+    .erc, .bep, .trc, .btc, .erd, .celo, .sol, .atom {
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 360px) {
+
 }

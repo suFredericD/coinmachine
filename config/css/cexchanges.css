@@ -5,7 +5,7 @@
 // Role         : cexchanges.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-24
+// Last update  : 2023-06-28
 // ===================================================================================================== */
 :root {
     --twitter: #1da1f2;
@@ -190,11 +190,25 @@
 
 }
 @media screen and (max-width: 576px) {
-
+    #cex-master .row h1 {
+        font-size: 1.25em;
+    }
 }
 @media screen and (max-width: 480px) {
-
+    #cex-master .row h1 {
+        font-size: 1.1em;
+    }
+    .cex-description {
+        margin-right: 0;
+        padding-right: 0;
+        font-size: 0.8em;
+    }
+    .cex-tutos {
+        font-size: 0.8em;
+    }
 }
 @media screen and (max-width: 360px) {
-
+    .cex-name h2 {
+        font-size: 0.5em;
+    }
 }

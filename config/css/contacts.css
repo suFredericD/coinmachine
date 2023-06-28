@@ -124,5 +124,14 @@ article .row a:hover {
     }
 }
 @media screen and (max-width: 360px) {
-
+    #contacts-container .row article span {
+        font-size: 1.2em;
+    }
+    #contacts-container .row article h3 {
+        font-size: 1em;
+    }
+    #contacts-container .row article a {
+        margin-bottom: 6px;
+        font-size: 0.8em;
+    }
 }
