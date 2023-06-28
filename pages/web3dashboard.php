@@ -6,7 +6,7 @@
 // Role         : known and used blockchains informations
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -36,7 +36,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <!-- Little menu -->
                 <nav id="bcd-mini-menu" class="col-3">
                     <div class="row">
-                    <h4 class="col-12"><a href="#">Blockchains</a></h4>
+                        <h4 class="col-12"><a href="#">Blockchains</a></h4>
                         <ul class="col-12">
 <?php   for($i = 0; $i < count($tabBlockchainsInfos); $i++){ ?>
                             <li><a href="#<?php echo $tabBlockchainsInfos[$i]['OrderId'];?>"><?php echo $tabBlockchainsInfos[$i]['Name'];?></a></li>
@@ -54,7 +54,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         <article class="blockchain col-11">
                             <div class="row">
                                 <img class="bc-token-logo col-2" src="<?php echo $strLogoFile;?>" alt="<?php echo $tabBlockchainsInfos[$i]['Name'];?> logo" />
-                                <div class="bc-details col-10">
+                                <div class="bc-details col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
                                     <div class="row">
                                         <h3 class="col-7"><a class="bc-article-titles" id="<?php echo $tabBlockchainsInfos[$i]['OrderId'];?>"><?php echo $tabBlockchainsInfos[$i]['Name'];?></a></h3>
                                         <h4 class="bc-consensus col-4"><?php echo $tabBlockchainsInfos[$i]['Consensus'];?></h4>
@@ -64,7 +64,7 @@ creatMainMenu($fileName);                               // Create the main menu
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['Blockscan'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['Blockscan'];?></a>
                                         <label class="bc-blockscan-link-label offset-1 col-5">Code source :</label>
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['SourceCode'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['SourceCode'];?></a>
-                                        <div class="col-12">
+                                        <div class="text-container col-12">
                                             <div class="row">
 <?php        for($j = 0; $j < count($tabBlockchainDescription); $j++){ ?>
                                                 <p class="bc-description col-12"><?php echo $tabBlockchainDescription[$j];?></p>

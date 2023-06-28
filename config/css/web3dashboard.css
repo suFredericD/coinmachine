@@ -5,7 +5,7 @@
 // Role         : web3medias.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -18,7 +18,6 @@
     padding: 0;
     padding-bottom: 10px;
     border: 1px dotted #06c883;
-    transform: skew(-5deg,0);
     box-shadow: inset -1px -1px 4px 1px #ebef7b;
 }
 .blockchain .row {
@@ -311,8 +310,98 @@
 
 }
 @media screen and (max-width: 480px) {
-
+    #bc-dashboard-label {
+        font-size: 1.25em;
+    }
+    #bcd-mini-menu {
+        top: 25%;
+        left: 0;
+    }
+    #bcd-mini-menu h4 {
+        display: none;
+    }
+    #bcd-mini-menu ul li {
+        max-width: 15%;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #bcd-mini-menu ul li a {
+        font-size: 0.75em;
+    }
+    #bc-main-content {
+        margin-top: 30px;
+    }
+    #bc-blockchains-list article {
+        padding: 5px;
+        box-shadow: none;
+    }
+    #bc-blockchains-list article h3 {
+        font-size: 1.25em;
+    }
+    .bc-article-titles {
+        font-size: 0.9em;
+    }
+    .bc-consensus {
+        font-size: 0.75em;
+    }
+    .bc-blockscan-link-label {
+        font-size: 0.5em;
+    }
+    .bc-blockscan-link {
+        font-size: 0.5em;
+    }
+    .text-container {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .text-container .row {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 15px;
+        padding: 2px;
+    }
+    .bc-description {
+        padding: 0;
+        font-size: 0.6em;
+    }
+    .bc-ref-titles {
+        font-size: 0.5em;
+    }
+    .bc-ref-rubrics {
+        font-size: 0.5em;
+    }
+    .bc-ref-details, .bc-ref-details li a {
+        margin: 2px auto;
+        padding-left: 0px;
+    }
+    .bc-ref-details {
+        font-size: 0.5em;
+    }
+    .bc-ref-details li a {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 376px) {
+    #bcd-mini-menu {
+        top: 35%;
+    }
+    #bcd-mini-menu ul li {
+        margin-top: 0;
+        margin-bottom: 2px;
+        padding: 0;
+        line-height: 0.9em;
+    }
+    #bcd-mini-menu ul li a {
+        font-size: 0.65em;
+        margin: 0;
+        padding: 0;
+    }
 }
 @media screen and (max-width: 360px) {
-
+    #bcd-mini-menu ul li a {
+        font-size: 0.5em;
+    }
+    .bc-ref-titles {
+        font-size: 0.4em;
+    }
 }

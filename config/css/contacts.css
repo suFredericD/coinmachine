@@ -5,7 +5,7 @@
 // Role         : contacts.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-13
-// Last update  : 2021-06-18
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 :root {
         --linkedin: #0077b5;
@@ -24,6 +24,7 @@
 #contacts-container .row article {
     margin: 20px auto;
     padding: 10px;
+    padding-bottom: 20px;
     border: 1px ridge #06c883;
     border-radius: 0% 100% 100% 0% / 55% 46% 54% 45%;
     background-clip: text;
@@ -118,7 +119,9 @@ article .row a:hover {
 
 }
 @media screen and (max-width: 480px) {
-
+    #contacts-container .row article a {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 360px) {
 
