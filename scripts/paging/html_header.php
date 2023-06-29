@@ -20,6 +20,9 @@ function createHTMLheader($fileName){
     $strMainCSS = $strCSSpath . "main.css";
     $strFavicon = $strIconPath . "favicon.ico";
     $strSpecialCSSFile = $strCSSpath . substr(strrchr($fileName, "/"), 1, -4) . ".css";
+    $strKeywords = "blockchain, cryptomonnaies, web3, bitcoin, binance, swissborg, décentralisation, contrats intelligents, sécurité, transactions, finance décentralisée, DeFi, 
+                    tokenisation, actifs, NFT, smart contracts, ethereum, cryptographie, DApps, consensus, proof-of-work, proof-of-stake, confidentialité, 
+                    scalabilité, interopérabilité, adoption, éducation, ressources, consulting, formation, développement, audit";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="fr">
@@ -27,16 +30,16 @@ function createHTMLheader($fileName){
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blockchain and cryptocurrency education and consulting">
-    <meta name="keywords" content="">
+    <meta name="description" content="Blockchain et cryptomonnaies : éducation et consulting">
+    <meta name="keywords" content="<?php echo $strKeywords;?>">
     <meta name="author" content="<?php echo $strAuthor;?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index,follow">
-    <meta property="og:title" content="CoinMachine : Blockchain and cryptocurrency">
+    <meta property="og:title" content="CoinMachine : Blockchain et cryptomonnaies">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Blockchain and cryptocurrency education and consulting">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:description" content="Blockchain et cryptomonnaies : éducation et consulting">
+    <meta property="og:url" content="https://www.coinmachinehub.fr">
+    <meta property="og:image" content="https://www.coinmachinehub.fr/media/coinmachine/coinmachinehub-fr-2023-06-29.png">
     <meta property="og:locale" content="fr_FR">
 
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $strFavicon;?>">
