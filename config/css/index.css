@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-28
+// Last update  : 2021-06-29
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -90,7 +90,7 @@
     font-size: 1em;
     font-weight: 600;
     font-variant: small-caps;
-    color: #2c3e50;
+    color: #4c5d6e;
 }
 .breaking-news span {
     white-space: nowrap;

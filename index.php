@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2021-06-28
+// Last update  : 2023-06-28
 // =====================================================================================================
 require('scripts\paging\html_header.php');              // Include the HTML header builder
 require('scripts\paging\page_header.php');              // Include the page header builder

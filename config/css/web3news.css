@@ -5,7 +5,7 @@
 // Role         : web3news.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -96,23 +96,69 @@
 
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
- 
+
 }
 @media screen and (max-width: 1200px) {
 
 }
 @media screen and (max-width: 992px) {
-
+    #web3-news-label {
+        font-size: 1.75em;
+    }
+    .news-date {
+        text-align: center;
+        vertical-align: middle;
+        align-self: center;
+        align-items: center;
+    }
+    .news-title {
+        font-size: 1.25em; 
+    }
 }
 @media screen and (max-width: 768px) {
-
+    .news-date {
+        font-size: 1em;
+    }
+    .news-title {
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 576px) {
-
+    .news-date {
+        font-size: 0.8em;
+    }
+    .news-title {
+        font-size: 0.8em;
+    }
+    .news-text {
+        font-size: 0.6em;
+    }
+    .news-link {
+        font-size: 0.6em;
+    }
 }
 @media screen and (max-width: 480px) {
-
+    .news-date {
+        font-size: 0.7em;
+    }
+    .news-title {
+        font-size: 0.7em;
+    }
 }
 @media screen and (max-width: 360px) {
-
+    #web3-news-label {
+        font-size: 1.25em;
+    }
+    .news-date {
+        font-size: 0.5em;
+    }
+    .news-title {
+        font-size: 0.5em;
+    }
+    .news-text {
+        font-size: 0.4em;
+    }
+    .news-link {
+        font-size: 0.4em;
+    }
 }

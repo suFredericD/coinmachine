@@ -6,7 +6,7 @@
 // Role         : known fresh informations about web3
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-24
+// Last update  : 2021-06-28
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -41,11 +41,11 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
                         <div class="news-container col-12">
                             <div class="row">
-                                <img class="img-news col-4" src="<?php echo $strImageUrl;?>" alt="<?php echo $newsInfos['Title']; ?>">
-                                <div class="col-8">
+                                <img class="img-news col-xl-4" src="<?php echo $strImageUrl;?>" alt="<?php echo $newsInfos['Title']; ?>">
+                                <div class="col-xl-8">
                                     <div class="row">
-                                        <p class="news-date col-11"><?php echo $strDateNews; ?></p>
-                                        <img class="news-source-logo col-1" src="<?php echo $strLogoSource;?>" alt="<?php echo $newsInfos['SourceName']; ?>">
+                                        <p class="news-date col-11 col-xl-11"><?php echo $strDateNews; ?></p>
+                                        <img class="news-source-logo col-1 col-xl-1" src="<?php echo $strLogoSource;?>" alt="<?php echo $newsInfos['SourceName']; ?>">
                                         <h3 class="news-title col-12"><?php echo $newsInfos['Title'];?></h3>
                                         <p class="news-text col-12"><?php echo $newsInfos['Text'];?></p>
                                         <a class="news-link col-12" href="<?php echo $newsInfos['Url'];?>" target="_blank"><span class="fa-solid fa-arrow-up-right-from-square"></span><?php echo $strNewsLinkTitle;?></a>

@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-24
+// Last update  : 2021-06-29
 // =====================================================================================================
 require('..\scripts\paging\html_header.php');           // Include the HTML header builder
 require('..\scripts\paging\page_header.php');           // Include the page header builder
@@ -74,22 +74,23 @@ creatMainMenu($fileName);                               // Create the main menu
             $strFullName = $human['FirstName'] . " " . $human['LastName'];
             $strFullTitle =  $human['LastName'] . ", <span class=\"firstname\">" . $human['FirstName'] . "</span>";
             $datBirthDate = new DateTime($human['Birth']);
-            if($datBirthDate !="" && $datBirthDate->format('Y') > 0){
+            if($datBirthDate->format('Y') > 0){
                 $strBirthDate = $datBirthDate->format('d/m/Y');
                 $datNow = new DateTime();
                 $intAge = $datNow->diff($datBirthDate);
                 $strAge = $intAge->format('%y ans');
                 $strZodiacSign = getZodiacSign($human['Birth']);
+                $strZodiacSignTitle = $strZodiacSign . " zodiac sign picture";
                 $strZodiacImg = "../media/zodiac/" . $strZodiacSign . ".png";
             } else {
-                $strBirthDate = "Unknown";
-                $strAge = "Unknown";
-                $strZodiacSign = "Unknown";
+                $strBirthDate = "<span class=\"fa-solid fa-ban\"></span>";
+                $strAge = "<span class=\"fa-solid fa-ban\"></span>";
+                $strZodiacSign = "Unknow zodiac sign";
                 $strZodiacImg = "../media/zodiac/unknown.png";
             }
             $strPicture = "../media/people/" . $human['Picture'];
-            $strCompany = $human['FirmId'] != "" ? $human['FirmName']. "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>" : 'Unknown';
-            $strFunction = $human['FunctionId'] != "" ? $human['Function'] : 'Unknown';
+            $strCompany = $human['FirmId'] != "" ? $human['FirmName']. "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>" : "<span class=\"fa-solid fa-ban\"></span>";
+            $strFunction = $human['FunctionId'] != "" ? $human['Function'] : "<span class=\"fa-solid fa-ban\"></span>";
             $strFlag = "../media/flags/" . $human['CountryFlag'];
 // Find first letter of the last name and compare it to last "first-letter" to create a link for the mini navigation menu
             $tabLastNameLetters = str_split($human['LastName']);
@@ -114,25 +115,33 @@ creatMainMenu($fileName);                               // Create the main menu
                         <article id="<?php echo $strFullName;?>" class="col-12">
                             <div class="row">
                                 <h2 class="col-12 col-sm-6 col-md-7 col-lg-7 col-xl-7"><?php echo $strFullTitle;?></h2>
+<?php       if($human['CountryFlag'] != ""){ ?>                                
                                 <img class="flag col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1" src="<?php echo $strFlag;?>"/>
+<?php       } else { ?>
+                                <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1"><span class="fa-solid fa-ban"></span></div>
+<?php       } ?>
                                 <h3 class="col-2"><?php echo $strAge;?></h3>
                                 <h5 class="birthdate col-2"><?php echo $strBirthDate;?></h5>
                                 <img class="people-img col-4 col-sm-5 col-md-3" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
                                 <div class="col-11 col-sm-6 col-md-8">
                                     <div class="row">
                                         <h3 class="col-12 col-sm-6">Réseaux sociaux :</h3>
-<?php       if($human['Twitter'] != ""){ ?>
+<?php       if($human['Twitter'] == "" && $human['Facebook'] == "" && $human['Linkedin'] == ""){ ?>
+                                        <h3 class="nodata col-12 col-sm-6">Unknown</h3>
+<?php       } else {
+                if($human['Twitter'] != ""){ ?>
                                         <a class="socials col-2" href="<?php echo $human['Twitter'];?>" title="Compte Twitter de <?php echo $strFullName;?>" target="_blank">
                                             <span class="twitter-icon fa-brands fa-twitter-square"></span></a>
-<?php       } 
-            if($human['Facebook'] != ""){?>
+<?php           } 
+                if($human['Facebook'] != ""){?>
                                         <a class="socials col-2" href="<?php echo $human['Facebook'];?>" title="Compte Facebook de <?php echo $strFullName;?>" target="_blank">
                                             <span class="facebook-icon fa-brands fa-facebook-square"></span></a>
-<?php       } 
-            if($human['Linkedin'] != ""){?>
+<?php           } 
+                if($human['Linkedin'] != ""){?>
                                         <a class="socials col-2" href="<?php echo $human['Linkedin'];?>" title="Compte LinkedIn de <?php echo $strFullName;?>" target="_blank">
                                             <span class="linkedin-icon fa-brands fa-linkedin"></span></a>
-<?php       } ?>
+<?php           }
+            } ?>
                                         <h3 class="col-12 col-sm-6">Compagnie :</h3>
                                         <a class="col-12 col-sm-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
                                         <h3 class="col-12 col-sm-6">Fonction :</h3>
@@ -142,7 +151,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php       } ?>
                                     </div>
                                 </div>
-                                <img class="zodiac-img col-1 col-sm-1 col-md-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSign;?> zodiac sign picture" />
+                                <img class="zodiac-img col-1 col-sm-1 col-md-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSignTitle;?>" />
                             </div>
                         </article>
 <?php   } ?>

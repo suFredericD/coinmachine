@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-28
+// Last update  : 2021-06-29
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -100,6 +100,7 @@ article a, article p {
     max-height: 80px;
     margin: 0 auto;
     padding: 0;
+    z-index: 1;
 }
 .birthdate {
     font-family: "DotGothic16", sans-serif;
@@ -163,6 +164,9 @@ article p {
 .twitter-icon:hover, .facebook-icon:hover,
 .youtube-icon:hover, .linkedin-icon:hover {
     color: #8306c8;
+}
+.nodata {
+    text-align: left;
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {

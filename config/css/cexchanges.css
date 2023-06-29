@@ -5,7 +5,7 @@
 // Role         : cexchanges.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-16
-// Last update  : 2023-06-28
+// Last update  : 2023-06-29
 // ===================================================================================================== */
 :root {
     --twitter: #1da1f2;
@@ -152,6 +152,60 @@
 }
 .cex-tutos span {
     margin-left: 5px;
+}
+.cex-ceo-details, .cex-ceo-details .row {
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+}
+.cex-ceo-details .row {
+    margin: 2px auto;
+}
+.cex-ceo-details label, .cex-ceo-details h4,
+.cex-ceo-details a {
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+.cex-ceo-details label {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.25em;
+    text-align: right;
+    justify-content: flex-end;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+.cex-ceo-details label span {
+    margin-right: 5px;
+    font-size: 1.25em;
+}
+.cex-ceo-details h4 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    justify-content: flex-start;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.cex-ceo-details a {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1em;
+    text-align: left;
+    justify-content: flex-start;
+    color: #00acc1;
+}
+
+.cex-ceo-details a span {
+    margin-left: 5px;
+    font-size: 0.9em;
 }
 /* *** *** *** ANIMATIONS *** *** *** */
 @keyframes title-color {

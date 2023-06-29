@@ -56,7 +56,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         <div class="img-container col-4"><img class="img-fluid" src="../media/thumbnails/realT/screencapture-realt-001.png" alt="RealT logo"></div>
                         <div class="rta-article col-12 col-xl-6">
                             <div class="row">
-                                <div class="img-tuto offset-1 col-2 offset-xl-3 col-xl-1"><img class="img-fluid" src="../media/icons/unique-coins.png" alt="unique coins icon" /></div>
+                                <div class="img-tuto offset-1 col-2 offset-xl-2 col-xl-1"><img class="img-fluid" src="../media/icons/unique-coins.png" alt="unique coins icon" /></div>
                                 <h4 class="rta-subtitle col-8">Tokens uniques</h4>
                                 <p class="rta-details col-12">La propriété de chaque bien immobilier est répartie entre un nombre limité de jetons représentatifs.</p>
                                 <p class="rta-details col-12">En fonction de la part de jetons détenue, les propriétaires peuvent percevoir des revenus locatifs et participer aux décisions relatives à la propriété.</p>
@@ -64,7 +64,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                         <div class="rta-article col-12 col-xl-6">
                             <div class="row">
-                                <div class="img-tuto offset-1 col-2 offset-xl-3 col-xl-1"><img class="img-fluid" src="../media/icons/managed.png" alt="managed icon" /></div>
+                                <div class="img-tuto offset-1 col-2 offset-xl-2 col-xl-1"><img class="img-fluid" src="../media/icons/managed.png" alt="managed icon" /></div>
                                 <h4 class="rta-subtitle col-8">Gestion immobilière</h4>
                                 <p class="rta-details col-12">Chaque bien immobilier de <span class="realt-name">RealT</span> est géré par une société de gestion immobilière qui s'occupe du bien au nom des propriétaires de RealToken.</p>
                                 <p class="rta-details col-12">La société de gestion immobilière trouve des locataires, perçoit les loyers et gère les réparations, de sorte que le groupe diversifié de propriétaires de RealToken n'ait pas à le faire.</p>
@@ -72,7 +72,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                         <div class="rta-article col-12 col-xl-6">
                             <div class="row">
-                                <div class="img-tuto offset-1 col-2 offset-xl-3 col-xl-1"><img class="img-fluid" src="../media/icons/llc-owned.png" alt="managed icon" /></div>
+                                <div class="img-tuto offset-1 col-2 offset-xl-2 col-xl-1"><img class="img-fluid" src="../media/icons/llc-owned.png" alt="managed icon" /></div>
                                 <h4 class="rta-subtitle col-9">Propriété détenue par une société</h4>
                                 <p class="rta-details col-12">L'immobilier ne peut pas être directement tokenisé, mais les entités juridiques le peuvent.</p>
                                 <p class="rta-details col-12">Chaque bien immobilier est détenu par une société (soit une société par actions, soit une société à responsabilité limitée).</p>
@@ -81,7 +81,7 @@ creatMainMenu($fileName);                               // Create the main menu
                         </div>
                         <div class="rta-article col-12 col-xl-6">
                             <div class="row">
-                                <div class="img-tuto offset-1 col-2 offset-xl-3 col-xl-1"><img class="img-fluid" src="../media/icons/payments.png" alt="managed icon" /></div>
+                                <div class="img-tuto offset-1 col-2 offset-xl-2 col-xl-1"><img class="img-fluid" src="../media/icons/payments.png" alt="managed icon" /></div>
                                 <h4 class="rta-subtitle col-9">Paiements des loyers hebdomadaires</h4>
                                 <p class="rta-details col-12">Grâce aux blockchains, nous n'avons plus besoin d'attendre 30 jours pour recevoir un virement bancaire.</p>
                                 <p class="rta-details col-12">Posséder un bien immobilier avec <span class="realt-name">RealT</span> vous permet de percevoir votre loyer chaque semaine.</p>
