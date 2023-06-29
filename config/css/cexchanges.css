@@ -238,10 +238,15 @@
 
 }
 @media screen and (max-width: 992px) {
-
+    .cex-ceo-details a {
+        text-align: center;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 768px) {
-
+    .cex-ceo-details label {
+        justify-content: flex-start;
+    }
 }
 @media screen and (max-width: 576px) {
     #cex-master .row h1 {
@@ -259,6 +264,11 @@
     }
     .cex-tutos {
         font-size: 0.8em;
+    }
+    .cex-ceo-details label,
+    .cex-ceo-details h4,
+    .cex-ceo-details a {
+        font-size: 0.75em;
     }
 }
 @media screen and (max-width: 360px) {

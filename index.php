@@ -6,17 +6,16 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-28
+// Last update  : 2023-06-29
 // =====================================================================================================
-require('scripts\paging\html_header.php');              // Include the HTML header builder
-require('scripts\paging\page_header.php');              // Include the page header builder
-require('scripts\paging\html_footer.php');              // Include the HTML footer builder
-require('scripts\paging\main_menu.php');                // Include the main menu builder
-require('admin\db_access.php');                         // Include the database access informations
-require('admin\db_requestBuilder.php');                 // Include the database access functions
+require('scripts/paging/html_header.php');              // Include the HTML header builder
+require('scripts/paging/page_header.php');              // Include the page header builder
+require('scripts/paging/html_footer.php');              // Include the HTML footer builder
+require('scripts/paging/main_menu.php');                // Include the main menu builder
+require('admin/db_access.php');                         // Include the database access informations
+require('admin/db_requestBuilder.php');                 // Include the database access functions
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
-$siteInformations = [];
 
 $tabNewsDetails = get5LastNewsDetailsByDate();          // Get the news details
 $intBlockchains = getItemsCountInTable('blockchain');   // Get the number of blockchains
@@ -25,8 +24,14 @@ $intCexchanges = getItemsCountInTable('cexchange');     // Get the number of cen
 $intGlossary = getItemsCountInTable('glossary');        // Get the number of items in the glossary
 $intTutorials = getTutorialsCount();                    // Get the number of tutorials
 $intToolbox = getItemsCountInTable('toolbox');          // Get the number of items in the toolbox
+$intMedias = getItemsCountInTable('media');             // Get the number of items in the medias
+$intMediasNewspapers = getMediasCountById(2);           // Get the number of newspapers in the medias
+$intMediasCharts = getMediasCountById(3);               // Get the number of charts in the medias
+$intMediasYoutubers = getMediasCountById(1);            // Get the number of youtubers in the medias
+$intMediasTwittos = getMediasCountById(4);              // Get the number of twittos in the medias
+$intMediasWoTwittos = $intMedias - $intMediasTwittos - $intMediasCharts;   // Get the number of medias without twittos
 
-createHTMLheader($fileName, $siteInformations);         // Create the HTML header
+createHTMLheader($fileName);                            // Create the HTML header
 createPageheader($fileName);                            // Create the page header
 creatMainMenu($fileName);                               // Create the main menu
 ?>
@@ -130,7 +135,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/web3news.php">News</a>       : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
    |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em><?php echo $intTutorials;?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
    |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em><?php echo $intToolbox;?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
-   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em>médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...</em>
+   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em><?php echo $intMediasWoTwittos;?> médias d'actualités crypto et <?php echo $intMediasTwittos;?> twittos triés pour la qualité de leur contenu...</em>
    |            |___ <a href="pages/web3medias.php#news">Journaux</a>
    |            |___ <a href="pages/web3medias.php#charts">Charts</a>
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>

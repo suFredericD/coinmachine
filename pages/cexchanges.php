@@ -8,12 +8,12 @@
 // Creation     : 2023-06-16
 // Last update  : 2023-06-29
 // =====================================================================================================
-require('..\scripts\paging\html_header.php');           // Include the HTML header builder
-require('..\scripts\paging\page_header.php');           // Include the page header builder
-require('..\scripts\paging\html_footer.php');           // Include the HTML footer builder
-require('..\scripts\paging\main_menu.php');             // Include the menu builder script
-require('..\admin\db_access.php');                      // Include the database access script
-require('..\admin\db_requestBuilder.php');              // Include the database request builder script
+require('../scripts/paging/html_header.php');           // Include the HTML header builder
+require('../scripts/paging/page_header.php');           // Include the page header builder
+require('../scripts/paging/html_footer.php');           // Include the HTML footer builder
+require('../scripts/paging/main_menu.php');             // Include the menu builder script
+require('../admin/db_access.php');                      // Include the database access script
+require('../admin/db_requestBuilder.php');              // Include the database request builder script
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 $siteInformations = [];
@@ -99,17 +99,17 @@ creatMainMenu($fileName);                               // Create the main menu
                     } ?>
                         <div class="cex-ceo-details col-12">
                             <div class="row">
-                                <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2" src="<?php echo $strCeoImg;?>" alt="<?php echo $strCeoImgAlt;?>" />
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-10">
+                                <img class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-2" src="<?php echo $strCeoImg;?>" alt="<?php echo $strCeoImgAlt;?>" />
+                                <div class="col-9 col-sm-10 col-md-10 col-lg-11 col-xl-10">
                                     <div class="row">
                                         <label class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2"><span class="fa-solid fa-user-tie"></span>Ceo :</label>
                                         <h4 class="col-12 col-sm-12 col-md-9 col-lg-3 col-xl-3"><?php echo $strCeoName;?></h4>
                                         <a class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" title="<?php echo $strCeoLinkTitle;?>" href="<?php echo $strCeoLink;?>" target="_blank">Consulter son profil<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
                                         <label class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2"><span class="fa-regular fa-calendar-days"></span>Age :</label>
                                         <h4 class="col-12 col-sm-12 col-md-9 col-lg-10 col-xl-10"><?php echo $strAge;?></h4>
-                                        <label class="col-10 col-sm-10 col-md-4 col-lg-3 col-xl-3">Birth country :</label>
+                                        <label class="col-9 col-sm-10 col-md-4 col-lg-3 col-xl-3">Birth country :</label>
 <?php               if($ceos['Country'] != ""){ ?>
-                                        <img class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1" src="<?php echo $strCountryFlag;?>" alt="<?php echo $strCountryFlagTitle;?>" />
+                                        <img class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1" src="<?php echo $strCountryFlag;?>" alt="<?php echo $strCountryFlagTitle;?>" />
 <?php               } else { ?>
                                         <h4 class="col-2 col-sm-2 col-md-9 col-lg-10 col-xl-10"><span class="fa-solid fa-ban"></span></h4>
 <?php               } ?>

@@ -8,13 +8,13 @@
 // Creation     : 2023-06-18
 // Last update  : 2021-06-29
 // =====================================================================================================
-require('..\scripts\paging\html_header.php');           // Include the HTML header builder
-require('..\scripts\paging\page_header.php');           // Include the page header builder
-require('..\scripts\paging\html_footer.php');           // Include the HTML footer builder
-require('..\scripts\paging\main_menu.php');             // Include the menu builder script
-require('..\admin\db_access.php');                      // Include the database access script
-require('..\admin\db_requestBuilder.php');              // Include the database request builder script
-require('..\scripts\php\tools.php');                    // Include the utilitary functions script
+require('../scripts/paging/html_header.php');           // Include the HTML header builder
+require('../scripts/paging/page_header.php');           // Include the page header builder
+require('../scripts/paging/html_footer.php');           // Include the HTML footer builder
+require('../scripts/paging/main_menu.php');             // Include the menu builder script
+require('../admin/db_access.php');                      // Include the database access script
+require('../admin/db_requestBuilder.php');              // Include the database request builder script
+require('../scripts/php/tools.php');                    // Include the utilitary functions script
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 $siteInformations = [];
