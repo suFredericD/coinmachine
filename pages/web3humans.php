@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-29
+// Last update  : 2021-06-30
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -25,6 +25,7 @@ $tabMinNavAlphabet = ['A', 'N', 'B', 'O', 'C', 'P', 'D', 'Q', 'E', 'R',
 $tabAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
                 'U', 'V', 'W', 'X', 'Y', 'Z'];
+$tabHumansReferences = getHumansReferences();
 $tabHumansOrderedByAlphaLastName = getHumansOrderedByAlphaLastName();
 $strPreviousLetter = "";
 $tabAlphaHumans = [];
@@ -90,7 +91,11 @@ creatMainMenu($fileName);                               // Create the main menu
             }
             $strPicture = "../media/people/" . $human['Picture'];
             $strCompany = $human['FirmId'] != "" ? $human['FirmName']. "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>" : "<span class=\"fa-solid fa-ban\"></span>";
-            $strFunction = $human['FunctionId'] != "" ? $human['Function'] : "<span class=\"fa-solid fa-ban\"></span>";
+            if($human['FunctionId'] != ""){
+                $strFunction = $human['Gender'] != 0 ? $human['Function'] : $human['FunctionFeminized'];
+            } else {
+                $strFunction = "<span class=\"fa-solid fa-ban\"></span>";
+            }
             $strFlag = "../media/flags/" . $human['CountryFlag'];
 // Find first letter of the last name and compare it to last "first-letter" to create a link for the mini navigation menu
             $tabLastNameLetters = str_split($human['LastName']);
@@ -152,6 +157,19 @@ creatMainMenu($fileName);                               // Create the main menu
                                     </div>
                                 </div>
                                 <img class="zodiac-img col-1 col-sm-1 col-md-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSignTitle;?>" />
+                                
+<?php       if($tabHumansReferences != ""){
+                foreach($tabHumansReferences as $reference) {
+                    if($reference['SubjectId'] == $human['Id']){ ?>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <h5 class="ref-type col-4"><?php echo $reference['TypeTitle'];?></h5>
+                                        <a class="ref-link col-8" href="<?php echo $reference['Link'];?>" title="<?php echo $reference['Tooltip'];?>" target="_blank"><?php echo $reference['Title'];?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                                    </div>
+                                </div>    
+<?php               }
+               }
+            } ?>
                             </div>
                         </article>
 <?php   } ?>

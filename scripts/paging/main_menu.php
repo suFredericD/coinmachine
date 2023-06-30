@@ -142,7 +142,7 @@ function creatMainMenu($fileName){
                         </li>
 <!-- Projets section -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bons plans</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Earning</a>
                             <ul class="dropdown-menu ddm-user">
                                 <li><a class="dropdown-item" href="<?php echo $strRealToverview;?>" title="<?php echo $strRealToverviewTitle;?>">
                                     <span class="fa-solid fa-city"></span>&nbsp;&nbsp;RealT&nbsp;&nbsp;<span class="fa-solid fa-money-bill-trend-up"></span></a></li>

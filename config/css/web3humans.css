@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-29
+// Last update  : 2021-06-30
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -167,6 +167,28 @@ article p {
 }
 .nodata {
     text-align: left;
+}
+/* *** *** *** REFERENCES *** *** *** */
+.ref-type, .ref-link {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+.ref-type {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: right;
+}
+.ref-link {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: left;
+}
+.ref-link span {
+    margin-left: 5px;
+    font-size: 0.8em;
 }
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {

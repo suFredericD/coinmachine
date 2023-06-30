@@ -141,7 +141,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
    |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>
    |
-   |__ <strong>Bons plans</strong>
+   |__ <strong>Earning</strong>
         |___ <a href="pages/realtOverview.php">RealT</a>       : <em>une plateforme incontournable d'investissement immobilier tokenisé...</em>
                 </pre>
 <!-- --- --- END of content --- --- -->

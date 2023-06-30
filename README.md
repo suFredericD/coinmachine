@@ -54,6 +54,6 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 
 - ---
 
-## Bons plans
+## Earning
 
 - [RealT]

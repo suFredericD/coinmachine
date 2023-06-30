@@ -51,7 +51,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 if($tabTutorials[$j]['DifficultyId'] == $tabDifficultyLevels[$i]['Id']){
                     $strThumbnail = "../media/thumbnails/" . $tabTutorials[$j]['Thumbnail'];
                     if(explode(".", $tabTutorials[$j]['File'])[1] == "php"){
-                        $strTutorialLink = "pages/" . $tabTutorials[$j]['File'];
+                        $strTutorialLink = $tabTutorials[$j]['File'];
                         $strTutoLinkContent = "<span class=\"fa-solid fa-arrow-up-right-from-square\"></span>";
                     } else {
                         $strTutorialLink = "../" . $tabTutorials[$j]['Path'] . $tabTutorials[$j]['File'];

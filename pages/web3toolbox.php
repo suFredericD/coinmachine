@@ -53,11 +53,11 @@ creatMainMenu($fileName);                               // Create the main menu
 ?>
                                 <article class="toolbox-item-container col-11">
                                     <div class="row">
-                                        <a class="col-4" href="<?php echo $tabToolBaxItems[$j]['Url'];?>" title="<?php echo $strLinkTitle;?>">
+                                        <a class="col-4" href="<?php echo $tabToolBaxItems[$j]['Url'];?>" title="<?php echo $strLinkTitle;?>" target="_blank">
                                             <h3><?php echo $tabToolBaxItems[$j]['Name'];?></h3>
                                         </a>
                                         <h4 class="col-8"><?php echo $tabToolBaxItems[$j]['Title'];?></h4>
-                                        <a class="col-4" href="<?php echo $tabToolBaxItems[$j]['Url'];?>" title="<?php echo $strLinkTitle;?>">
+                                        <a class="col-4" href="<?php echo $tabToolBaxItems[$j]['Url'];?>" title="<?php echo $strLinkTitle;?>" target="_blank">
                                             <img src="<?php echo $strThumbnail;?>" alt="<?php echo $tabToolBaxItems[$j]['Name'];?> thumbnail" />
                                         </a>
                                         <p class="toolbox-text col-8"><?php echo $tabToolBaxItems[$j]['Description'];?></p>
