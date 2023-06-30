@@ -58,11 +58,11 @@ creatMainMenu($fileName);                               // Create the main menu
                                     <div class="row">
                                         <h3 class="col-7"><a class="bc-article-titles" id="<?php echo $tabBlockchainsInfos[$i]['OrderId'];?>"><?php echo $tabBlockchainsInfos[$i]['Name'];?></a></h3>
                                         <h4 class="bc-consensus col-4"><?php echo $tabBlockchainsInfos[$i]['Consensus'];?></h4>
-                                        <label class="bc-blockscan-link-label offset-1 col-5">Website :</label>
+                                        <label class="bc-blockscan-link-label col-5">Website :</label>
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['Website'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['Website'];?></a>
-                                        <label class="bc-blockscan-link-label offset-1 col-5">Explorateur de blocs :</label>
+                                        <label class="bc-blockscan-link-label col-5">Explorateur de blocs :</label>
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['Blockscan'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['Blockscan'];?></a>
-                                        <label class="bc-blockscan-link-label offset-1 col-5">Code source :</label>
+                                        <label class="bc-blockscan-link-label col-5">Code source :</label>
                                         <a class="bc-blockscan-link col-6" href="<?php echo $tabBlockchainsInfos[$i]['SourceCode'];?>" target="_blank"><?php echo $tabBlockchainsInfos[$i]['SourceCode'];?></a>
                                         <div class="text-container col-12">
                                             <div class="row">

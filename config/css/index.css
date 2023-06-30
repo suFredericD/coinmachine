@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-29
+// Last update  : 2021-06-30
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -31,7 +31,7 @@
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
 #see-map {
-    opacity: 0;
+    opacity: 0.95;
     margin-bottom: 5px;
     border: none;
     border-radius: 25px;
@@ -106,7 +106,7 @@
 }
 /* *** *** *** TITRAGES *** *** *** */
 #index-title {
-    opacity: 0;
+    opacity: 0.95;
     margin: 10px auto;
     padding: 0;
     font-family: "AudioWide", sans-serif;
@@ -120,7 +120,7 @@
     background-image: linear-gradient(45deg, #ebef7b, #06c883);
 }
 #index-intro-cm .row h2 {
-    opacity: 0;
+    opacity: 0.95;
     font-family: "Frijole", cursive;
     font-size: 1.5rem;
     background-clip: text;
@@ -144,7 +144,7 @@
 }
 /* *** *** *** USER CLASSES *** *** *** */
 #index-intro p {
-    opacity: 0;
+    opacity: 0.95;
     margin: 10px auto;
     padding: 0 100px;
     font-family: "Aldrich", sans-serif;
@@ -176,7 +176,7 @@
     background-image: linear-gradient(90deg, #ebef7b, #06c883);
 }
 .intro-cm-fulltext {
-    opacity: 0;
+    opacity: 0.95;
     margin: 10px auto;
     padding: 0 40px;
     font-size: 1em;
@@ -185,10 +185,10 @@
     background-image: linear-gradient(90deg, #06c883, #ebef7b);
 }
 .intro-cm-shorttext {
-    opacity: 0;
+    opacity: 0.95;
 }
 .intro-cm-contact {
-    opacity: 0;
+    opacity: 0.95;
     margin: 0px auto;
     margin-bottom: 20px;
     padding: 0 40px;
@@ -197,7 +197,7 @@
     background-image: linear-gradient(90deg, #ebef7b, #06c883);
 }
 #index-intro-cm div img {
-    opacity: 0;
+    opacity: 0.95;
 }
 /* *** *** *** WEBSITE TREE MAP *** *** *** */
 #arborescence a {
@@ -283,7 +283,7 @@
       opacity: 1;
     }
     50% {
-      opacity: 0;
+      opacity: 0.95;
     }
     100% {
       opacity: 1;
@@ -291,13 +291,13 @@
 }
 @keyframes fade-in-out {
     0% {
-      opacity: 0;
+      opacity: 0.95;
     }
     50% {
       opacity: 1;
     }
     100% {
-      opacity: 0;
+      opacity: 0.95;
     }
 }
 @keyframes slide {
@@ -358,9 +358,6 @@
     .intro-cm-fulltext, .intro-cm-contact {
         font-size: 0.6em;
     }
-    #index-intro-cm .row img {
-        display: none;
-    }
 }
 @media screen and (max-width: 576px) {
     #index-title {
@@ -388,12 +385,12 @@
         font-size: 1rem;
     }
     #index-intro p {
-        font-size: 0.4em;
+        font-size: 0.55em;
         padding: 0 5px;
     }
     #index-intro-cm-text .row p,
     .intro-cm-fulltext, .intro-cm-contact {
-        font-size: 0.4em;
+        font-size: 0.5em;
     }
     #index-intro-cm .row img {
         display: none;
@@ -429,13 +426,14 @@
         font-size: 0.5em;
     }
     .index-news-marquee {
-        font-size: 0.4em;
+        font-size: 0.5em;
+        font-weight: 600;
     }
     #index-title {
         font-size: 0.8rem;
     }
     #index-intro p {
-        font-size: 0.4em;
+        font-size: 0.55em;
         padding: 0 5px;
     }
     #index-intro-cm .row h2 {
@@ -443,6 +441,10 @@
     }
     #index-intro-cm .row img {
         display: none;
+    }
+    #index-intro-cm-text .row p, .intro-cm-shorttext,
+    .intro-cm-fulltext, .intro-cm-contact {
+        font-size: 0.5em;
     }
     #see-map {
         font-size: 0.3em;

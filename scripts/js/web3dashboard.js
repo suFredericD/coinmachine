@@ -5,26 +5,17 @@
 // Role         : animation JS script for web3dashboard.php
 // Author       : CoinMachine
 // Creation     : 2023-06-13
-// Last update  : 2021-06-13
+// Last update  : 2021-06-30
 // =====================================================================================================
 // ================ DOM ELEMENTS ================ //
-const refDetails = document.querySelectorAll('.bc-references');
+const refSectionTitles = document.querySelectorAll('.bc-ref-titles');
 
 // ================ FUNCTIONS ================ //
-function toggleReferences(intRubricId) {                            // toggle references rubrics details
-    const strRubricId = "#ref" + intRubricId;
-    const domRubric = document.querySelector(strRubricId);
-    if(domRubric.style.display != "none"){
-        domRubric.style.display = "none";
-
-    } else {
-        domRubric.style.display = "flex"
-    }
-}
 
 // ================ EVENT LISTENERS ================ //
-document.querySelectorAll('.bc-ref-titles').forEach(item => {       // click on a reference rubric title
+refSectionTitles.forEach(item => {       // click on a reference rubric title
     item.addEventListener('click', event => {
-        toggleReferences(item.id);
+        refSection = "#ref" + item.id;
+        $(refSection).slideToggle("slow");
     })
 });

@@ -247,7 +247,7 @@
 }
 .bc-ref-tooltip {
     font-size: 0.9em;
-    font-weight: 900;
+    font-weight: 800;
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
@@ -396,6 +396,17 @@
         margin: 0;
         padding: 0;
     }
+    .bc-ref-details {
+        font-size: 1em;
+    }
+    .bc-ref-details li a {
+        font-size: 0.9em;
+    }
+    .bc-ref-details li a span,
+    .bc-ref-tooltip {
+        margin-left: 4px;
+        font-size: 1em;
+    }
 }
 @media screen and (max-width: 360px) {
     #bcd-mini-menu ul li a {
@@ -403,5 +414,25 @@
     }
     .bc-ref-titles {
         font-size: 0.4em;
+    }
+    .bc-ref-details {
+        margin-left: 5px;
+        padding-left: 0px;
+        font-size: 0.8em;
+    }
+    .bc-ref-details li {
+        margin-left: 10px;
+    }
+    .bc-ref-details li a {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 20px;
+        flex-wrap: wrap;
+        font-size: 1em;
+    }
+    .bc-ref-details li a span,
+    .bc-ref-tooltip {
+        margin-left: 2px;
+        font-size: 1em;
     }
 }

@@ -52,9 +52,9 @@ creatMainMenu($fileName);                               // Create the main menu
                         </ul>
                     </div><hr>
                 </article>
-                <h1 id="index-title" class="col-11">CoinMachine Plateforme</h1>
+                <h1 id="index-title" class="col-11">CoinMachine Hub</h1>
                 <div id="index-intro" class="col-11">
-                    <p>CoinMachine Plateforme est dédiée à l'éducation et au consulting en blockchain et cryptomonnaies.</p>
+                    <p>CoinMachine Hub est dédiée à l'éducation et au consulting en blockchain et cryptomonnaies.</p>
                     <p>Vous trouverez ici des ressources, des tutoriels, des outils, des liens utiles, des actualités, des analyses, des projets...</p>
                     <p>Le but est d'aider chacun à comprendre les blockchains et les cryptomonnaies, à se familiariser avec les outils et les usages, à être accompagné dans leurs utilisations.</p>
                 </div>
