@@ -29,19 +29,23 @@ $tabHumansReferences = getHumansReferences();
 $tabHumansOrderedByAlphaLastName = getHumansOrderedByAlphaLastName();
 $strPreviousLetter = "";
 $tabAlphaHumans = [];
+$tabAlphaHumansCount = [];
 for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
     $letter = $tabMinNavAlphabet[$i];
+    $intHumansCount = 0;
     foreach($tabHumansOrderedByAlphaLastName as $human) {
         $tabLastNameLetters = str_split($human['LastName']);
-            if($tabLastNameLetters[0] == $letter) {
-                if(isset($tabAlphaHumans[$i])){
-                    $tabAlphaHumans[$i] .= ", " . $human['LastName'] . " " . $human['FirstName'];
-                } else {
-                    $tabAlphaHumans[$i] = $human['LastName'] . " " . $human['FirstName'];
-                }
-                
+        if($tabLastNameLetters[0] == $letter) {
+            if(isset($tabAlphaHumans[$i])){
+                $tabAlphaHumans[$i] .= ", " . $human['LastName'] . " " . $human['FirstName'];
+                $intHumansCount++;
+            } else {
+                $tabAlphaHumans[$i] = $human['LastName'] . " " . $human['FirstName'];
+                $intHumansCount++;
             }
+        }
     }
+    $tabAlphaHumansCount[$i] = $intHumansCount;
 }
 
 // =====================================================================================================
@@ -63,8 +67,9 @@ creatMainMenu($fileName);                               // Create the main menu
             } else {
                 $strMiniNavTitle = "Aucun humain répertorié pour cette lettre";
             }
+            $strDisplayLink = $tabMinNavAlphabet[$i] . " <span class=\"humans-count\">(" . $tabAlphaHumansCount[$i] . ")</span>";
 ?>
-                        <a class="col-6" href="#<?php echo $tabMinNavAlphabet[$i];?>" title="<?php echo $strMiniNavTitle;?>"><?php echo $tabMinNavAlphabet[$i];?></a>
+                        <a class="col-6" href="#<?php echo $tabMinNavAlphabet[$i];?>" title="<?php echo $strMiniNavTitle;?>"><?php echo $strDisplayLink;?></a>
 <?php   } ?>
                     </div>
                 </nav>

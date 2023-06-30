@@ -6,7 +6,7 @@
 // Role         : epxlantions about topics and expressions about web3
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-29
+// Last update  : 2021-06-30
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -32,16 +32,15 @@ for($i = 0; $i < count($tabMinNavAlphabet); $i++) {
     $intWordsCount = 0;
     foreach($tabGlossary as $glossary) {
         $tabLastNameLetters = str_split($glossary['Expression']);
-            if($tabLastNameLetters[0] == $letter) {
-                if(isset($tabAlphaGlossary[$i])){
-                    $tabAlphaGlossary[$i] .= ", " . $glossary['Expression'];
-                    $intWordsCount++;
-                } else {
-                    $tabAlphaGlossary[$i] = $glossary['Expression'];
-                    $intWordsCount++;
-                }
-                
-            }
+        if($tabLastNameLetters[0] == $letter) {
+            if(isset($tabAlphaGlossary[$i])){
+                $tabAlphaGlossary[$i] .= ", " . $glossary['Expression'];
+                $intWordsCount++;
+            } else {
+                $tabAlphaGlossary[$i] = $glossary['Expression'];
+                $intWordsCount++;
+            }   
+        }
     }
     $tabAlphaGlossaryCount[$i] = $intWordsCount;
 }

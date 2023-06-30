@@ -52,6 +52,10 @@ article {
 #humans-mini-nav .row a:hover {
     color: #8306c8;
 }
+.humans-count {
+    font-family: "Lekton";
+    font-size: 0.9rem;
+}
 /* *** *** *** TITRAGES *** *** *** */
 #humans-main-title, article h2, article h3 {
     vertical-align: bottom;
