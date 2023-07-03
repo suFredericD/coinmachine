@@ -35,7 +35,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php   foreach ($tabNewsInfos as $newsInfos) {
             $dateNews = new DateTime($newsInfos['Date']);
             $strDateNews = "[" . $dateNews->format('d/m/Y') . "] - <span class=\"news-source\">" . $newsInfos['SourceName'] . "</span>";
-            $strImageUrl = "../media/thumbnails/" . $newsInfos['Thumbnail'];
+            $strImageUrl = "../media/thumbnews/" . $newsInfos['Thumbnail'];
             $strLogoSource = "../media/logos/" . $newsInfos['SourceLogo'];
             $strNewsLinkTitle = "Lire l'article complet sur " . $newsInfos['SourceName'] . "...";
 ?>

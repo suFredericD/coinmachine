@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-30
+// Last update  : 2021-07-03
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -152,12 +152,15 @@ creatMainMenu($fileName);                               // Create the main menu
                                             <span class="linkedin-icon fa-brands fa-linkedin"></span></a>
 <?php           }
             } ?>
-                                        <h3 class="col-12 col-sm-6">Compagnie :</h3>
-                                        <a class="col-12 col-sm-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
-                                        <h3 class="col-12 col-sm-6">Fonction :</h3>
-                                        <p class="col-12 col-sm-6"><?php echo $strFunction;?></p>
+                                        <h3 class="col-12 col-sm-12 col-md-6">Compagnie :</h3>
+                                        <a class="col-12 col-sm-12 col-md-6" href="<?php echo $human['Website'];?>" title="<?php echo $human['FirmTooltip'];?>" target="_blank"><?php echo $strCompany;?></a>
+                                        <h3 class="col-12 col-sm-12 col-md-6">Fonction :</h3>
+                                        <p class="col-12 col-sm-12 col-md-6"><?php echo $strFunction;?></p>
 <?php       if($human['WikiFr'] != "" || $human['WikiEn'] != ""){ ?>
                                         <a class="wiki-link col-12" href="<?php echo $strWikiLink;?>" target="_blank">A propos de <?php echo $strFullName;?><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+<?php       }
+            if($human['fullBio'] != ""){ ?>
+                                        <p class="human-small-bio col-12"><?php echo $human['fullBio'];?></p>
 <?php       } ?>
                                     </div>
                                 </div>

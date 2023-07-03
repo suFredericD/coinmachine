@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-06-30
+// Last update  : 2021-07-03
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -144,6 +144,14 @@ article p {
     text-align: center;
     font-size: 0.9em;
 }
+.human-small-bio {
+    margin: 5px auto;
+    padding: 5px;
+    text-align: justify;
+    font-family: "Lekton", sans-serif;
+    font-size: 0.9em;
+    line-height: 0.99em;
+}
 .flag {
     max-height: 30px;
 }
@@ -218,6 +226,12 @@ article p {
     #humans-main-content article p {
         font-size: 1em;
     }
+    .ref-type {
+        font-size: 1em;
+    }
+    .ref-link {
+        font-size: 0.75em;
+    }
 }
 @media screen and (max-width: 768px) {
 
@@ -241,6 +255,9 @@ article p {
     }
     #humans-main-content article h3 {
         font-size: 0.7em;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 2px;
     }
     #humans-main-content article h5 {
         font-size: 0.5em;
@@ -248,6 +265,12 @@ article p {
     #humans-main-content article a,
     #humans-main-content article p {
         font-size: 0.7em;
+    }
+    .ref-type {
+        font-size: 1em;
+    }
+    .ref-link {
+        font-size: 0.5em;
     }
 }
 @media screen and (max-width: 480px) {
@@ -276,10 +299,20 @@ article p {
         top: 25%;
         font-size: 0.5em;
     }
+    .humans-count {
+        font-size: 0.5rem;
+    }
     #humans-main-content article h2 {
         font-size: 1em;
     }
     .people-img {
         margin-left: 5px;
+    }
+    .ref-type {
+        font-size: 1em;
+    }
+    #humans-main-content article p,
+    #humans-main-content article a, .ref-link {
+        font-size: 0.4em;
     }
 }
