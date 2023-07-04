@@ -5,7 +5,7 @@
 // Role         : web3humans.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-07-03
+// Last update  : 2021-07-04
 // ===================================================================================================== */
 :root {
     --linkedin: #0077b5;
@@ -303,13 +303,13 @@ article p {
         font-size: 0.5rem;
     }
     #humans-main-content article h2 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .people-img {
         margin-left: 5px;
     }
     .ref-type {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     #humans-main-content article p,
     #humans-main-content article a, .ref-link {

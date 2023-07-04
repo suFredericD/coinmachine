@@ -6,7 +6,7 @@
 // Role         : web3 humans presentation page
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-07-03
+// Last update  : 2021-07-04
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -124,18 +124,19 @@ creatMainMenu($fileName);                               // Create the main menu
                         <div id="<?php echo $strRefLink;?>"></div>
                         <article id="<?php echo $strFullName;?>" class="col-12">
                             <div class="row">
-                                <h2 class="col-12 col-sm-6 col-md-7 col-lg-7 col-xl-7"><?php echo $strFullTitle;?></h2>
+                                <h2 class="col-12 col-sm-6 col-md-12 col-lg-7 col-xl-7"><?php echo $strFullTitle;?></h2>
 <?php       if($human['CountryFlag'] != ""){ ?>                                
                                 <img class="flag col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1" src="<?php echo $strFlag;?>"/>
 <?php       } else { ?>
                                 <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1"><span class="fa-solid fa-ban"></span></div>
 <?php       } ?>
-                                <h3 class="col-2"><?php echo $strAge;?></h3>
-                                <h5 class="birthdate col-2"><?php echo $strBirthDate;?></h5>
-                                <img class="people-img col-4 col-sm-5 col-md-3" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
-                                <div class="col-11 col-sm-6 col-md-8">
+                                <h3 class="col-2 col-sm-2 col-md-2"><?php echo $strAge;?></h3>
+                                <h5 class="birthdate col-2 col-sm-2 col-md-2"><?php echo $strBirthDate;?></h5>
+
+                                <img class="people-img col-6 col-sm-4 col-md-4 col-lg-5 col-xl-3" src="<?php echo $strPicture;?>" title="Photo de <?php echo $strFullName;?>" />
+                                <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-8">
                                     <div class="row">
-                                        <h3 class="col-12 col-sm-6">Réseaux sociaux :</h3>
+                                        <h3 class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">Réseaux sociaux :</h3>
 <?php       if($human['Twitter'] == "" && $human['Facebook'] == "" && $human['Linkedin'] == ""){ ?>
                                         <h3 class="nodata col-12 col-sm-6">Unknown</h3>
 <?php       } else {
@@ -164,7 +165,7 @@ creatMainMenu($fileName);                               // Create the main menu
 <?php       } ?>
                                     </div>
                                 </div>
-                                <img class="zodiac-img col-1 col-sm-1 col-md-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSignTitle;?>" />
+                                <img class="zodiac-img col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" src="<?php echo $strZodiacImg;?>" alt="<?php echo $strZodiacSignTitle;?>" />
                                 
 <?php       if($tabHumansReferences != ""){
                 foreach($tabHumansReferences as $reference) {

@@ -42,4 +42,4 @@ for(let i = 1; i < tabNews.length; i++){
 }
 setTimeout(function(){
     disclaimer.style.display = "none";
-}, 5000);
+}, 7500);
