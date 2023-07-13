@@ -5,7 +5,7 @@
 // Role         : web3news.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-06-28
+// Last update  : 2021-07-13
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -90,6 +90,79 @@
     background-image: linear-gradient(45deg, #06acc8, #8306c8);
 }
 .news-link span {
+    margin-right: 5px;
+}
+/* *** *** *** LITTLE CARDS *** *** *** */
+#old-news {
+    margin: 10px auto;
+    padding: 10px;
+}
+#old-news-row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.old-news-month {
+    margin: 5px auto;
+    padding: 0;
+    font-family: "Audiowide";
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: left;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.little-card-news {
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px inset #06c883;
+    box-shadow: inset 0 0 10px #06c883;
+    transition: all 0.5s ease-in-out;
+}
+.little-card-news:hover {
+    transform: scale(2);
+}
+.little-card-news .row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.little-date-news {
+    margin: 0;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 1em;
+    color: #06acc8;
+}
+.little-title-news {
+    margin: 5px auto;
+    font-family: "Aldrich", sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+}
+.little-link-news {
+    margin: 5px auto;
+    text-decoration: none;
+    font-family: "Aldrich", sans-serif;
+    font-size: 0.5em;
+    text-align: center;
+}
+.little-link-news span {
     margin-right: 5px;
 }
 /* *** *** *** ANIMATIONS *** *** *** */
