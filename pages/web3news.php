@@ -71,7 +71,7 @@ creatMainMenu($fileName);                               // Create the main menu
                                 <h2 class="old-news-month col-12"><?= $strMonth?></h2>
 <?php       }
 ?>
-                                <article class="little-card-news col-2">
+                                <article class="little-card-news col-5 col-sm-5 col-md-3 col-lg-2 col-xl-2">
                                     <div class="row">
                                         <div class="little-date-news col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9"><?= "[" . $dateNews->format('d/m/Y') . "]" ?></div>
                                         <img class="little-news-source-logo col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" src="<?= $strLogoSource?>" alt="<?= $tabNewsInfos[$i]['SourceName'] ?>">

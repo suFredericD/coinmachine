@@ -33,6 +33,7 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 
 - [CeXchanges]
 - [Humans]
+- [Companies]
 
 - [Glossary]
 

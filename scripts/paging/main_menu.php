@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-06-28
+// Last update  : 2023-07-16
 // =====================================================================================================
 function creatMainMenu($fileName){
     $intBlockchains = getItemsCountInTable('blockchain');
@@ -14,6 +14,7 @@ function creatMainMenu($fileName){
     // $intProtocols = getItemsCountInTable('protocol');
     $intCexchanges = getItemsCountInTable('cexchange');
     $intHumans = getItemsCountInTable('human');
+    $intFirms = getItemsCountInTable('firm');
     $intGlossary = getItemsCountInTable('glossary');
     $intNews = getItemsCountInTable('news');
     $intTutorials = getTutorialsCount();
@@ -41,6 +42,7 @@ function creatMainMenu($fileName){
     $strWeb3Protocols = $strPagesPath . "web3protocols.php";
     $strCexchanges = $strPagesPath . "cexchanges.php";
     $strHumans = $strPagesPath . "web3humans.php";
+    $strFirms = $strPagesPath . "web3firms.php";
     $strGlossary = $strPagesPath . "web3glossary.php";
     $strWeb3News = $strPagesPath . "web3news.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
@@ -55,6 +57,7 @@ function creatMainMenu($fileName){
     // $strProtocolsContent = "(" . $intProtocols . ")";
     $strCexchangesContent = "<span class=\"fa-solid fa-chart-line\"></span>CeXchanges (" . $intCexchanges . ")";
     $strHumansContent = "<span class=\"fa-solid fa-people-group\"></span>Humains (" . $intHumans . ")";
+    $strFirmsContent = "<span class=\"fa-solid fa-building\"></span>Compagnies (" . $intFirms . ")";
     $strGlossaryContent = "<span class=\"fa-solid fa-book-bookmark\"></span>Glossaire (" . $intGlossary . ")";
     $strNewsContent = "<span class=\"fa-solid fa-radio\"></span>News (" . $intNews . ")";
     $strTutorialsContent = "<span class=\"fa-solid fa-graduation-cap\"></span>Tutoriels (" . $intTutorials . ")";
@@ -72,6 +75,7 @@ function creatMainMenu($fileName){
     $strWeb3ProtocolsTitle = "web3protocols.php";
     $strCexchangesTitle = "Tout sur les exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...";
     $strHumansTitle = "Découvrez plus d'informations sur les personnalités influentes dans la cryptosphère...";
+    $strFirmsTitle = "Découvrez les entreprises qui font la blockchain et la crypto, les liens officiels...";
     $strGlossaryTitle = "Répertoire des mots et expressions à connaître, pour apprendre, pour rappel...";
     $strWeb3NewsTitle = "Fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...";
     $strWeb3ToolboxTitle = "Liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...";
@@ -121,6 +125,7 @@ function creatMainMenu($fileName){
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="dropdown-item" href="<?php echo $strCexchanges;?>" title="<?php echo $strCexchangesTitle;?>"><?php echo $strCexchangesContent;?></a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strHumans;?>" title="<?php echo $strHumansTitle;?>"><?php echo $strHumansContent;?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo $strFirms;?>" title="<?php echo $strFirmsTitle;?>"><?php echo $strFirmsContent;?></a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
                                 <li><a class="dropdown-item" href="<?php echo $strGlossary;?>" title="<?php echo $strGlossaryTitle;?>"><?php echo $strGlossaryContent;?></a></li>
                             </ul>

@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-29
+// Last update  : 2023-07-16
 // =====================================================================================================
 require('scripts/paging/html_header.php');              // Include the HTML header builder
 require('scripts/paging/page_header.php');              // Include the page header builder
@@ -21,6 +21,7 @@ $tabNewsDetails = get5LastNewsDetailsByDate();          // Get the news details
 $intBlockchains = getItemsCountInTable('blockchain');   // Get the number of blockchains
 $intWallets = getItemsCountInTable('wallet');           // Get the number of wallets
 $intCexchanges = getItemsCountInTable('cexchange');     // Get the number of centralised exchanges
+$intFirms = getItemsCountInTable('firm');               // Get the number of firms
 $intGlossary = getItemsCountInTable('glossary');        // Get the number of items in the glossary
 $intTutorials = getTutorialsCount();                    // Get the number of tutorials
 $intToolbox = getItemsCountInTable('toolbox');          // Get the number of items in the toolbox
@@ -124,18 +125,19 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/disclaimer.php">Disclaimer</a>
    |
    |__ <strong>Datas</strong>
-   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documentaires à propos de <?php echo $intBlockchains;?> blockchains (Bitcoin, Ethereum, BSC...)</em>
-   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur <?php echo $intWallets;?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
-   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur <?php echo $intCexchanges;?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
+   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documentaires à propos de <?= $intBlockchains ?> blockchains (Bitcoin, Ethereum, BSC...)</em>
+   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur <?= $intWallets ?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
+   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur <?= $intCexchanges ?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
    |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
-   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire de <?php echo $intGlossary;?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
+   |    |___ <a href="pages/web3firms.php">Compagnies</a>   : <em>plus d'informations sur <?= $intFirms ?> compagnies incontournables de l'écosystème crypto...</em>
+   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire de <?= $intGlossary ?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
    |
    |__ <strong>Ressources</strong>
    |    |
    |    |___ <a href="pages/web3news.php">News</a>       : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
-   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em><?php echo $intTutorials;?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
-   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em><?php echo $intToolbox;?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
-   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em><?php echo $intMediasWoTwittos;?> médias d'actualités crypto et <?php echo $intMediasTwittos;?> twittos triés pour la qualité de leur contenu...</em>
+   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em><?= $intTutorials ?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
+   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em><?= $intToolbox ?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
+   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em><?= $intMediasWoTwittos ?> médias d'actualités crypto et <?= $intMediasTwittos ?> twittos triés pour la qualité de leur contenu...</em>
    |            |___ <a href="pages/web3medias.php#news">Journaux</a>
    |            |___ <a href="pages/web3medias.php#charts">Charts</a>
    |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>

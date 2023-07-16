@@ -1,0 +1,280 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3firms.css
+// Role         : web3firms.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-07-16
+// Last update  : 2021-07-16
+// ===================================================================================================== */
+:root {
+    --linkedin: #0077b5;
+    --twitter: #1da1f2;
+    --facebook: #1558e7;
+}
+/* *** *** *** CONTAINERS *** *** *** */
+article {
+    margin: 10px auto;
+    padding: 10px;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    border: 1px inset #06c883;
+    box-shadow: inset 0 0 15px #06c883;
+}
+/* *** *** *** NAVIGATION *** *** *** */
+#firms-mini-nav {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    font-family: "Frijole";
+    font-size: 1.5em;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#firms-mini-nav .row a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#firms-mini-nav .row a:hover {
+    color: #8306c8;
+}
+.firms-count {
+    font-family: "Lekton";
+    font-size: 0.9rem;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#firms-main-title, article h2, article h3 {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+#firms-main-title {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.3em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#firms-main-title span {
+    margin-left: 10px;
+}
+article h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.2em;
+    text-align: left;
+}
+article h3 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.5em;
+    text-align: right;
+}
+.firm-ceo-label {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: right;
+}
+/* *** *** *** USER CLASSES *** *** *** */
+article a, article p {
+    text-decoration: none;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+article a {
+    text-align: left;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    animation: switch-colors 3s infinite;
+}
+article a span {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+article a:hover {
+    background-image: linear-gradient(45deg, #1491ff, #8306c8);
+}
+article p {
+    text-align: justify;
+    font-family: "Lekton";
+    font-weight: 400;
+    font-size: 1em;
+}
+.firm-logo {
+    max-height: 350px;
+    align-self: center;
+}
+.firm-ceo {
+    align-items: baseline;
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    vertical-align: bottom;
+    align-self: baseline;
+}
+.firm-ceo span {
+    vertical-align: bottom;
+    align-self: baseline;
+}
+/* *** *** *** SOCIALS ICONS *** *** *** */
+.twitter-icon {
+    color: var(--twitter);
+}
+.facebook-icon {
+    color: var(--facebook);
+}
+.youtube-icon {
+    color: var(--youtube);
+}
+.linkedin-icon {
+    color: var(--linkedin);
+}
+.twitter-icon, .facebook-icon,
+.youtube-icon, .linkedin-icon {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+.twitter-icon:hover, .facebook-icon:hover,
+.youtube-icon:hover, .linkedin-icon:hover {
+    color: #8306c8;
+}
+.nodata {
+    text-align: left;
+}
+/* *** *** *** REFERENCES *** *** *** */
+.ref-type, .ref-link {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+.ref-type {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: right;
+}
+.ref-link {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: left;
+}
+.ref-link span {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+@keyframes switch-colors {
+    0% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+    50% {
+        background-image: linear-gradient(45deg, #ebef7b, #06c883);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    }
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+    article h2 {
+        font-size: 1.8em;
+    }
+    article h3 {
+        font-size: 1.25em;
+    }
+    article a {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 992px) {
+    #firms-main-title {
+        font-size: 1.5em;
+    }
+    article h2 {
+        font-size: 1.5em;
+    }
+    article h3 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+    #firms-mini-nav {
+        top: 35%;
+        font-size: 0.9em;
+    }
+    article h2 {
+        font-size: 1.25em;
+    }
+    article h3 {
+        font-size: 0.9em;
+    }
+    article p {
+        font-size: 0.9em;
+    }
+    article a {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 576px) {
+    #firms-main-title {
+        font-size: 1.25em;
+    }
+    #firms-mini-nav {
+        top: 30%;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .firm-ceo-label {
+        text-align: left;
+        font-size: 0.9em;
+    }
+    .firm-ceo {
+        text-align: center;
+    }
+    article p {
+        font-size: 0.8em;
+    }
+    article a {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #firms-main-title {
+        font-size: 1em;
+    }
+    #firms-mini-nav {
+        top: 25%;
+        font-size: 0.5em;
+    }
+}
