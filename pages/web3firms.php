@@ -28,6 +28,7 @@ $tabAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
 
 $tabFirmsOrderedByAlphaName = getFirmsOrderedByAlphaName();
 $tabFirmsCeos = getFirmsCeos();
+$tabAssociationsPresidents = getAssociationsPresidents();
 
 $strPreviousLetter = "";
 $tabAlphaFirms = [];
@@ -79,8 +80,20 @@ creatMainMenu($fileName);                               // Create the main menu
                 <section id="firms-main-content" class="offset-2 col-10">
                     <div clas="row">
 <?php   foreach($tabFirmsOrderedByAlphaName as $firm) {
-            foreach($tabFirmsCeos as $ceo) {
+            if($firm['TypeName'] == "Association"){
+                $strCeoLabel = "Président :";
+                $tabPersonnalities = $tabAssociationsPresidents;
+            } else {
+                $strCeoLabel = "PDG :";
+                $tabPersonnalities = $tabFirmsCeos;
+            }
+            foreach($tabPersonnalities as $ceo) {
                 if($ceo['FirmId'] == $firm['Id']) {
+                    if($ceo['Gender'] == 0) {
+                        $strCeoLabel = $ceo['FunctionFem'] . " :";
+                    } else {
+                        $strCeoLabel = $ceo['Function'] . " :";
+                    }
                     $strCeoName = $ceo['FirstName'] . " " . $ceo['LastName'];
                     $strCeoLink = "<a href=\"web3humans.php#" . $strCeoName . "\" title=\"Consulter le profil de ". $strCeoName ."...\" target=\"_blank\">";
                     $strCeoLink .= $strCeoName . "</a>";
@@ -89,6 +102,7 @@ creatMainMenu($fileName);                               // Create the main menu
                     $strCeoLink = "<span class=\"fa-solid fa-ban\"></span>";
                 }
             }
+            
             $strFirmLinkDisplay = "Visiter le site web de ";
             $strFirstLetter = substr($firm['Name'], 0, 1);
             if($strFirstLetter == "A" || $strFirstLetter == "E" || $strFirstLetter == "I" || $strFirstLetter == "O" || $strFirstLetter == "U" || $strFirstLetter == "Y") {
@@ -103,8 +117,8 @@ creatMainMenu($fileName);                               // Create the main menu
                                 <img class="firm-logo col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4" src="../media/logos/<?= $firm['LogoFile'] ?>">
                                 <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
                                     <div class="row">
-                                        <div class="firm-ceo-label col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">CEO :</div>
-                                        <div class="firm-ceo col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9"><?= $strCeoLink ?></div>
+                                        <div class="firm-ceo-label col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4"><?= $strCeoLabel ?></div>
+                                        <div class="firm-ceo col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8"><?= $strCeoLink ?></div>
                                         <p class="firm-description col-12"><?= $firm['Description'] ?></p>
                                         <a class="firm-website col-12" href="<?= $firm['Website'] ?>" title="Visiter le site web de <?= $firm['Name'] ?>..." target="_blank"><?= $strFirmLinkDisplay ?></a>
                                         <div class="firm-socials col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">

@@ -88,12 +88,14 @@ article h3 {
     font-family: "Audiowide", sans-serif;
     font-size: 1.5em;
     text-align: right;
+    vertical-align: baseline;
 }
 .firm-ceo-label {
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-size: 1.1em;
     text-align: right;
+    vertical-align: baseline;
 }
 /* *** *** *** USER CLASSES *** *** *** */
 article a, article p {
@@ -131,16 +133,17 @@ article p {
     align-self: center;
 }
 .firm-ceo {
+    height: 100%;
     align-items: baseline;
     font-family: "Aldrich", sans-serif;
     font-weight: 400;
     font-size: 1em;
     text-align: left;
-    vertical-align: bottom;
+    vertical-align: baseline;
     align-self: baseline;
 }
 .firm-ceo span {
-    vertical-align: bottom;
+    vertical-align: baseline;
     align-self: baseline;
 }
 /* *** *** *** SOCIALS ICONS *** *** *** */
@@ -226,6 +229,12 @@ article p {
     article h3 {
         font-size: 1em;
     }
+    .firm-ceo-label {
+        text-align: left;
+    }
+    .firm-ceo {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 768px) {
     #firms-mini-nav {
@@ -256,11 +265,7 @@ article p {
 }
 @media screen and (max-width: 480px) {
     .firm-ceo-label {
-        text-align: left;
         font-size: 0.9em;
-    }
-    .firm-ceo {
-        text-align: center;
     }
     article p {
         font-size: 0.8em;
