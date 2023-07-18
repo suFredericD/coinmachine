@@ -5,7 +5,7 @@
 // Role         : web3toolbox.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-14
-// Last update  : 2021-06-30
+// Last update  : 2021-07-16
 // ===================================================================================================== */
 /* 
     lightblue   : #1491ff
@@ -103,6 +103,58 @@
     font-family: "Share Tech Mono", monospace;
     font-size: 0.9em;
     color: #06acc8;
+}
+/* *** *** *** TOP 10 PRICES *** *** *** */
+#topten-prices, .topten-scroller {
+    height: 1.2em;
+    line-height: 1.2em;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    color: #4c5d6e;
+    align-self: center;
+    justify-content: center;
+}
+#topten-prices > span {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: slide-topten 10s infinite;
+    color: #4c5d6e;
+    text-align: center;
+    justify-content: center;
+}
+@keyframes slide-topten {
+    0% {
+      top: 0;
+    }
+    10% {
+      top: 0;
+    }
+    20% {
+      top: 0em;
+    }
+    30% {
+      top: 0em;
+    }
+    40% {
+        top: -1.2em;
+    }
+    50% {
+        top: -1.2em;
+    }
+    60% {
+        top: -1.2em;
+    }
+    70% {
+        top: -1.2em;
+    }
+    80% {
+        top: -1.2em;
+    }
+    90% {
+        top: 0em;
+    }
 }
 /* *** *** *** TITRAGES *** *** *** */
 #index-title {

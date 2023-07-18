@@ -14,6 +14,7 @@ require('scripts/paging/html_footer.php');              // Include the HTML foot
 require('scripts/paging/main_menu.php');                // Include the main menu builder
 require('admin/db_access.php');                         // Include the database access informations
 require('admin/db_requestBuilder.php');                 // Include the database access functions
+require('scripts/php/tools.php');                       // Include the utilitary functions
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 
@@ -30,7 +31,21 @@ $intMediasNewspapers = getMediasCountById(2);           // Get the number of new
 $intMediasCharts = getMediasCountById(3);               // Get the number of charts in the medias
 $intMediasYoutubers = getMediasCountById(1);            // Get the number of youtubers in the medias
 $intMediasTwittos = getMediasCountById(4);              // Get the number of twittos in the medias
-$intMediasWoTwittos = $intMedias - $intMediasTwittos - $intMediasCharts;   // Get the number of medias without twittos
+$intMediasWoTwittos = $intMedias - $intMediasTwittos - $intMediasCharts;    // Get the number of medias without twittos
+
+$tabTopTenTokensInfos = getTopTenTokensInformations();  // Get the top 10 tokens informations
+$tabLastPricesUpdate = getLastPricesUpdate();           // Get the last prices update
+$dateNow = new DateTime();                              // Get the current date
+$dateLastPricesUpdate = new DateTime($tabLastPricesUpdate['Date']);         // Get the last prices update date
+// Calculate the number of hours between the last prices update and the current date
+$decHoursSinceLastPricesUpdate = getHoursNumber($dateNow, $dateLastPricesUpdate);
+if($decHoursSinceLastPricesUpdate > 2){
+    // Update the prices if the last update is older than 2 hours
+    updateTopTenPrices($tabTopTenTokensInfos, $dateNow);
+    $tabLastPricesUpdate = getLastPricesUpdate();       // Update the last prices update
+    $dateLastPricesUpdate = new DateTime($tabLastPricesUpdate['Date']);         // Update the last prices update date
+}
+$tabTopTenTokensprices = getTopTenPricesFromDb($tabLastPricesUpdate['Id']);     // Get the top 10 tokens prices
 
 createHTMLheader($fileName);                            // Create the HTML header
 createPageheader($fileName);                            // Create the page header
@@ -48,9 +63,35 @@ creatMainMenu($fileName);                               // Create the main menu
             $dateNews = date_create($newsDetails['Date']);
             $strTextNews = "<span class=\"index-news-date\">[" . date_format($dateNews, "d/m") . "]</span> " . $newsDetails['Title'] . "<i class=\"fa-solid fa-arrow-up-right-from-square\"></i>";
 ?>
-                            <li><a href="<?php echo $newsDetails['Url']; ?>" title="<?php echo $newsDetails['Tooltip']; ?>" target="_blank"><?php echo $strTextNews;?></a></li>
+                            <li><a href="<?php echo $newsDetails['Url']; ?>" title="<?= $newsDetails['Tooltip'] ?>" target="_blank"><?= $strTextNews ?></a></li>
 <?php   } ?>
-                        </ul>
+                        </ul><hr>
+                        <p id="topten-prices" class="topten-scroller col-12">
+                            <span class="row">
+<?php   $intTokensCount = 0;
+        foreach($tabTopTenTokensInfos as $tokenInfo) {
+            foreach($tabTopTenTokensprices as $tokenPrice) {
+                if($tokenInfo['Id'] == $tokenPrice['TokenId']) {
+                    if($tokenPrice['Price'] > 100) {
+                        $strTokenPrice = "$ " . number_format($tokenPrice['Price'], 0, ',', ' ');
+                    } elseif($tokenPrice['Price'] > 1) {
+                        $strTokenPrice = "$ " . number_format($tokenPrice['Price'], 2, ',', ' ');
+                    } else {
+                        $strTokenPrice = "$ " . number_format($tokenPrice['Price'], 4, ',', ' ');
+                    }
+?>
+                                <?= $tokenInfo['Ticker'] ?>&nbsp;&nbsp;&nbsp;<?= $strTokenPrice ?>
+<?php           }
+            }
+            if($intTokensCount == 4){ ?>
+                                    <br />
+<?php       } else { ?>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<?php       }
+            $intTokensCount++;
+        } ?>
+                            </span>
+                        </p>
                     </div><hr>
                 </article>
                 <h1 id="index-title" class="col-11">CoinMachine Hub</h1>
