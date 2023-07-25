@@ -109,8 +109,21 @@ creatMainMenu($fileName);                               // Create the main menu
                 $strFirmLinkDisplay .= "l'";
             }
             $strFirmLinkDisplay .= $firm['Name'] . "<span class=\"fa-solid fa-external-link\"></span>";
+            // Find first letter of the last name and compare it to last "first-letter" to create a link for the mini navigation menu
+            $tabLastNameLetters = str_split($firm['Name']);
+            $strPreviousLetter = "Z";
+            foreach($tabAlphabet as $letter) {
+                if($tabLastNameLetters[0] == $letter) {
+                    if($strPreviousLetter != $letter) {
+                        $strPreviousLetter = $letter;
+                        $strRefLink = $letter;
+                    } else {
+                        $strRefLink = '';
+                    }
+                }
+            }
 ?>
-                        <article class="firm-item col-12">
+                        <article  id="<?= $strRefLink ?>" class="firm-item col-12">
                             <div class="row">
                                 <h2 class="firm-name col-9 col-sm-9 col-md-9 col-lg-10 col-xl-10"><?= $firm['Name'] ?></h2>
                                 <h3 class="firm-birthyear col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2"><?= $firm['BirthYear'] ?></h3>
@@ -127,15 +140,15 @@ creatMainMenu($fileName);                               // Create the main menu
                                         <h3 class="nodata col-12 col-sm-6">Unknown</h3>
 <?php       } else {
                 if($firm['Twitter'] != ""){ ?>
-                                        <a class="socials col-2" href="<?php echo $firm['Twitter'];?>" title="Compte Twitter de <?= $firm['Name'] ?>" target="_blank">
+                                        <a class="socials col-2" href="<?= $firm['Twitter'] ?>" title="Compte Twitter de <?= $firm['Name'] ?>" target="_blank">
                                             <span class="twitter-icon fa-brands fa-twitter-square"></span></a>
 <?php           } 
                 if($firm['Meta'] != ""){?>
-                                        <a class="socials col-2" href="<?php echo $firm['Meta'];?>" title="Compte Facebook de <?= $firm['Name'] ?>" target="_blank">
+                                        <a class="socials col-2" href="<?= $firm['Meta'] ?>" title="Compte Facebook de <?= $firm['Name'] ?>" target="_blank">
                                             <span class="facebook-icon fa-brands fa-facebook-square"></span></a>
 <?php           } 
                 if($firm['Linkedin'] != ""){?>
-                                        <a class="socials col-2" href="<?php echo $firm['Linkedin'];?>" title="Compte LinkedIn de <?= $firm['Name'] ?>" target="_blank">
+                                        <a class="socials col-2" href="<?= $firm['Linkedin'] ?>" title="Compte LinkedIn de <?= $firm['Name'] ?>" target="_blank">
                                             <span class="linkedin-icon fa-brands fa-linkedin"></span></a>
 <?php           }
             } ?>
