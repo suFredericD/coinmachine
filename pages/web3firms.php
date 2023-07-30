@@ -6,7 +6,7 @@
 // Role         : web3 firms presentation page
 // Author       : CoinMachine
 // Creation     : 2023-07-16
-// Last update  : 2021-07-16
+// Last update  : 2021-07-25
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder

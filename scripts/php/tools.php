@@ -6,7 +6,7 @@
 // Role         : utilitary functions script
 // Author       : CoinMachine
 // Creation     : 2023-06-18
-// Last update  : 2021-07-16
+// Last update  : 2021-07-30
 // =====================================================================================================
 
 // Function to get the zodiac sign from a date
@@ -19,9 +19,11 @@ function getZodiacSign($dateBirth) {
     $dateBirth = new DateTime($dateBirth);
     $dateBirth = $dateBirth->format('m-d');
     for($i = 0; $i < count($tabZodiacSignsDates); $i++) {
-        if($dateBirth < $tabZodiacSignsDates[$i]) {
+        if($dateBirth <= $tabZodiacSignsDates[$i]) {
             $zodiacSign = $tabZodiacSigns[$i - 1];
             break;
+        } else {
+            $zodiacSign = $tabZodiacSigns[count($tabZodiacSigns) - 1];
         }
     }
     return $zodiacSign;
