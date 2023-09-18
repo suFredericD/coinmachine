@@ -6,7 +6,7 @@
 // Role         : script creating the website main menu
 // Author       : CoinMachine
 // Creation     : 2023-06-12
-// Last update  : 2023-07-16
+// Last update  : 2023-09-18
 // =====================================================================================================
 function creatMainMenu($fileName){
     $intBlockchains = getItemsCountInTable('blockchain');
@@ -47,6 +47,7 @@ function creatMainMenu($fileName){
     $strWeb3News = $strPagesPath . "web3news.php";
     $strWeb3Toolbox = $strPagesPath . "web3toolbox.php";
     $strWeb3Medias = $strPagesPath . "web3medias.php";
+    $strWeb3Quizz = $strPagesPath . "web3quizz.php";
     $strWeb3Tutorials = $strPagesPath . "web3tutorials.php";
     $strContacts = $strPagesPath . "contacts.php";
     $strDisclaimer = $strPagesPath . "disclaimer.php";
@@ -60,6 +61,7 @@ function creatMainMenu($fileName){
     $strFirmsContent = "<span class=\"fa-solid fa-building\"></span>Compagnies (" . $intFirms . ")";
     $strGlossaryContent = "<span class=\"fa-solid fa-book-bookmark\"></span>Glossaire (" . $intGlossary . ")";
     $strNewsContent = "<span class=\"fa-solid fa-radio\"></span>News (" . $intNews . ")";
+    $strQuizzContent = "<span class=\"fa-solid fa-gamepad\"></span>CryptoQuizz";
     $strTutorialsContent = "<span class=\"fa-solid fa-graduation-cap\"></span>Tutoriels (" . $intTutorials . ")";
     $strToolboxContent = "<span class=\"fa-solid fa-toolbox\"></span>ToolBox (" . $intToolbox . ")";
     $strMediasContent = "<span class=\"fa-solid fa-photo-film\"></span>Medias (" . $intMedias . ")";
@@ -80,6 +82,7 @@ function creatMainMenu($fileName){
     $strWeb3NewsTitle = "Fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...";
     $strWeb3ToolboxTitle = "Liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...";
     $strWeb3MediasTitle = "Médias d'actualités crypto triés sur le volet pour la qualité de leur contenu...";
+    $strWeb3QuizzTitle = "Testez vos connaissances en jouant au CryptoQuizz parmi plus de XX questions...";
     $strWeb3TutorialsTitle = "Réalisés par mes soins à propos de l'utilisation des blockchains, wallets, des tokens...";
     $strContactsTitle = "Mes liens de contatcs / contatcs links";
     $strDisclaimerTitle = "Disclaimer";
@@ -136,6 +139,7 @@ function creatMainMenu($fileName){
                             <ul class="dropdown-menu ddm-user">
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3News;?>" title="<?php echo $strWeb3NewsTitle;?>"><?php echo $strNewsContent;?></a></li>
                                 <li><hr class="dropdown-divider ddm-hr"></li>
+                                <li><a class="dropdown-item" href="<?php echo $strWeb3Quizz;?>" title="<?php echo $strWeb3QuizzTitle;?>"><?php echo $strQuizzContent;?></a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Tutorials;?>" title="<?php echo $strWeb3TutorialsTitle;?>"><?php echo $strTutorialsContent;?></a></li>
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Toolbox;?>" title="<?php echo $strWeb3ToolboxTitle;?>"><?php echo $strToolboxContent;?></a></li>
                                 <li class="ddm-subtitle"><hr class="dropdown-divider ddm-hr"><?php echo $strMediasContent;?></li>
@@ -145,7 +149,7 @@ function creatMainMenu($fileName){
                                 <li><a class="dropdown-item" href="<?php echo $strWeb3Medias;?>#twitter"><?php echo $strTwittosContent;?></a></li>
                             </ul>
                         </li>
-<!-- Projets section -->
+<!-- Earning section -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Earning</a>
                             <ul class="dropdown-menu ddm-user">

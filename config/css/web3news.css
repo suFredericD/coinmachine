@@ -5,7 +5,7 @@
 // Role         : web3news.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-06-24
-// Last update  : 2021-07-13
+// Last update  : 2021-07-31
 // ===================================================================================================== */
 
 /* *** *** *** CONTAINERS *** *** *** */
@@ -54,7 +54,7 @@
 .img-news {
     align-self: center;
 }
-.news-date, .news-source, .news-text, .news-link {
+.news-date, .news-source, .news-link {
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
@@ -73,11 +73,12 @@
 }
 .news-text {
     opacity: 0.9;
-    font-family: "Lekton";
+    font-family: "Aldrich", sans-serif;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 300;
     text-align: justify;
     text-indent: 30px;
+    color: #777;
 }
 .news-link {
     text-decoration: none;

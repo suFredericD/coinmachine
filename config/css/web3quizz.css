@@ -1,0 +1,103 @@
+/* =====================================================================================================
+// Project      : CoinMachine platform
+// Context      : blockchain/cryptocurrency education and consulting, IT developement
+// File         : web3quizz.css
+// Role         : web3quizz.php special CSS stylesheet
+// Author       : CoinMachine
+// Creation     : 2023-09-18
+// Last update  : 2021-09-18
+// ===================================================================================================== */
+:root {
+    --rookie: #1da1f2;
+    --pro: #ffad1f;
+    --expert: #ff1d1d;
+}
+/* *** *** *** CONTAINERS *** *** *** */
+article, form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 100%;
+}
+/* *** *** *** TITRAGES *** *** *** */
+#quizz-main-title, article h2, article h3 {
+    vertical-align: bottom;
+    align-items: baseline;
+    align-self: baseline;
+}
+#quizz-main-title {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.3em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+legend {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: right;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+/* *** *** *** USER CLASSES *** *** *** */
+#rookie-label, #pro-label, #expert-label {
+    padding-left: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#rookie-label {
+    background-image: linear-gradient(45deg, #06c883, var(--rookie));
+}
+#pro-label {
+    background-image: linear-gradient(45deg, var(--rookie), var(--pro));
+}
+#expert-label {
+    background-image: linear-gradient(45deg, var(--pro), var(--expert));
+}
+/* *** *** *** MEDIA QUERIES *** *** *** */
+@media screen and (max-width: 1350px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}

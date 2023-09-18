@@ -6,7 +6,7 @@
 // Role         : home page of the website
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-07-16
+// Last update  : 2023-07-30
 // =====================================================================================================
 require('scripts/paging/html_header.php');              // Include the HTML header builder
 require('scripts/paging/page_header.php');              // Include the page header builder
@@ -170,7 +170,7 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur <?= $intWallets ?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
    |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur <?= $intCexchanges ?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
    |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
-   |    |___ <a href="pages/web3firms.php">Compagnies</a>   : <em>plus d'informations sur <?= $intFirms ?> compagnies incontournables de l'écosystème crypto...</em>
+   |    |___ <a href="pages/web3firms.php">Compagnies</a>  : <em>plus d'informations sur <?= $intFirms ?> compagnies incontournables de l'écosystème crypto...</em>
    |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire de <?= $intGlossary ?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
    |
    |__ <strong>Ressources</strong>
