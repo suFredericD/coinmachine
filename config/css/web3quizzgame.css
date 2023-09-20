@@ -5,12 +5,13 @@
 // Role         : web3quizzgame.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-18
+// Last update  : 2021-09-19
 // ===================================================================================================== */
 :root {
     --rookie: #1da1f2;
     --pro: #ffad1f;
     --expert: #ff1d1d;
+    --bad: #f03f3f;
 }
 /* *** *** *** CONTAINERS *** *** *** */
 article, form {
@@ -18,8 +19,49 @@ article, form {
     align-items: center;
     justify-content: center;
 }
+article {
+    min-height: 500px;
+}
 form {
+    min-height: 500px;
     width: 100%;
+}
+#score-section {
+    margin-bottom: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#question p {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    text-align: justify;
+    text-decoration: none;
+}
+.answers {
+    padding: 10px;
+    font-family: "Lekton", sans-serif;
+    text-align: left;
+    color: #AAA;
+}
+.answers label {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#quizz-end {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #06c883;
 }
 /* *** *** *** TITRAGES *** *** *** */
 #quizz-main-title {
@@ -60,6 +102,103 @@ legend {
     color: transparent;
     background-image: linear-gradient(45deg, #06c883, #ebef7b);
 }
+.question-label, #quizz-end-score-label,
+.question-score, #quizz-end-score {
+    padding: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+#quizz-end-title, .question-label,
+#quizz-end-score-label {
+    font-family: "Audiowide", sans-serif;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+#quizz-end-title {
+    text-align: center;
+    font-size: 2.5em;
+}
+.question-label {
+    text-align: right;
+}
+.question-score, #quizz-end-score {
+    font-family: "Lekton", sans-serif;
+    text-align: left;
+}
+#quizz-end-score-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75em;
+}
+#quizz-congratulations {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+}
+/* *** *** *** QUESTIONS CATEGORIES *** *** *** */
+#category-display {
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+.question-category {
+    font-family: "Audiowide", sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+}
+.question-category span {
+    padding: 4px;
+}
+.histoire {
+    border: 1px outset #1491ff;
+    box-shadow: inset 0 0 10px #1491ff;
+    color: #1491ff;
+}
+.people {
+    border: 1px outset #91ff14;
+    box-shadow: inset 0 0 10px #91ff14;
+    color: #91ff14;
+}
+.defi {
+    border: 1px outset #8214ff;
+    box-shadow: inset 0 0 10px #8214ff;
+    color: #8214ff;
+}
+.nft {
+    border: 1px outset #14fff8;
+    box-shadow: inset 0 0 10px #14fff8;
+    color: #14fff8;
+}
+.technologie {
+    border: 1px outset #14ff82;
+    box-shadow: inset 0 0 10px #14ff82;
+    color: #14ff82;
+}
+.fondamentaux {
+    border: 1px outset #ff8214;
+    box-shadow: inset 0 0 10px #ff8214;
+    color: #ff8214;
+}
+.toolbox-item-container {
+    border: 1px outset #141bff;
+    box-shadow: inset 0 0 10px #141bff;
+    color: #141bff;
+}
 /* *** *** *** USER CLASSES *** *** *** */
 #rookie-label, #pro-label, #expert-label {
     padding-left: 10px;
@@ -84,6 +223,47 @@ legend {
 #expert-label {
     background-image: linear-gradient(45deg, var(--pro), var(--expert));
 }
+.validate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.validate input {
+    padding: 15px;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #06c883, #ebef7b);
+    border: 1px solid #06c883;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.validate input:hover {
+    background-image: #000;
+    color: #06c883;
+    border: 2px solid #06c883;
+}
+.score-good {
+    color: #06c883;
+}
+.score-bad {
+    color: #f03f3f;
+}
+.custom-hr {
+    margin-top: 10px;
+}
+/* *** *** *** ANIMATIONS *** *** *** */
+
 /* *** *** *** MEDIA QUERIES *** *** *** */
 @media screen and (max-width: 1350px) {
 

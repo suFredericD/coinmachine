@@ -6,7 +6,7 @@
 // Role         : web3 quizz page
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-18
+// Last update  : 2021-09-19
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -30,25 +30,25 @@ creatMainMenu($fileName);                               // Create the main menu
                     <h1 id="quizz-main-title">Web3 : quizz<span class="fa-solid fa-gamepad"></span></h1>
                 </div>
 <!-- --- --- --- MAIN CONTENT --- --- --- -->
-                <section id="quizz-main-content" class="offset-2 col-10">
+                <section id="quizz-main-content" class="col-12">
                     <div clas="row">
-                        <article class="col-8">
+                        <article class="col-12">
                                 <form class="row" action="web3quizzgame.php" method="post">
                                     <fieldset>
                                         <legend class="col-12">Choisir un niveau d'expertise :</legend>
-                                        <div class="col-10">
+                                        <div class="offset-1 col-11">
                                             <input type="radio" id="rookie" name="level" value="1" checked />
-                                            <label for="rookie" id="rookie-label">Niveau Rookie</label>
+                                            <label for="rookie" id="rookie-label">Normie : nouveau venu dans les cryptos</label>
                                         </div>
-                                        <div class="col-10">
+                                        <div class="offset-1 col-11">
                                             <input type="radio" id="pro" name="level" value="2" />
-                                            <label for="advanced" id="pro-label">Niveau Pro</label>
+                                            <label for="advanced" id="pro-label">Hodler : fondamentaux acquis</label>
                                         </div>
-                                        <div class="col-10">
-                                            <input type="radio" id="expert" name="level" value="3" />
-                                            <label for="expert" id="expert-label">Niveau Expert</label>
+                                        <div class="offset-1 col-11">
+                                            <input type="radio" id="expert" name="level" value="3" title="Pas encore disponible..." disabled/>
+                                            <label for="expert" id="expert-label">Bitcoiner : expert  en crypto-monnaies</label>
                                         </div>
-                                        <div class="col-10">
+                                        <div id="validate" class="col-12">
                                             <input type="submit" value="Lancer le quizz" />
                                         </div>
                                     </fieldset>
