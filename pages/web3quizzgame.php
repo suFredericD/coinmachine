@@ -6,7 +6,7 @@
 // Role         : web3 quizz game page
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-19
+// Last update  : 2021-09-20
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -101,7 +101,7 @@ creatMainMenu($fileName);                               // Create the main menu
             } ?>
                                 <form id="quizz-form" class="row" action="web3quizzgame.php" method="post">
                                     <fieldset id="quizz-fieldset">
-                                        <legend class="col-12">Question n° <?= $intQuestionNumberDisplay ?></legend>    
+                                        <legend id="question-number-label" class="col-12">Question n° <?= $intQuestionNumberDisplay ?></legend>    
                                         <div id="score-section" class="col-12"><div class="row">
                                             <div id="score-label" class="offset-1 col-2">Score</div>
                                             <div id="score-display" class="col-4"><?= $intScore ?> / <?= $_POST['level']."0" ?></div>
@@ -110,19 +110,19 @@ creatMainMenu($fileName);                               // Create the main menu
                                         <div id="question" class="offset-1 col-10">
                                             <p><?= $tabQuestion['Text'] ?></p>
                                         </div>
-                                        <div class="answers offset-1 col-10">
+                                        <div id="answer1-container" class="answers offset-2 col-10">
                                             <input type="radio" id="answer1" name="answer" value="1" />
                                             <label for="answer1" id="answer1-label"><?= $tabQuestion['Answer1'] ?></label>
                                         </div>
-                                        <div class="answers offset-1 col-10">
+                                        <div id="answer2-container" class="answers offset-2 col-10">
                                             <input type="radio" id="answer2" name="answer" value="2" />
                                             <label for="answer2" id="answer2-label"><?= $tabQuestion['Answer2'] ?></label>
                                         </div>
-                                        <div class="answers offset-1 col-10">
+                                        <div id="answer3-container" class="answers offset-2 col-10">
                                             <input type="radio" id="answer3" name="answer" value="3" />
                                             <label for="answer3" id="answer3-label"><?= $tabQuestion['Answer3'] ?></label>
                                         </div>
-                                        <div class="answers offset-1 col-10">
+                                        <div id="answer4-container" class="answers offset-2 col-10">
                                             <input type="radio" id="answer4" name="answer" value="4" />
                                             <label for="answer4" id="answer4-label"><?= $tabQuestion['Answer4'] ?></label>
                                         </div>

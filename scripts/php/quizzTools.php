@@ -6,7 +6,7 @@
 // Role         : utilitary functions script
 // Author       : CoinMachine
 // Creation     : 2023-09-19
-// Last update  : 2021-09-19
+// Last update  : 2021-09-20
 // =====================================================================================================
 
 // Function to check number of questions by level in the database

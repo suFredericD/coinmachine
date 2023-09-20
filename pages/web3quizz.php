@@ -6,7 +6,7 @@
 // Role         : web3 quizz page
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-19
+// Last update  : 2021-09-20
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -36,17 +36,17 @@ creatMainMenu($fileName);                               // Create the main menu
                                 <form class="row" action="web3quizzgame.php" method="post">
                                     <fieldset>
                                         <legend class="col-12">Choisir un niveau d'expertise :</legend>
-                                        <div class="offset-1 col-11">
+                                        <div id="rookie-container" class="offset-1 col-11" title="Débutant dans cet univers, viens tester tes connaissances, pour peut-être devenir un hodler à succès...">
                                             <input type="radio" id="rookie" name="level" value="1" checked />
                                             <label for="rookie" id="rookie-label">Normie : nouveau venu dans les cryptos</label>
                                         </div>
-                                        <div class="offset-1 col-11">
+                                        <div class="offset-1 col-11" title="Déjà bien engagé dans le 'Rabbit Hole', ici tu mettras tes connaissances à l'épreuve du CryptoQuizz...">
                                             <input type="radio" id="pro" name="level" value="2" />
                                             <label for="advanced" id="pro-label">Hodler : fondamentaux acquis</label>
                                         </div>
-                                        <div class="offset-1 col-11">
+                                        <div class="offset-1 col-11" title="Pas encore disponible...">
                                             <input type="radio" id="expert" name="level" value="3" title="Pas encore disponible..." disabled/>
-                                            <label for="expert" id="expert-label">Bitcoiner : expert  en crypto-monnaies</label>
+                                            <label for="expert" id="expert-label" title="Pas encore disponible...">Bitcoiner : expert  en crypto-monnaies</label>
                                         </div>
                                         <div id="validate" class="col-12">
                                             <input type="submit" value="Lancer le quizz" />
