@@ -40,6 +40,15 @@ inputCategory.setAttribute('name', strInputCategoryName);
 inputCategory.setAttribute('value', strInputCategory);
 fieldsetQuizz.appendChild(inputCategory);
 
+let strInputQuestion = encodeURIComponent(paragraphQuestion.innerHTML);
+let strInputQuestionName = 'quest' + intQuestionNumber;
+let inputQuestion = document.createElement('input');
+inputQuestion.setAttribute('type', 'hidden');
+inputQuestion.setAttribute('name', strInputQuestionName);
+inputQuestion.setAttribute('value', strInputQuestion);
+fieldsetQuizz.appendChild(inputQuestion);
+
+
 // ================ FUNCTIONS ================ //
 function animateQuestionText(){
     let strQuestion = paragraphQuestion.innerHTML;
@@ -55,8 +64,8 @@ function animateQuestionText(){
         if(intQuestionIndex == intQuestionLength){
             clearInterval(intQuestionAnimation);
         }
-    }, 65);
-    let intAnimationLength = intQuestionLength * 65;
+    }, 60);
+    let intAnimationLength = intQuestionLength * 60;
     return intAnimationLength;
 }
 // ================ EVENT LISTENERS ================ //
@@ -65,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $("#question-number-label").slideDown(2000);
     $("#category-display").slideDown(2000);
     setTimeout(function(){
-        let intStartAnswersDisplay = animateQuestionText() + 2125;
+        let intStartAnswersDisplay = animateQuestionText() + 1250;
         setTimeout(function(){
             $("#answer1-container").slideDown(2000);
             setTimeout(function(){
@@ -81,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 }, intAnswersDiscover);
             }, intAnswersDiscover);
         }, intStartAnswersDisplay);
-    }, 2125);
+    }, 2000);
 });
 // Vérifie si l'utilisateur a répondu à la question
 quizzForm.addEventListener("submit", function (e) {
@@ -93,17 +102,12 @@ quizzForm.addEventListener("submit", function (e) {
                 btnCheck.disabled = true;
                 btnCheck.style.color = '#888';
                 btnCheck.style.borderColor = '#888';
-                if (intQuestionNumber > 9){
-                    btnCheck.value = 'Résultats du quizz';
-                } else {
-                    btnCheck.value = 'Question suivante';
-                }
                 intUserResponse = element.value;
                 if(intUserResponse == intWrightAnswer){     // bonne réponse
                     element.parentElement.querySelector('label').style.backgroundColor = '#06c883';
                     element.parentElement.querySelector('label').style.color = '#000';
                     element.parentElement.querySelector('label').style.fontWeight = 'bold';
-                    element.parentElement.querySelector('label').innerHTML += ' <span class="fa-regular fa-circle-check"></span>';
+                    element.parentElement.querySelector('label').innerHTML += '&nbsp;&nbsp;<span class="fa-regular fa-circle-check"></span>';
                     document.getElementById('score-display').style.display = 'none';
                     document.getElementById('score').value = parseInt(document.getElementById('score').value) + intPlayerLevel;
                     document.getElementById('score-display').innerHTML = intScore + intPlayerLevel + ' / ' + intPlayerLevel + '0';
@@ -127,7 +131,7 @@ quizzForm.addEventListener("submit", function (e) {
                     element.parentElement.querySelector('label').style.backgroundColor = 'var(--bad)';
                     element.parentElement.querySelector('label').style.color = '#000';
                     element.parentElement.querySelector('label').style.fontWeight = 'bold';
-                    element.parentElement.querySelector('label').innerHTML += ' <span class="fa-solid fa-circle-xmark"></span>';
+                    element.parentElement.querySelector('label').innerHTML += '&nbsp;&nbsp;<span class="fa-solid fa-circle-xmark"></span>';
                     tabAnswers[intWrightAnswer-1].parentElement.querySelector('label').style.backgroundColor = '#06c883';
                     tabAnswers[intWrightAnswer-1].parentElement.querySelector('label').style.color = '#000';
                     tabAnswers[intWrightAnswer-1].parentElement.querySelector('label').style.fontWeight = 'bold';
@@ -139,7 +143,24 @@ quizzForm.addEventListener("submit", function (e) {
                     btnCheck.style.color = '#06c883';
                     btnCheck.style.borderColor = '#06c883';
                     btnCheck.disabled = false;
-                }, 2750);
+                    if (intQuestionNumber > 9){
+                        btnCheck.value = 'Résultats du quizz';
+                    } else {
+                        btnCheck.value = 'Question suivante';
+                    }
+                    setTimeout(function(){
+                        btnCheck.style.opacity = 0.25;
+                        setTimeout(function(){
+                            btnCheck.style.opacity = 1;
+                            setTimeout(function(){
+                                btnCheck.style.opacity = 0.25;
+                                setTimeout(function(){
+                                    btnCheck.style.opacity = 1;
+                                }, 250);
+                            }, 250);
+                        }, 250);
+                    }, 500);
+                }, 2500);
             }
         });
     }
@@ -154,7 +175,7 @@ radAnswers.forEach(element => {
         });
         // Change la couleur du label associé à l'option choisie
         const label = element.parentElement.querySelector('label');
-        label.style.color = 'var(--rookie)'; // Change la couleur ici si nécessaire
+        label.style.color = '#ebef7b'; // Change la couleur ici si nécessaire
         label.style.fontWeight = 'bold'; // Change le style du texte si nécessaire
     });
 });

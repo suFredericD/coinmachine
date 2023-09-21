@@ -145,11 +145,22 @@ legend {
     font-size: 2.5em;
 }
 .question-label {
-    text-align: right;
+    text-align: left;
 }
 .question-score, #quizz-end-score {
     font-family: "Lekton", sans-serif;
+}
+.question-score {
+    text-align: right;
+}
+#quizz-end-score {
     text-align: left;
+}
+#question-text p {
+    font-family: 'Lekton', sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    color: #888;
 }
 #quizz-end-score-label {
     display: flex;
@@ -288,6 +299,11 @@ legend {
 #answer3-container, #answer4-container,
 #check {
     display: none;
+}
+#check:hover {
+    color: #ebef7b;
+    border: 2px inset #ebef7b;
+    box-shadow: inset 0 0 10px #ebef7b;
 }
 /* *** *** *** ANIMATIONS *** *** *** */
 

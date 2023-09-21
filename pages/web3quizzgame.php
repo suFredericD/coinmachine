@@ -98,18 +98,21 @@ creatMainMenu($fileName);                               // Create the main menu
                 case 'Fondamentaux':
                     $strCategoryDisplayClass = "fondamentaux";
                 break;
-            } ?>
-                                <form id="quizz-form" class="row" action="web3quizzgame.php#footer" method="post">
+            }
+            if ($intQuestionNumber > 9) {
+                $strQuizzFormAction = "web3quizzgame.php#quizz-end";
+            } else {
+                $strQuizzFormAction = "web3quizzgame.php#footer";
+            }
+            ?>
+                                <form id="quizz-form" class="row" action="<?= $strQuizzFormAction ?>" method="post">
                                     <fieldset id="quizz-fieldset">
                                         <legend id="question-number-label" class="col-12">Question n° <?= $intQuestionNumberDisplay ?></legend>    
                                         <div id="score-section" class="col-12"><div class="row">
                                             <div id="score-label" class="offset-1 col-2">Score</div>
                                             <div id="score-display" class="col-4"><?= $intScore ?> / <?= $_POST['level']."0" ?></div>
                                             <div id="category-display" class="<?= $strCategoryDisplayClass ?> col-5">
-                                                <span class="<?= $tabQuestion['CategoryIcon'] ?> category-left"></span>
-                                                <?= $tabQuestion['Category'] ?>
-                                                <span class="<?= $tabQuestion['CategoryIcon'] ?> category-right"></span>
-
+                                                <span class="<?= $tabQuestion['CategoryIcon'] ?> category-left"></span><?= $tabQuestion['Category'] ?><span class="<?= $tabQuestion['CategoryIcon'] ?> category-right"></span>
                                             </div>
                                         </div></div>
                                         <div id="question" class="offset-1 col-10">
@@ -143,6 +146,7 @@ creatMainMenu($fileName);                               // Create the main menu
             for ($i = 1; $i < $intQuestionNumberDisplay; $i++) {?>
                                         <input type="hidden" name="score<?= $i ?>" value="<?= $_POST["score$i"] ?>" />
                                         <input type="hidden" name="cat<?= $i ?>" value="<?= $_POST["cat$i"] ?>" />
+                                        <input type="hidden" name="quest<?= $i ?>" value="<?= $_POST["quest$i"] ?>" />
 <?php       }
         } ?>
                                         <div class="validate col-12">
@@ -182,8 +186,9 @@ creatMainMenu($fileName);                               // Create the main menu
                 }
 ?>
                                 <div class="question-label offset-1 col-3">Question <?= $i ?></div>
-                                <div class="question-category col-3"><span class="<?= $strCategoryClass ?>"><?= $_POST["cat$i"] ?></span></div>
-                                <div class="question-score col-5"><span class="<?= $strScoreClass ?>"><?= $_POST["score$i"] ?></span> / <?= $_POST['level'] ?></div>
+                                <div class="question-category col-5"><span class="<?= $strCategoryClass ?>"><?= $_POST["cat$i"] ?></span></div>
+                                <div class="question-score col-2"><span class="<?= $strScoreClass ?>"><?= $_POST["score$i"] ?></span> / <?= $_POST['level'] ?></div>
+                                <div class="question-text offset-1 col-10"><p><?= $_POST["quest$i"] ?></p></div>
                                 <hr class="custom-hr offset-1 col-10" />
 <?php       }
             $intScoreMax = intval($_POST['level']."0");
