@@ -5,7 +5,7 @@
 // Role         : animation JS script for web3quizzgame.php
 // Author       : CoinMachine
 // Creation     : 2023-09-19
-// Last update  : 2021-09-20
+// Last update  : 2021-09-21
 // =====================================================================================================
 // ================ DOM ELEMENTS ================
 const quizzForm = document.getElementById('quizz-form');
@@ -90,6 +90,9 @@ quizzForm.addEventListener("submit", function (e) {
         tabAnswers.forEach(element => {
             if(element.checked){
                 bolResponded = true;
+                btnCheck.disabled = true;
+                btnCheck.style.color = '#888';
+                btnCheck.style.borderColor = '#888';
                 if (intQuestionNumber > 9){
                     btnCheck.value = 'Résultats du quizz';
                 } else {
@@ -120,7 +123,6 @@ quizzForm.addEventListener("submit", function (e) {
                         }, 500);
                     }, 500);
                     inputScore.setAttribute('value', intPlayerLevel);
-                   
                 } else {                                    // mauvaise réponse
                     element.parentElement.querySelector('label').style.backgroundColor = 'var(--bad)';
                     element.parentElement.querySelector('label').style.color = '#000';
@@ -133,6 +135,11 @@ quizzForm.addEventListener("submit", function (e) {
                     inputScore.setAttribute('value', 0);
                 }
                 fieldsetQuizz.appendChild(inputScore);
+                setTimeout(function(){
+                    btnCheck.style.color = '#06c883';
+                    btnCheck.style.borderColor = '#06c883';
+                    btnCheck.disabled = false;
+                }, 2750);
             }
         });
     }

@@ -44,6 +44,7 @@ Our mission is to help individuals understand blockchains and cryptocurrencies, 
 
 - [News]
 
+- [CryptoQuizz]
 - [Tutorials]
 - [ToolBox]
 

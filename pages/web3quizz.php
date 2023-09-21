@@ -6,7 +6,7 @@
 // Role         : web3 quizz page
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-20
+// Last update  : 2021-09-21
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -33,7 +33,7 @@ creatMainMenu($fileName);                               // Create the main menu
                 <section id="quizz-main-content" class="col-12">
                     <div clas="row">
                         <article class="col-12">
-                                <form class="row" action="web3quizzgame.php" method="post">
+                                <form class="row" action="web3quizzgame.php#footer" method="post">
                                     <fieldset>
                                         <legend class="col-12">Choisir un niveau d'expertise :</legend>
                                         <div id="rookie-container" class="offset-1 col-11" title="Débutant dans cet univers, viens tester tes connaissances, pour peut-être devenir un hodler à succès...">

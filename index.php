@@ -15,6 +15,7 @@ require('scripts/paging/main_menu.php');                // Include the main menu
 require('admin/db_access.php');                         // Include the database access informations
 require('admin/db_requestBuilder.php');                 // Include the database access functions
 require('scripts/php/tools.php');                       // Include the utilitary functions
+require('scripts/php/quizzTools.php');                  // Include the quizz utilitary functions
 
 $fileName = $_SERVER['SCRIPT_NAME'];                    // Get the name of the current script
 
@@ -32,6 +33,9 @@ $intMediasCharts = getMediasCountById(3);               // Get the number of cha
 $intMediasYoutubers = getMediasCountById(1);            // Get the number of youtubers in the medias
 $intMediasTwittos = getMediasCountById(4);              // Get the number of twittos in the medias
 $intMediasWoTwittos = $intMedias - $intMediasTwittos - $intMediasCharts;    // Get the number of medias without twittos
+$intQuestionsNumber = countAllQuestions();              // Get the number of questions in the database
+$intLevelsNumber = countAllQuizzLevels();               // Get the number of quizz difficulty levels in the database
+$intCategoriesNumber = countAllQuizzCategories();       // Get the number of questions categories in the database
 
 $tabTopTenTokensInfos = getTopTenTokensInformations();  // Get the top 10 tokens informations
 $tabLastPricesUpdate = getLastPricesUpdate();           // Get the last prices update
@@ -166,23 +170,24 @@ creatMainMenu($fileName);                               // Create the main menu
    |    |___ <a href="pages/disclaimer.php">Disclaimer</a>
    |
    |__ <strong>Datas</strong>
-   |    |___ <a href="pages/web3dashboard.php">Blockchains</a> : <em>fondamentaux, articles, vidéos, documentaires à propos de <?= $intBlockchains ?> blockchains (Bitcoin, Ethereum, BSC...)</em>
-   |    |___ <a href="pages/web3wallets.php">Wallets</a>     : <em>tout sur <?= $intWallets ?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
-   |    |___ <a href="pages/cexchanges.php">CeXchanges</a>  : <em>tout sur <?= $intCexchanges ?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
-   |    |___ <a href="pages/web3humans.php">Humains</a>     : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
-   |    |___ <a href="pages/web3firms.php">Compagnies</a>  : <em>plus d'informations sur <?= $intFirms ?> compagnies incontournables de l'écosystème crypto...</em>
-   |    |___ <a href="pages/web3glossary.php">Glossaire</a>   : <em>répertoire de <?= $intGlossary ?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
+   |    |____ <a href="pages/web3dashboard.php">Blockchains</a>   : <em>fondamentaux, articles, vidéos, documentaires à propos de <?= $intBlockchains ?> blockchains (Bitcoin, Ethereum, BSC...)</em>
+   |    |____ <a href="pages/web3wallets.php">Wallets</a>       : <em>tout sur <?= $intWallets ?> portefeuilles, les standards de tokens supportés, les liens officiels...</em>
+   |    |____ <a href="pages/cexchanges.php">CeXchanges</a>    : <em>tout sur <?= $intCexchanges ?> exchanges centralisés, les liens pour s'inscrire et pour suivre ces plateformes...</em>
+   |    |____ <a href="pages/web3humans.php">Humains</a>       : <em>découvrir plus d'informations sur les personnalités influentes dans la cryptosphère...</em>
+   |    |____ <a href="pages/web3firms.php">Compagnies</a>    : <em>plus d'informations sur <?= $intFirms ?> compagnies incontournables de l'écosystème crypto...</em>
+   |    |____ <a href="pages/web3glossary.php">Glossaire</a>     : <em>répertoire de <?= $intGlossary ?> mots et expressions à connaître, pour apprendre, pour rappel...</em>
    |
    |__ <strong>Ressources</strong>
    |    |
-   |    |___ <a href="pages/web3news.php">News</a>       : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
-   |    |___ <a href="pages/web3tutorials.php">Tutoriels</a>  : <em><?= $intTutorials ?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
-   |    |___ <a href="pages/web3toolbox.php">ToolBox</a>    : <em><?= $intToolbox ?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
-   |    |___ <a href="pages/web3medias.php">Medias</a>     : <em><?= $intMediasWoTwittos ?> médias d'actualités crypto et <?= $intMediasTwittos ?> twittos triés pour la qualité de leur contenu...</em>
-   |            |___ <a href="pages/web3medias.php#news">Journaux</a>
-   |            |___ <a href="pages/web3medias.php#charts">Charts</a>
-   |            |___ <a href="pages/web3medias.php#youtube">YouTubers</a>
-   |            |___ <a href="pages/web3medias.php#twitter">Twittos</a>
+   |    |____ <a href="pages/web3news.php">News</a>         : <em>fraîchement sélectionnées pour garder un oeil sur les derniers évènements marquants...</em>
+   |    |____ <a href="pages/web3quizz.php">CryptoQuizz</a>  : <em><?= $intLevelsNumber ?> niveaux de difficulté, une bibliothèque de <?= $intQuestionsNumber ?> questions réparties en <?= $intCategoriesNumber ?> catégories...</em>
+   |    |____ <a href="pages/web3tutorials.php">Tutoriels</a>    : <em><?= $intTutorials ?> tutoriels à propos de l'utilisation des blockchains, wallets, des tokens...</em>
+   |    |____ <a href="pages/web3toolbox.php">ToolBox</a>      : <em><?= $intToolbox ?> liens utiles et outils pour les wallets, les NFT, la DeFi, les explorateurs de blocs...</em>
+   |    |____ <a href="pages/web3medias.php">Medias</a>       : <em><?= $intMediasWoTwittos ?> médias d'actualités crypto et <?= $intMediasTwittos ?> twittos triés pour la qualité de leur contenu...</em>
+   |            |____ <a href="pages/web3medias.php#news">Journaux</a>
+   |            |____ <a href="pages/web3medias.php#charts">Charts</a>
+   |            |____ <a href="pages/web3medias.php#youtube">YouTubers</a>
+   |            |____ <a href="pages/web3medias.php#twitter">Twittos</a>
    |
    |__ <strong>Earning</strong>
         |___ <a href="pages/realtOverview.php">RealT</a>       : <em>une plateforme incontournable d'investissement immobilier tokenisé...</em>

@@ -5,7 +5,7 @@
 // Role         : web3quizzgame.php special CSS stylesheet
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-20
+// Last update  : 2021-09-21
 // ===================================================================================================== */
 :root {
     --rookie: #1da1f2;
@@ -117,6 +117,12 @@ legend {
 }
 #category-display {
     display: none;
+}
+.category-left{
+    padding-right: 10px;
+}
+.category-right {
+    padding-left: 10px;
 }
 .question-label, #quizz-end-score-label,
 .question-score, #quizz-end-score {

@@ -6,7 +6,7 @@
 // Role         : web3 quizz game page
 // Author       : CoinMachine
 // Creation     : 2023-09-18
-// Last update  : 2021-09-20
+// Last update  : 2021-09-21
 // =====================================================================================================
 require('../scripts/paging/html_header.php');           // Include the HTML header builder
 require('../scripts/paging/page_header.php');           // Include the page header builder
@@ -99,13 +99,18 @@ creatMainMenu($fileName);                               // Create the main menu
                     $strCategoryDisplayClass = "fondamentaux";
                 break;
             } ?>
-                                <form id="quizz-form" class="row" action="web3quizzgame.php" method="post">
+                                <form id="quizz-form" class="row" action="web3quizzgame.php#footer" method="post">
                                     <fieldset id="quizz-fieldset">
                                         <legend id="question-number-label" class="col-12">Question n° <?= $intQuestionNumberDisplay ?></legend>    
                                         <div id="score-section" class="col-12"><div class="row">
                                             <div id="score-label" class="offset-1 col-2">Score</div>
                                             <div id="score-display" class="col-4"><?= $intScore ?> / <?= $_POST['level']."0" ?></div>
-                                            <div id="category-display" class="<?= $strCategoryDisplayClass ?> col-5"><?= $tabQuestion['Category'] ?></div>
+                                            <div id="category-display" class="<?= $strCategoryDisplayClass ?> col-5">
+                                                <span class="<?= $tabQuestion['CategoryIcon'] ?> category-left"></span>
+                                                <?= $tabQuestion['Category'] ?>
+                                                <span class="<?= $tabQuestion['CategoryIcon'] ?> category-right"></span>
+
+                                            </div>
                                         </div></div>
                                         <div id="question" class="offset-1 col-10">
                                             <p><?= $tabQuestion['Text'] ?></p>

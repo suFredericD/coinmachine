@@ -6,7 +6,7 @@
 // Role         : script creating the HTML footer
 // Author       : CoinMachine
 // Creation     : 2023-06-11
-// Last update  : 2023-06-28
+// Last update  : 2023-09-20
 // =====================================================================================================
 function createHTMLfooter($fileName){
     if($fileName == '/index.php' || $fileName == '/coinmachine/index.php'){
@@ -23,7 +23,7 @@ function createHTMLfooter($fileName){
 <!-- --- --- --- END OF CONTENT --- --- --- -->
     </section>
 <!-- --- --- --- FOOTER --- --- --- -->
-    <footer class="col-10">
+    <footer id="footer" class="col-10">
         <div class="row">
             <p class="col-12">Powered by <span class="fa-brands fa-php"></span><span class="fa-brands fa-html5"><span class="fa-brands fa-css3"></span></span></p>
             <p class="col-12">With <span class="fa-regular fa-heart"></span> by <a href="<?php echo $strContactPage;?>" title="Contacter CoinMachine...">CoinMachine</a></p>

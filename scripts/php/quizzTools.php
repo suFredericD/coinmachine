@@ -6,12 +6,42 @@
 // Role         : utilitary functions script
 // Author       : CoinMachine
 // Creation     : 2023-09-19
-// Last update  : 2021-09-20
+// Last update  : 2021-09-21
 // =====================================================================================================
 
 // Function to check number of questions by level in the database
 function checkNumberOfQuestionsByLevel($intLevel) {
     $strRequest = "SELECT COUNT(*) AS 'numberOfQuestions' FROM `question` WHERE `level` = $intLevel";
+    $resLink = requestExec($strRequest);
+    $resLink->data_seek(0);
+    $intReturn = array();
+    $row = $resLink->fetch_row();
+    $intReturn = $row[0];
+    return $intReturn;
+}
+// Function to count all questions in database
+function countAllQuestions(){
+    $strRequest = "SELECT DISTINCT COUNT(`id`) AS 'numberOfQuestions' FROM `question`;";
+    $resLink = requestExec($strRequest);
+    $resLink->data_seek(0);
+    $intReturn = array();
+    $row = $resLink->fetch_row();
+    $intReturn = $row[0];
+    return $intReturn;
+}
+// Function to count all quizz difficulty levels in database
+function countAllQuizzLevels() {
+    $strRequest = "SELECT COUNT(DISTINCT `level`) AS 'numberOfLevels' FROM `question`;";
+    $resLink = requestExec($strRequest);
+    $resLink->data_seek(0);
+    $intReturn = array();
+    $row = $resLink->fetch_row();
+    $intReturn = $row[0];
+    return $intReturn;
+}
+// Function to count all questions categories in database
+function countAllQuizzCategories() {
+    $strRequest = "SELECT DISTINCT COUNT(`id`) AS 'numberOfCategories' FROM `questiontype`;";
     $resLink = requestExec($strRequest);
     $resLink->data_seek(0);
     $intReturn = array();
@@ -39,6 +69,8 @@ function getAllQuestionsByLevel($intLevel) {
         $arrReturn[$intIndex]['Answer3'] = $row['6'];
         $arrReturn[$intIndex]['Answer4'] = $row['7'];
         $arrReturn[$intIndex]['Category'] = $row['9'];
+        $arrReturn[$intIndex]['CategoryText'] = $row['10'];
+        $arrReturn[$intIndex]['CategoryIcon'] = $row['11'];
         $arrReturn[$intIndex]['GoodAnswer'] = $row['12'];
         $intIndex++;
     }
